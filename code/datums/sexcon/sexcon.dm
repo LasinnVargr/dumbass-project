@@ -1911,14 +1911,14 @@
 /mob/living/carbon/human/proc/zaids_check()
 	if(!mind)
 		return
-	if(mind.has_antag_datum(/datum/antagonist/vampire))
-		return
+//	if(mind.has_antag_datum(/datum/antagonist/vampire))
+//		return
 //	if(mind.has_antag_datum(/datum/antagonist/werewolf))
 //		return
 	if(mind.has_antag_datum(/datum/antagonist/zombie))
 		return
-	if(mind.has_antag_datum(/datum/antagonist/skeleton))
-		return
+//	if(mind.has_antag_datum(/datum/antagonist/skeleton))
+//		return
 	if(HAS_TRAIT(src, TRAIT_ZOMBIE_IMMUNE))
 		return
 	return apply_status_effect(/datum/status_effect/zombie_infection)

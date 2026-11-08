@@ -411,7 +411,7 @@
 		/obj/item/clothing/mask/rogue/facemask/carved/rosemask = 1,
 		/obj/item/clothing/mask/rogue/facemask/carved/turqmask = 1,
 		/obj/item/clothing/mask/rogue/facemask/shadowfacemask = 1,
-		/obj/item/clothing/mask/rogue/goblin_mask = 2,
+//		/obj/item/clothing/mask/rogue/goblin_mask = 2,
 		/obj/item/carvedgem/rose/statue/baotha = 10,
 		/obj/item/clothing/gloves/roguetown/plate/graggar = 8,
 		/obj/item/clothing/head/roguetown/helmet/heavy/graggar = 8,

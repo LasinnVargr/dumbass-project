@@ -235,30 +235,30 @@ SUBSYSTEM_DEF(gamemode)
 
 	if(SSticker.HasRoundStarted() && (world.time - SSticker.round_start_time) >= ROUNDSTART_VALID_TIMEFRAME)
 		can_run_roundstart = FALSE
-	else if(current_roundstart_event && length(current_roundstart_event.preferred_events)) //note that this implementation is made for preferred_events being other roundstart events
-		var/list/preferred_copy = current_roundstart_event.preferred_events.Copy()
-		var/datum/round_event_control/selected_event = pickweight(preferred_copy)
-		var/player_count = get_active_player_count(alive_check = TRUE, afk_check = TRUE, human_check = TRUE)
-		if(ispath(selected_event)) //get the instances if we dont have them
-			current_roundstart_event.preferred_events = list()
-			for(var/datum/round_event_control/e_control as anything in preferred_copy)
-				current_roundstart_event.preferred_events[new e_control] = preferred_copy[e_control]
-			preferred_copy = current_roundstart_event.preferred_events.Copy()
-			selected_event = null
-		else if(!selected_event.canSpawnEvent(player_count))
-			preferred_copy -= selected_event
-			selected_event = null
+//	else if(current_roundstart_event && length(current_roundstart_event.preferred_events)) //note that this implementation is made for preferred_events being other roundstart events
+//		var/list/preferred_copy = current_roundstart_event.preferred_events.Copy()
+//		var/datum/round_event_control/selected_event = pickweight(preferred_copy)
+//		var/player_count = get_active_player_count(alive_check = TRUE, afk_check = TRUE, human_check = TRUE)
+//		if(ispath(selected_event)) //get the instances if we dont have them
+//			current_roundstart_event.preferred_events = list()
+//			for(var/datum/round_event_control/e_control as anything in preferred_copy)
+//				current_roundstart_event.preferred_events[new e_control] = preferred_copy[e_control]
+//			preferred_copy = current_roundstart_event.preferred_events.Copy()
+//			selected_event = null
+//		else if(!selected_event.canSpawnEvent(player_count))
+//			preferred_copy -= selected_event
+//			selected_event = null
 
-		var/sanity = 0
-		while(!selected_event && length(preferred_copy) && sanity < 100)
-			sanity++
-			selected_event = pickweight(preferred_copy)
-			if(!selected_event.canSpawnEvent(player_count))
-				preferred_copy -= selected_event
-				selected_event = null
+//		var/sanity = 0
+//		while(!selected_event && length(preferred_copy) && sanity < 100)
+//			sanity++
+//			selected_event = pickweight(preferred_copy)
+//			if(!selected_event.canSpawnEvent(player_count))
+//				preferred_copy -= selected_event
+//				selected_event = null
 
-		if(selected_event)
-			current_storyteller.try_buy_event(selected_event)
+//		if(selected_event)
+//			current_storyteller.try_buy_event(selected_event)
 
 	///Handle scheduled events
 	for(var/datum/scheduled_event/sch_event in scheduled_events)
@@ -1211,8 +1211,8 @@ SUBSYSTEM_DEF(gamemode)
 //			record_round_statistic(STATS_BANDITS)
 //		if(living.mind.has_antag_datum(/datum/antagonist/werewolf))
 //			record_round_statistic(STATS_WEREVOLVES)
-		if(living.mind.has_antag_datum(/datum/antagonist/vampire))
-			record_round_statistic(STATS_VAMPIRES)
+//		if(living.mind.has_antag_datum(/datum/antagonist/vampire))
+//			record_round_statistic(STATS_VAMPIRES)
 //		if(living.mind.has_antag_datum(/datum/antagonist/zombie) || living.mind.has_antag_datum(/datum/antagonist/skeleton) || living.mind.has_antag_datum(/datum/antagonist/lich))
 //			record_round_statistic(STATS_DEADITES_ALIVE)
 		if(ishuman(living))

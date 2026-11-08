@@ -98,7 +98,7 @@
 		else if(!nodmg && (HAS_TRAIT(user, TRAIT_VAMPBITE)))
 			var/ramount = 15
 //			var/rid = /datum/reagent/vampsolution
-			reagents.add_reagent(rid, ramount)
+//			reagents.add_reagent(rid, ramount)
 //			rid = /datum/reagent/vampsolution
 	var/datum/wound/caused_wound
 	if(!nodmg)

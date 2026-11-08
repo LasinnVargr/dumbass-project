@@ -50,10 +50,10 @@
 
 	if(mind)
 		if(!gibbed)
-			var/datum/antagonist/vampire/VD = mind.has_antag_datum(/datum/antagonist/vampire)
-			if(VD)
-				dust(just_ash=TRUE,drop_items=TRUE)
-				return
+//			var/datum/antagonist/vampire/VD = mind.has_antag_datum(/datum/antagonist/vampire)
+//			if(VD)
+//				dust(just_ash=TRUE,drop_items=TRUE)
+//				return
 
 //		var/datum/antagonist/lich/L = mind.has_antag_datum(/datum/antagonist/lich)
 //		if (L && !L.out_of_lives)
@@ -64,8 +64,8 @@
 //			else
 //				to_chat(src, span_userdanger("No, NO! This cannot be!"))
 //				L.out_of_lives = TRUE
-				gib()
-				return
+//				gib()
+//				return
 
 	if(client || mind)
 		record_round_statistic(STATS_DEATHS)
@@ -79,8 +79,8 @@
 		if(mind)
 			if(mind.assigned_role in GLOB.church_positions)
 				record_round_statistic(STATS_CLERGY_DEATHS)
-			if(mind.has_antag_datum(/datum/antagonist/vampire))
-				record_round_statistic(STATS_VAMPIRES_KILLED)
+//			if(mind.has_antag_datum(/datum/antagonist/vampire))
+//				record_round_statistic(STATS_VAMPIRES_KILLED)
 			if(mind.has_antag_datum(/datum/antagonist/zombie))
 				record_round_statistic(STATS_DEADITES_KILLED)
 //			if(mind.has_antag_datum(/datum/antagonist/skeleton) || mind.has_antag_datum(/datum/antagonist/lich))

@@ -28,8 +28,8 @@
 
 	var/mob/living/carbon/carbon_user = user
 
-	if(istype(carbon_user?.clan, /datum/clan/nosferatu))
-		return
+//	if(istype(carbon_user?.clan, /datum/clan/nosferatu))
+//		return
 	if(!HAS_TRAIT(carbon_user, TRAIT_EORAN_CALM) && !HAS_TRAIT(carbon_user, TRAIT_EORAN_SERENE))
 		to_chat(carbon_user, span_userdanger("By [carbon_user.patron?.name]! They are disgusting!!!"))
 		carbon_user.stress_freakout()

@@ -201,18 +201,18 @@
 	if(!organ_inside)
 		return
 
-	for(var/datum/culling_duel/D in GLOB.graggar_cullings)
-		var/obj/item/organ/heart/d_challenger_heart = D.challenger_heart?.resolve()
-		var/obj/item/organ/heart/d_target_heart = D.target_heart?.resolve()
-		var/mob/living/carbon/human/challenger = D.challenger?.resolve()
-		var/mob/living/carbon/human/target = D.target?.resolve()
+//	for(var/datum/culling_duel/D in GLOB.graggar_cullings)
+//		var/obj/item/organ/heart/d_challenger_heart = D.challenger_heart?.resolve()
+//		var/obj/item/organ/heart/d_target_heart = D.target_heart?.resolve()
+//		var/mob/living/carbon/human/challenger = D.challenger?.resolve()
+//		var/mob/living/carbon/human/target = D.target?.resolve()
 
-		if(organ_inside == d_target_heart && eater == challenger)
-			D.process_win(winner = eater, loser = target)
-			return TRUE
-		else if(organ_inside == d_challenger_heart && eater == target)
-			D.process_win(winner = eater, loser = challenger)
-			return TRUE
+//		if(organ_inside == d_target_heart && eater == challenger)
+//			D.process_win(winner = eater, loser = target)
+//			return TRUE
+//		else if(organ_inside == d_challenger_heart && eater == target)
+//			D.process_win(winner = eater, loser = challenger)
+//			return TRUE
 
 /obj/item/organ/Initialize(mapload)
 	if(!zone_checked)

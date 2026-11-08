@@ -162,14 +162,14 @@
 	var/already_zombie = mind.has_antag_datum(/datum/antagonist/zombie)
 	if(already_zombie)
 		return already_zombie
-	if(mind.has_antag_datum(/datum/antagonist/vampire))
-		return
+//	if(mind.has_antag_datum(/datum/antagonist/vampire))
+//		return
 //	if(mind.has_antag_datum(/datum/antagonist/werewolf))
 //		return
 //	if(mind.has_antag_datum(/datum/antagonist/gnoll))
 //		return
-	if(mind.has_antag_datum(/datum/antagonist/skeleton))
-		return
+//	if(mind.has_antag_datum(/datum/antagonist/skeleton))
+//		return
 	if(HAS_TRAIT(src, TRAIT_ZOMBIE_IMMUNE))
 		return
 	return mind.add_antag_datum(/datum/antagonist/zombie)

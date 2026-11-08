@@ -660,10 +660,10 @@ GLOBAL_LIST_INIT(ballmer_windows_me_msg, list("Yo man, what if, we like, uh, put
 	if(HAS_TRAIT(src, TRAIT_NOSLEEP))
 		if(!(mobility_flags & MOBILITY_STAND))
 			energy_add(5)
-		if(mind?.has_antag_datum(/datum/antagonist/vampire))
-			if(!(mobility_flags & MOBILITY_STAND))
-				energy_add(10)
-			energy_add(4)
+//		if(mind?.has_antag_datum(/datum/antagonist/vampire))
+//			if(!(mobility_flags & MOBILITY_STAND))
+//				energy_add(10)
+//			energy_add(4)
 		return
 	//Healing while sleeping in a bed
 	if(IsSleeping())

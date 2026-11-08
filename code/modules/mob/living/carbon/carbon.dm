@@ -10,8 +10,8 @@
 	create_reagents(1000)
 	update_body_parts() //to update the carbon's new bodyparts appearance
 	GLOB.carbon_list += src
-	if(GLOB.blood_sight_viewers)
-		AddComponent(/datum/component/blood_glow)
+//	if(GLOB.blood_sight_viewers)
+//		AddComponent(/datum/component/blood_glow)
 	RegisterSignal(src, list(
 		SIGNAL_ADDTRAIT(TRAIT_PARALYSIS),
 		SIGNAL_REMOVETRAIT(TRAIT_PARALYSIS),

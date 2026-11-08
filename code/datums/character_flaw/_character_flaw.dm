@@ -110,21 +110,21 @@ GLOBAL_LIST_INIT(character_flaws, list(
 //
 ///datum/charflaw/randflaw/apply_post_equipment(mob/user)
 //	var/mob/living/carbon/human/H = user
-	if(prob(50))
-		var/flawz = GLOB.character_flaws.Copy()
-		var/charflaw = pick_n_take(flawz)
+//	if(prob(50))
+//		var/flawz = GLOB.character_flaws.Copy()
+//		var/charflaw = pick_n_take(flawz)
 //		charflaw = GLOB.character_flaws[charflaw]
-		if((charflaw == type) || (charflaw == /datum/charflaw/noflaw))
-			charflaw = pick_n_take(flawz)
-			charflaw = GLOB.character_flaws[charflaw]
-		if((charflaw == type) || (charflaw == /datum/charflaw/noflaw))
-			charflaw = pick_n_take(flawz)
+//		if((charflaw == type) || (charflaw == /datum/charflaw/noflaw))
+//			charflaw = pick_n_take(flawz)
 //			charflaw = GLOB.character_flaws[charflaw]
-		H.charflaw = new charflaw()
-		H.charflaw.on_mob_creation(H)
-	else
+//		if((charflaw == type) || (charflaw == /datum/charflaw/noflaw))
+//			charflaw = pick_n_take(flawz)
+//			charflaw = GLOB.character_flaws[charflaw]
+//		H.charflaw = new charflaw()
+//		H.charflaw.on_mob_creation(H)
+//	else
 //		H.charflaw = new /datum/charflaw/eznoflaw()
-		H.charflaw.on_mob_creation(H)
+//		H.charflaw.on_mob_creation(H)
 
 //
 /datum/charflaw/eznoflaw
@@ -857,9 +857,9 @@ GLOBAL_LIST_INIT(character_flaws, list(
 		return
 	// Undeath cancels mortal obligations. A vampiric servant has no nervelock account to speak of
 	// and the repeated fine attempts spam error notes every life tick.
-	if(user?.mind?.has_antag_datum(/datum/antagonist/vampire))
-		is_active = FALSE
-		return
+//	if(user?.mind?.has_antag_datum(/datum/antagonist/vampire))
+//		is_active = FALSE
+//		return
 	calculate_childsupport(user)
 
 /datum/charflaw/indebted/proc/calculate_childsupport(mob/deadbeat)

@@ -68,7 +68,7 @@
 	desc = "Astrata's cursed spawn blights the land!"
 	cost = 4
 	min_chaos = 2
-	villain_events = list(/datum/round_event_control/antagonist/solo/masquerade)
+//	villain_events = list(/datum/round_event_control/antagonist/solo/masquerade)
 
 /datum/round_modifier/vampirelord
 	name = "Vampyre Lord"
@@ -76,27 +76,27 @@
 	cost = 8
 	weight = 5
 	min_chaos = 3
-	villain_events = list(/datum/round_event_control/antagonist/solo/vampires)
+//	villain_events = list(/datum/round_event_control/antagonist/solo/vampires)
 
 /datum/round_modifier/assassin
 	name = "Assassins"
 	desc = "Ware! Knives in the dark!"
 	cost = 1
-	villain_events = list(/datum/round_event_control/antagonist/solo/assassins)
+//	villain_events = list(/datum/round_event_control/antagonist/solo/assassins)
 
 /datum/round_modifier/rebel
 	name = "Rebellion"
 	desc = "The lowborn think to rule themselves!"
 	cost = 2
 	min_chaos = 1
-	villain_events = list(/datum/round_event_control/antagonist/solo/rebel)
+//	villain_events = list(/datum/round_event_control/antagonist/solo/rebel)
 
 /datum/round_modifier/dreamwalker
 	name = "Dreamwalker"
 	desc = "Abyssor stirs in his slumber."
 	cost = 2
 	min_chaos = 2
-	villain_events = list(/datum/round_event_control/antagonist/solo/dreamwalker)
+//	villain_events = list(/datum/round_event_control/antagonist/solo/dreamwalker)
 
 /*
 /datum/round_modifier/lich

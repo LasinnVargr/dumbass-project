@@ -102,14 +102,14 @@
 	if(!guarantees_roundstart_roleset && prob(roundstart_prob) && !roundstart_checks)
 		roundstart_checks = TRUE
 
-	if(SSgamemode.current_roundstart_event && !SSgamemode.ran_roundstart && (guarantees_roundstart_roleset || roundstart_checks))
-		buy_event(SSgamemode.current_roundstart_event, EVENT_TRACK_CHARACTER_INJECTION, TRUE)
-		if(EVENT_TRACK_CHARACTER_INJECTION in SSgamemode.forced_next_events)
-			SSgamemode.forced_next_events[EVENT_TRACK_CHARACTER_INJECTION] = null
-			SSgamemode.forced_next_events -= EVENT_TRACK_CHARACTER_INJECTION
+//	if(SSgamemode.current_roundstart_event && !SSgamemode.ran_roundstart && (guarantees_roundstart_roleset || roundstart_checks))
+//		buy_event(SSgamemode.current_roundstart_event, EVENT_TRACK_CHARACTER_INJECTION, TRUE)
+//		if(EVENT_TRACK_CHARACTER_INJECTION in SSgamemode.forced_next_events)
+//			SSgamemode.forced_next_events[EVENT_TRACK_CHARACTER_INJECTION] = null
+//			SSgamemode.forced_next_events -= EVENT_TRACK_CHARACTER_INJECTION
 
-		log_storyteller("Running SSgamemode.current_roundstart_event\[[SSgamemode.current_roundstart_event]\]")
-		SSgamemode.ran_roundstart = TRUE
+//		log_storyteller("Running SSgamemode.current_roundstart_event\[[SSgamemode.current_roundstart_event]\]")
+//		SSgamemode.ran_roundstart = TRUE
 
 	add_points(1)
 	handle_tracks()
@@ -223,7 +223,7 @@
 	message_admins("Storyteller purchased and triggered [bought_event] event, on [track] track, for [total_cost] cost.")
 	if(bought_event.roundstart)
 		SSgamemode.ran_roundstart = TRUE
-		SSgamemode.current_roundstart_event = bought_event
+//		SSgamemode.current_roundstart_event = bought_event
 		mode.TriggerEvent(bought_event, forced)
 	else
 		mode.schedule_event(bought_event, 3 MINUTES, total_cost, _forced = forced)

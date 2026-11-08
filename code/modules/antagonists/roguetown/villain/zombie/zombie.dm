@@ -72,14 +72,14 @@
 	)
 
 /datum/antagonist/zombie/examine_friendorfoe(datum/antagonist/examined_datum,mob/examiner,mob/examined)
-	if(istype(examined_datum, /datum/antagonist/vampire))
-		if(!SEND_SIGNAL(examined_datum.owner, COMSIG_DISGUISE_STATUS))
-			return span_boldnotice("Another deadite.")
+//	if(istype(examined_datum, /datum/antagonist/vampire))
+//		if(!SEND_SIGNAL(examined_datum.owner, COMSIG_DISGUISE_STATUS))
+//			return span_boldnotice("Another deadite.")
 	if(istype(examined_datum, /datum/antagonist/zombie))
 		var/datum/antagonist/zombie/fellow_zombie = examined_datum
 		return span_boldnotice("Another deadite. [fellow_zombie.has_turned ? "My ally." : span_warning("Hasn't turned yet.")]")
-	if(istype(examined_datum, /datum/antagonist/skeleton))
-		return span_boldnotice("Another deadite.")
+//	if(istype(examined_datum, /datum/antagonist/skeleton))
+//		return span_boldnotice("Another deadite.")
 
 //Housekeeping/saving variables from pre-zombie
 
@@ -471,14 +471,14 @@
 /mob/living/carbon/human/proc/zombie_check_can_convert()
 	if(!mind)
 		return FALSE
-	if(mind.has_antag_datum(/datum/antagonist/vampire))
-		return FALSE
+//	if(mind.has_antag_datum(/datum/antagonist/vampire))
+//		return FALSE
 //	if(mind.has_antag_datum(/datum/antagonist/werewolf))
 //		return FALSE
 	if(mind.has_antag_datum(/datum/antagonist/zombie))
 		return FALSE
-	if(mind.has_antag_datum(/datum/antagonist/skeleton))
-		return FALSE
+//	if(mind.has_antag_datum(/datum/antagonist/skeleton))
+//		return FALSE
 //	if(mind.has_antag_datum(/datum/antagonist/gnoll))
 //		return FALSE
 	if(HAS_TRAIT(src, TRAIT_ZOMBIE_IMMUNE))

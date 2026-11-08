@@ -213,7 +213,7 @@
 	if(!H.migrant_type)
 		return FALSE
 	var/datum/migrant_role/role = MIGRANT_ROLE(H.migrant_type)
-	return role?.role_category == target
+//	return role?.role_category == target
 
 /obj/structure/roguemachine/talkstatue/mercenary/ui_data(mob/user)
 	var/list/data = list()

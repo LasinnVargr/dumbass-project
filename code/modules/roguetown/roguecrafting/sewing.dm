@@ -981,7 +981,7 @@
 /datum/crafting_recipe/roguetown/sewing/regalrobes
 	display_category = ITEM_CAT_GARMENT_FINE
 	name = "regal silks"
-	result = list(/obj/item/clothing/suit/roguetown/shirt/vampire)
+//	result = list(/obj/item/clothing/suit/roguetown/shirt/vampire)
 	reqs = list(/obj/item/natural/cloth = 2,
 				/obj/item/natural/fibers = 2,
 				/obj/item/natural/silk = 2)

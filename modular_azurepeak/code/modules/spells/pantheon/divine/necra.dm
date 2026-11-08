@@ -99,9 +99,9 @@
 		if(L.stat == DEAD)
 			continue
 		if (L.mind)
-			var/datum/antagonist/vampire/V = L.mind.has_antag_datum(/datum/antagonist/vampire)
-			if(V && SEND_SIGNAL(L, COMSIG_DISGUISE_STATUS))
-				is_vampire = TRUE
+//			var/datum/antagonist/vampire/V = L.mind.has_antag_datum(/datum/antagonist/vampire)
+//			if(V && SEND_SIGNAL(L, COMSIG_DISGUISE_STATUS))
+//				is_vampire = TRUE
 			if (L.mind.has_antag_datum(/datum/antagonist/zombie))
 				is_zombie = TRUE
 				things_to_stun += L

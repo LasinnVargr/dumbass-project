@@ -1120,13 +1120,13 @@
 	var/used_title
 	if(migrant_type)
 		var/datum/migrant_role/migrant = MIGRANT_ROLE(migrant_type)
-		used_title = migrant.name
-		if(migrant.advjob_examine && advjob)
-			var/datum/advclass/AC = SSrole_class_handler.get_advclass_by_name(advjob)
-			if(AC?.examine_name)
-				used_title = AC.examine_name
-			else
-				used_title = advjob
+//		used_title = migrant.name
+//		if(migrant.advjob_examine && advjob)
+//			var/datum/advclass/AC = SSrole_class_handler.get_advclass_by_name(advjob)
+//			if(AC?.examine_name)
+//				used_title = AC.examine_name
+//			else
+//				used_title = advjob
 	else if(job)
 		var/datum/job/J = SSjob.GetJob(job)
 		if(!J)

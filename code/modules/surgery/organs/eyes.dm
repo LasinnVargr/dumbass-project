@@ -216,7 +216,7 @@
 
 /obj/item/organ/eyes/night_vision/vampire/Remove(mob/living/carbon/M, special = 0)
 	. = ..()
-	vampire_sight?.disable()
+//	vampire_sight?.disable()
 
 /obj/item/organ/eyes/elf
 	name = "elf eyes"

@@ -152,10 +152,10 @@ GLOBAL_VAR_INIT(observer_default_invisibility, INVISIBILITY_OBSERVER)
 		/mob/dead/observer/proc/open_spawners_menu,
 		/mob/dead/observer/proc/tray_view)
 
-	if(!istype(src, /mob/dead/observer/rogue/arcaneeye))
-		if(!istype(src, /mob/dead/observer/screye))
-			client?.verbs += GLOB.ghost_verbs
-			to_chat(src, span_danger("Click the <b>SKULL</b> on the left of your HUD to respawn."))
+//	if(!istype(src, /mob/dead/observer/rogue/arcaneeye))
+//		if(!istype(src, /mob/dead/observer/screye))
+//			client?.verbs += GLOB.ghost_verbs
+//			to_chat(src, span_danger("Click the <b>SKULL</b> on the left of your HUD to respawn."))
 
 	if(icon_state in GLOB.ghost_forms_with_directions_list)
 		ghostimage_default = image(src.icon,src,src.icon_state + "")
@@ -260,11 +260,11 @@ GLOBAL_VAR_INIT(observer_default_invisibility, INVISIBILITY_OBSERVER)
 
 /mob/dead/observer/Login()
 	. = ..()
-	if(!(istype(src, /mob/dead/observer/rogue/arcaneeye)))
-		if(istype(src, /mob/dead/observer/screye))
-			return
-		client?.verbs += GLOB.ghost_verbs
-		to_chat(src, span_danger("Click the <b>SKULL</b> on the left of your HUD to respawn."))
+//	if(!(istype(src, /mob/dead/observer/rogue/arcaneeye)))
+//		if(istype(src, /mob/dead/observer/screye))
+//			return
+//		client?.verbs += GLOB.ghost_verbs
+//		to_chat(src, span_danger("Click the <b>SKULL</b> on the left of your HUD to respawn."))
 
 /mob/dead/observer/narsie_act()
 	var/old_color = color
@@ -295,8 +295,8 @@ GLOBAL_VAR_INIT(observer_default_invisibility, INVISIBILITY_OBSERVER)
 	if(!isinhell)
 		if(istype(mover, /mob/dead/observer/rogue))
 			return 0
-		if(istype(mover, /mob/dead/observer/rogue/arcaneeye))
-			return 1
+//		if(istype(mover, /mob/dead/observer/rogue/arcaneeye))
+//			return 1
 	return 1
 
 /*
@@ -873,8 +873,8 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 		O.updateghostimages()
 
 /mob/dead/observer/proc/horde_respawn()
-	if(istype(src, /mob/dead/observer/rogue/arcaneeye))
-		return
+//	if(istype(src, /mob/dead/observer/rogue/arcaneeye))
+//		return
 	var/bt = world.time
 	SEND_SOUND(src, sound('sound/misc/notice (2).ogg'))
 	if(alert(src, "You have been summoned you to destroy!", "Join the Horde", "Yes", "No") == "Yes")
@@ -1537,7 +1537,7 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 
 	var/static/list/major_antag_typecache = typecacheof(list(
 //		/datum/antagonist/werewolf,
-		/datum/antagonist/vampire,
+//		/datum/antagonist/vampire,
 //		/datum/antagonist/lich,
 	))
 	var/static/list/minor_antag_typecache = typecacheof(list(
@@ -1591,21 +1591,21 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	if(!istype(A))
 		return null
 
-	if(istype(A, /datum/antagonist/vampire/lord))
-		return list("priority" = 10, "group" = "major", "label" = "Vampire Lord")
-	if(istype(A, /datum/antagonist/vampire/ancillae))
-		return list("priority" = 11, "group" = "major", "label" = "Ancillae Vampire")
-	if(istype(A, /datum/antagonist/vampire/licker))
-		return list("priority" = 12, "group" = "major", "label" = "Lesser Vampire")
-	if(istype(A, /datum/antagonist/vampire/thinblood))
-		return list("priority" = 13, "group" = "major", "label" = "Thinblood Vampire")
-	if(istype(A, /datum/antagonist/vampire))
-		var/datum/antagonist/vampire/V = A
-		if(V.generation >= GENERATION_METHUSELAH)
-			return list("priority" = 14, "group" = "major", "label" = "Vampire Lord")
-		if(special_role == "Vampire Spawn")
-			return list("priority" = 15, "group" = "major", "label" = "Vampire Spawn")
-		return list("priority" = 16, "group" = "major", "label" = "Lesser Vampire")
+//	if(istype(A, /datum/antagonist/vampire/lord))
+//		return list("priority" = 10, "group" = "major", "label" = "Vampire Lord")
+//	if(istype(A, /datum/antagonist/vampire/ancillae))
+//		return list("priority" = 11, "group" = "major", "label" = "Ancillae Vampire")
+//	if(istype(A, /datum/antagonist/vampire/licker))
+//		return list("priority" = 12, "group" = "major", "label" = "Lesser Vampire")
+//	if(istype(A, /datum/antagonist/vampire/thinblood))
+//		return list("priority" = 13, "group" = "major", "label" = "Thinblood Vampire")
+//	if(istype(A, /datum/antagonist/vampire))
+//		var/datum/antagonist/vampire/V = A
+//		if(V.generation >= GENERATION_METHUSELAH)
+//			return list("priority" = 14, "group" = "major", "label" = "Vampire Lord")
+//		if(special_role == "Vampire Spawn")
+//			return list("priority" = 15, "group" = "major", "label" = "Vampire Spawn")
+//		return list("priority" = 16, "group" = "major", "label" = "Lesser Vampire")
 
 //	if(istype(A, /datum/antagonist/werewolf))
 //		if(A.name == "Lesser Verevolf")
@@ -1615,18 +1615,18 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 //	if(istype(A, /datum/antagonist/lich))
 //		return list("priority" = 30, "group" = "major", "label" = "Lich")
 
-	if(istype(A, /datum/antagonist/skeleton/knight))
-		return list("priority" = 40, "group" = "minor", "label" = "Death Knight")
-	if(istype(A, /datum/antagonist/skeleton))
-		if(special_role == ROLE_LICH_SKELETON)
-			return list("priority" = 41, "group" = "minor", "label" = "Lich Skeleton")
-		if(special_role == ROLE_NECRO_SKELETON)
-			return list("priority" = 42, "group" = "minor", "label" = "Necromancer Skeleton")
-		if(HAS_TRAIT(M, TRAIT_LICHLAIR))
-			return list("priority" = 43, "group" = "minor", "label" = "Lich Skeleton")
-		if(assigned_role == "Fortified Skeleton" || assigned_role == "Greater Skeleton")
-			return list("priority" = 44, "group" = "minor", "label" = "Necromancer Skeleton")
-		return list("priority" = 45, "group" = "minor", "label" = "Skeleton")
+//	if(istype(A, /datum/antagonist/skeleton/knight))
+//		return list("priority" = 40, "group" = "minor", "label" = "Death Knight")
+//	if(istype(A, /datum/antagonist/skeleton))
+//		if(special_role == ROLE_LICH_SKELETON)
+//			return list("priority" = 41, "group" = "minor", "label" = "Lich Skeleton")
+//		if(special_role == ROLE_NECRO_SKELETON)
+//			return list("priority" = 42, "group" = "minor", "label" = "Necromancer Skeleton")
+//		if(HAS_TRAIT(M, TRAIT_LICHLAIR))
+//			return list("priority" = 43, "group" = "minor", "label" = "Lich Skeleton")
+//		if(assigned_role == "Fortified Skeleton" || assigned_role == "Greater Skeleton")
+//			return list("priority" = 44, "group" = "minor", "label" = "Necromancer Skeleton")
+//		return list("priority" = 45, "group" = "minor", "label" = "Skeleton")
 
 //	if(istype(A, /datum/antagonist/bandit))
 //		return list("priority" = 50, "group" = "minor", "label" = "Bandit")

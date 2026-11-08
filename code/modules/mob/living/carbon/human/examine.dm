@@ -63,11 +63,11 @@
 	var/obscure_name = FALSE
 	var/race_name = "<a href='?src=[REF(src)];species_lore=1'><u>[dna.species.name]</u></A>"
 //	var/datum/antagonist/maniac/maniac = user.mind?.has_antag_datum(/datum/antagonist/maniac)
-	var/datum/antagonist/skeleton/skeleton = user.mind?.has_antag_datum(/datum/antagonist/skeleton)
+//	var/datum/antagonist/skeleton/skeleton = user.mind?.has_antag_datum(/datum/antagonist/skeleton)
 //	if(maniac && (user != src))
 //		race_name = "disgusting pig"
-	if(skeleton && (user != src))
-		race_name = "[pick("shambling", "taut", "decrepit")]"
+//	if(skeleton && (user != src))
+//		race_name = "[pick("shambling", "taut", "decrepit")]"
 
 	var/m1 = "[t_He] [t_is]"
 	var/m2 = "[t_his]"
@@ -171,8 +171,8 @@
 					var/shit = bD.examine_friendorfoe(aD,user,src)
 					if(shit)
 						. += shit
-		if(user.mind?.has_antag_datum(/datum/antagonist/vampire) && can_be_blood_drunk())
-			. += span_userdanger("<a href='?src=[REF(src)];task=bloodpoolinfo;'>Vitae: [(mind && !clan) ? (bloodpool * CLIENT_VITAE_MULTIPLIER) : bloodpool]; Blood: [blood_volume]</a>")
+//		if(user.mind?.has_antag_datum(/datum/antagonist/vampire) && can_be_blood_drunk())
+//			. += span_userdanger("<a href='?src=[REF(src)];task=bloodpoolinfo;'>Vitae: [(mind && !clan) ? (bloodpool * CLIENT_VITAE_MULTIPLIER) : bloodpool]; Blood: [blood_volume]</a>")
 
 		// Loan default brands (AP parity): each creditor faction reads its own debtors;
 		// Crown debtors are known to the realm's authority roles. Ratwood has no
@@ -1153,15 +1153,15 @@
 				. += span_notice("A disgraced noble.")
 
 		//For tennite schism god-event
-		if(length(GLOB.tennite_schisms))
-			var/datum/tennite_schism/S = GLOB.tennite_schisms[1]
-			var/user_side = (WEAKREF(user) in S.supporters_astrata) ? "astrata" : (WEAKREF(user) in S.supporters_challenger) ? "challenger" : null
-			var/mob_side = (WEAKREF(src) in S.supporters_astrata) ? "astrata" : (WEAKREF(src) in S.supporters_challenger) ? "challenger" : null
+//		if(length(GLOB.tennite_schisms))
+//			var/datum/tennite_schism/S = GLOB.tennite_schisms[1]
+//			var/user_side = (WEAKREF(user) in S.supporters_astrata) ? "astrata" : (WEAKREF(user) in S.supporters_challenger) ? "challenger" : null
+//			var/mob_side = (WEAKREF(src) in S.supporters_astrata) ? "astrata" : (WEAKREF(src) in S.supporters_challenger) ? "challenger" : null
 
-			if(user_side && mob_side)
-				var/datum/patron/their_god = (mob_side == "astrata") ? S.astrata_god.resolve() : S.challenger_god.resolve()
-				if(their_god)
-					. += (user_side == mob_side) ? span_notice("Fellow [their_god.name] supporter!") : span_userdanger("Vile [their_god.name] supporter!")
+//			if(user_side && mob_side)
+//				var/datum/patron/their_god = (mob_side == "astrata") ? S.astrata_god.resolve() : S.challenger_god.resolve()
+//				if(their_god)
+//					. += (user_side == mob_side) ? span_notice("Fellow [their_god.name] supporter!") : span_userdanger("Vile [their_god.name] supporter!")
 
 
 		if(origin && origin != "Unknown")
@@ -1447,9 +1447,9 @@
 		if(mind.special_role == "Deadite")
 			villain_text = span_userdanger("DEADITE!")
 		if(mind.special_role == "Vampire Lord")
-			var/datum/antagonist/vampire/VD = mind.has_antag_datum(/datum/antagonist/vampire)
-			if(!SEND_SIGNAL(VD.owner, COMSIG_DISGUISE_STATUS))
-				villain_text += span_userdanger("A MONSTER!")
+//			var/datum/antagonist/vampire/VD = mind.has_antag_datum(/datum/antagonist/vampire)
+//			if(!SEND_SIGNAL(VD.owner, COMSIG_DISGUISE_STATUS))
+//				villain_text += span_userdanger("A MONSTER!")
 		if(mind.assigned_role == "Lunatic")
 			villain_text += span_userdanger("LUNATIC!")
 

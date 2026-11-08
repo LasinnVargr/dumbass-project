@@ -13,7 +13,7 @@
 	)
 	title_adjust = list(
 		// Noble Court
-		/datum/job/roguetown/lord = list(display_title = "Grand Viceroy", f_title = "Grand Vicereine"),
+//		/datum/job/roguetown/lord = list(display_title = "Grand Viceroy", f_title = "Grand Vicereine"),
 		// /datum/job/roguetown/hand = list(display_title = "Adjutant", f_title = "Adjutant"),
 		// /datum/job/roguetown/steward = list(display_title = "Seneschal", f_title = "Seneschal"),
 		// /datum/job/roguetown/butler = list(display_title = "Majordomo", f_title = "Majordomo"),
@@ -53,26 +53,26 @@
 //		/datum/job/roguetown/beggar = list(display_title = "Stowaway", f_title = "Stowaway"),
 	)
 	tutorial_adjust = list(
-		/datum/job/roguetown/lord = "You have been sent by the queen to oversee the colony of New Kingsfield. CHANGE THIS LATER.",
+//		/datum/job/roguetown/lord = "You have been sent by the queen to oversee the colony of New Kingsfield. CHANGE THIS LATER.",
 //		/datum/job/roguetown/bandit = "At some point in your lyfe, you'd fallen to the wrong side of the PIRATESHIP!. Whether by butchery or finesse, you're known throughout the SEVEN SEAS. Yet one of many faces in a SALTY PORT tavern, hung up on a wall. A tale told by the locals. Now, you lyve in a PIRATES COVE with your fellows, to avoid an unpleasant end."
 		// /datum/job/roguetown/orphan = "CHANGE THIS LATER!",
 
 	)
 	/// Jobs that this map won't use
 	blacklist = list(
-		/datum/job/roguetown/cataphract,
-		/datum/job/roguetown/headslave,
-		/datum/job/roguetown/janissary,
-		/datum/job/roguetown/janissarysergeant,
-		/datum/job/roguetown/azeb,
-		/datum/job/roguetown/azebagha,
-		/datum/job/roguetown/slavemaster,
+//		/datum/job/roguetown/cataphract,
+//		/datum/job/roguetown/headslave,
+//		/datum/job/roguetown/janissary,
+//		/datum/job/roguetown/janissarysergeant,
+//		/datum/job/roguetown/azeb,
+//		/datum/job/roguetown/azebagha,
+//		/datum/job/roguetown/slavemaster,
 //		/datum/job/roguetown/slaver,
 //		/datum/job/roguetown/rockhillslave,
 //		/datum/job/roguetown/baron,
 //		/datum/job/roguetown/baron_retainer,
-		/datum/job/roguetown/adventurer/courtslave,
-		/datum/job/roguetown/dtchaplain,
+//		/datum/job/roguetown/adventurer/courtslave,
+//		/datum/job/roguetown/dtchaplain,
 		
 		// /datum/job/roguetown/adventurer//Adventurers
 		// /datum/job/roguetown/wretch,

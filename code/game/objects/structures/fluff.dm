@@ -1229,7 +1229,7 @@
 		/obj/item/clothing/neck/roguetown/horus,
 		/obj/item/rogue/painting,
 		/obj/item/clothing/head/roguetown/crown/serpcrown,
-		/obj/item/clothing/head/roguetown/vampire,
+//		/obj/item/clothing/head/roguetown/vampire,
 		/obj/item/scomstone,
 		/obj/item/reagent_containers/lux,
 		/obj/item/cooking/platter/silver,

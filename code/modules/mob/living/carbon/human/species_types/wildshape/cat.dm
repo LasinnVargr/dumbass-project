@@ -207,9 +207,9 @@
 			if(target.mind.has_antag_datum(/datum/antagonist/zombie))
 				to_chat(src, span_warning("I shall not lick it..."))
 				return
-			if(target.mind.has_antag_datum(/datum/antagonist/vampire))
-				to_chat(src, span_warning("... What? Its an elder vampire!"))
-				return
+//			if(target.mind.has_antag_datum(/datum/antagonist/vampire))
+//				to_chat(src, span_warning("... What? Its an elder vampire!"))
+//				return
 		if(!do_after(user, 7 SECONDS, target = target))
 			return
 		var/ramount = 20

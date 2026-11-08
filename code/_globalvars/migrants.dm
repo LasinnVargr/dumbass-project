@@ -11,8 +11,8 @@ GLOBAL_LIST_INIT(migrant_roles, build_migrant_roles())
 
 /proc/build_migrant_roles()
 	. = list()
-	for(var/type in typesof(/datum/migrant_role))
-		if(is_abstract(type))
-			continue
-		.[type] = new type()
+//	for(var/type in typesof(/datum/migrant_role))
+//		if(is_abstract(type))
+//			continue
+//		.[type] = new type()
 	return .

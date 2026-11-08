@@ -130,8 +130,8 @@
 	desc = "Send your drider away while outdoors or in the Underdark."
 
 ///obj/effect/proc_holder/spell/self/saddleborn/sendaway/spiderborn/get_mount(mob/living/carbon/human/user)
-	if(!ishuman(user) || !HAS_TRAIT(user, TRAIT_SPIDERBORN))
-		return null
+//	if(!ishuman(user) || !HAS_TRAIT(user, TRAIT_SPIDERBORN))
+//		return null
 	return user.spiderborn_mount?.resolve()
 
 /obj/effect/proc_holder/spell/self/saddleborn/whistle/spiderborn
@@ -139,6 +139,6 @@
 	desc = "Call your drider to your side. Unlike those wretched surface mounts, the noble drider is unbothered by trivialities like hostile terrain or fauna; an apex in its own right."
 
 ///obj/effect/proc_holder/spell/self/saddleborn/whistle/spiderborn/get_mount(mob/living/carbon/human/user)
-	if(!ishuman(user) || !HAS_TRAIT(user, TRAIT_SPIDERBORN))
-		return null
+//	if(!ishuman(user) || !HAS_TRAIT(user, TRAIT_SPIDERBORN))
+//		return null
 	return user.spiderborn_mount?.resolve()

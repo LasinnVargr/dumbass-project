@@ -70,10 +70,10 @@
 	weight = 100 // It is a "default" wave
 	triumph_threshold = 10
 	required_roles = list(
-		/datum/migrant_role/pilgrim = 1,
+//		/datum/migrant_role/pilgrim = 1,
 	)
 	optional_roles = list(
-		/datum/migrant_role/pilgrim = 3,
+//		/datum/migrant_role/pilgrim = 3,
 	)
 	greet_text = "Fleeing from misfortune and hardship, you and a handful of survivors get closer to the realm, looking for refuge and work, finally almost being there, almost..."
 
@@ -83,10 +83,10 @@
 	weight = 100 // Adventurers is the default spillover role and instead of just setting adventurers slots up high at roundstart we'll let people join in gradually through the round
 	triumph_threshold = 15
 	required_roles = list(
-		/datum/migrant_role/adventurer = 1,
+//		/datum/migrant_role/adventurer = 1,
 	)
 	optional_roles = list(
-		/datum/migrant_role/adventurer = 3,
+//		/datum/migrant_role/adventurer = 3,
 	)
 	greet_text = "Together with a party of trusted friends we decided to venture out, seeking thrills, glory and treasure, ending up on a dark and lonesome road, perhaps getting ourselves into more than what we bargained for."
 
@@ -98,10 +98,10 @@
 	is_raid = TRUE
 	spawn_landmark = "Bandit"
 	required_roles = list(
-		/datum/migrant_role/bandit = 1,
+//		/datum/migrant_role/bandit = 1,
 	)
 	optional_roles = list(
-		/datum/migrant_role/bandit = 2,
+//		/datum/migrant_role/bandit = 2,
 	)
 
 /datum/migrant_wave/assassin
@@ -111,10 +111,10 @@
 	min_round_time = 300 MINUTES
 	is_raid = TRUE
 	required_roles = list(
-		/datum/migrant_role/assassin = 1,
+//		/datum/migrant_role/assassin = 1,
 	)
 	optional_roles = list(
-		/datum/migrant_role/assassin = 3,
+//		/datum/migrant_role/assassin = 3,
 	)
 
 /datum/migrant_wave/gnolls
@@ -124,8 +124,8 @@
 	min_round_time = 300 MINUTES
 	is_raid = TRUE
 	required_roles = list(
-		/datum/migrant_role/gnoll = 1,
+//		/datum/migrant_role/gnoll = 1,
 	)
 	optional_roles = list(
-		/datum/migrant_role/gnoll = 3,
+//		/datum/migrant_role/gnoll = 3,
 	)

@@ -112,9 +112,9 @@
 	COOLDOWN_START(src, transform_cooldown, 5 SECONDS)
 
 	// Apply vampire appearance - get it from clan
-	if(H.clan && istype(H.clan, /datum/clan))
-		var/datum/clan/vclan = H.clan
-		vclan.apply_vampire_look(H)
+//	if(H.clan && istype(H.clan, /datum/clan))
+//		var/datum/clan/vclan = H.clan
+//		vclan.apply_vampire_look(H)
 
 	to_chat(H, span_warning("My true nature is revealed!"))
 	return TRUE

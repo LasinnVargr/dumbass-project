@@ -498,7 +498,7 @@
 	greet_text = span_notice("I am quite rebellious for a princess. Screw Noble Customs!")
 	req_text = "Be a princess"
 	allowed_sexes = list(FEMALE)
-	allowed_jobs = list(/datum/job/roguetown/prince)
+//	allowed_jobs = list(/datum/job/roguetown/prince)
 	weight = 50
 
 /datum/special_trait/punkprincess/on_apply(mob/living/carbon/human/character, silent)

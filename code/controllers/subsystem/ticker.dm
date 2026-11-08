@@ -815,8 +815,8 @@ SUBSYSTEM_DEF(ticker)
 		CHECK_TICK
 
 	for(var/mob/living/carbon/human in GLOB.human_list)
-		if(human.clan)
-			continue
+//		if(human.clan)
+//			continue
 
 		human.stress_freakout()
 

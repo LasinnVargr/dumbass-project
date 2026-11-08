@@ -358,8 +358,8 @@ GLOBAL_VAR_INIT(last_crown_announcement_time, -1000)
 	if(!SScommunications.can_announce(user))
 		return
 	if(user.job)
-		if(!istype(SSjob.GetJob(user.job), /datum/job/roguetown/lord))
-			return
+//		if(!istype(SSjob.GetJob(user.job), /datum/job/roguetown/lord))
+//			return
 	else
 		return
 	return make_outlaw(raw_message)

@@ -8,17 +8,17 @@
 	map_file_name = "rockhill.dmm"
 	realm_name = "Rockhill"
 	blacklist = list(//I had wanted the map variable in the roles themselves to bar them from non-desert maps but it still shows up in the Latejoin menu so I'm doing this just to keep it clear)
-		/datum/job/roguetown/cataphract,
+//		/datum/job/roguetown/cataphract,
 		// /datum/job/roguetown/vizier,
-		/datum/job/roguetown/headslave,
+//		/datum/job/roguetown/headslave,
 		// /datum/job/roguetown/sheikh,
-		/datum/job/roguetown/janissary,
-		/datum/job/roguetown/janissarysergeant,
-		/datum/job/roguetown/azeb,
-		/datum/job/roguetown/azebagha,
-		/datum/job/roguetown/slavemaster,
-		/datum/job/roguetown/slave,
-		/datum/job/roguetown/dtchaplain,
+//		/datum/job/roguetown/janissary,
+//		/datum/job/roguetown/janissarysergeant,
+//		/datum/job/roguetown/azeb,
+//		/datum/job/roguetown/azebagha,
+//		/datum/job/roguetown/slavemaster,
+//		/datum/job/roguetown/slave,
+//		/datum/job/roguetown/dtchaplain,
 		
 //		/datum/job/roguetown/tribalchieftain,
 //		/datum/job/roguetown/tribalshaman,
@@ -29,10 +29,10 @@
 	slot_adjust = list(
 //		/datum/job/roguetown/manorguard = 4,//split with watchmen
 //		/datum/job/roguetown/warden = 4,//split with vanguard
-		/datum/job/roguetown/adventurer/courtslave = 2,
+//		/datum/job/roguetown/adventurer/courtslave = 2,
 	)
 	title_adjust = list(
-		/datum/job/roguetown/lord = list(display_title = "Duke", f_title = "Duchess"),
+//		/datum/job/roguetown/lord = list(display_title = "Duke", f_title = "Duchess"),
 //		/datum/job/roguetown/physician = list(display_title = "Court Physician"),
 //		/datum/job/roguetown/niteman = list(display_title = "Nightmaster", f_title = "Nightmistress"),
 //		/datum/job/roguetown/nightmaiden = list(display_title = "Nightswain", f_title = "Nightmaiden"),

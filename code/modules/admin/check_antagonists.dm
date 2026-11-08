@@ -211,26 +211,26 @@
 
 		if(HAS_TRAIT(L, TRAIT_GNOLL_HUNTED))
 			hunted_targets += L
-		else if(L.job in combat_roles)
-			combat_targets += L
+//		else if(L.job in combat_roles)
+//			combat_targets += L
 
 //	for(var/datum/antagonist/gnoll/G in GLOB.antagonists)
 //		var/mob/living/gnoll_mob = G.owner?.current
-		if(!gnoll_mob || QDELETED(gnoll_mob))
-			continue
+//		if(!gnoll_mob || QDELETED(gnoll_mob))
+//			continue
 //		var/mob/living/tracked_target = G.get_tracked_target()
-		if(!tracked_target)
-			continue
-		if(!(tracked_target in hunted_targets) && !(tracked_target in combat_targets) && !(tracked_target in direct_scent_targets))
-			direct_scent_targets += tracked_target
+//		if(!tracked_target)
+//			continue
+//		if(!(tracked_target in hunted_targets) && !(tracked_target in combat_targets) && !(tracked_target in direct_scent_targets))
+//			direct_scent_targets += tracked_target
 
-		var/target_ref = "\ref[tracked_target]"
+//		var/target_ref = "\ref[tracked_target]"
 		if(!tracking_gnolls_by_target_ref[target_ref])
 			tracking_gnolls_by_target_ref[target_ref] = list()
 
 		var/list/tracking_gnolls = tracking_gnolls_by_target_ref[target_ref]
-		if(!(gnoll_mob in tracking_gnolls))
-			tracking_gnolls += gnoll_mob
+//		if(!(gnoll_mob in tracking_gnolls))
+//			tracking_gnolls += gnoll_mob
 
 	var/list/active_targets = length(hunted_targets) ? hunted_targets : combat_targets
 	var/list/display_targets = active_targets.Copy()

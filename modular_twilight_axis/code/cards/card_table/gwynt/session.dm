@@ -189,8 +189,8 @@ GLOBAL_VAR_INIT(ccg_music_channel, null)
 	return !!player?.mind?.has_antag_datum(antag_path)
 
 /proc/ccg_soundtrack_is_open_vampire_lord(mob/player)
-	if(!player?.mind?.has_antag_datum(/datum/antagonist/vampire/lord))
-		return FALSE
+//	if(!player?.mind?.has_antag_datum(/datum/antagonist/vampire/lord))
+//		return FALSE
 	var/datum/component/vampire_disguise/disguise_comp = player.GetComponent(/datum/component/vampire_disguise)
 	if(disguise_comp?.disguised)
 		return FALSE

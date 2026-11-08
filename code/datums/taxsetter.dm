@@ -72,17 +72,17 @@
 	switch(action)
 		if("set_rates")
 //			var/lord = find_lord()
-			if(lord)
+//			if(lord)
 //				INVOKE_ASYNC(GLOBAL_PROC, GLOBAL_PROC_REF(lord_tax_rates_requested), requesting_steward, lord, params["categoryRates"], good_announcement_text, bad_announcement_text)
-			else
-				SStreasury.apply_rate_adjustments(params["categoryRates"], requesting_steward, good_announcement_text, bad_announcement_text)
+//			else
+//				SStreasury.apply_rate_adjustments(params["categoryRates"], requesting_steward, good_announcement_text, bad_announcement_text)
 			return TRUE
 		if("set_poll_rates")
 //			var/lord = find_lord()
-			if(lord)
+//			if(lord)
 //				INVOKE_ASYNC(GLOBAL_PROC, GLOBAL_PROC_REF(lord_poll_tax_rates_requested), requesting_steward, lord, params["pollTaxRates"], good_announcement_text, bad_announcement_text)
-			else
-				SStreasury.apply_poll_rate_adjustments(params["pollTaxRates"], requesting_steward, good_announcement_text, bad_announcement_text)
+//			else
+//				SStreasury.apply_poll_rate_adjustments(params["pollTaxRates"], requesting_steward, good_announcement_text, bad_announcement_text)
 			return TRUE
 
 /datum/taxsetter/ui_state(mob/user)

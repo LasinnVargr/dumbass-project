@@ -35,8 +35,8 @@
 		G.open_orbit_menu()
 	else
 		if(G.client)
-			if(istype(G, /mob/dead/observer/rogue/arcaneeye))
-				return
+//			if(istype(G, /mob/dead/observer/rogue/arcaneeye))
+//				return
 			if(alert("Travel with the boatman?", "", "Yes", "No") == "Yes")
 				if(G.mind)
 					var/datum/job/target_job = SSjob.GetJob(G.mind.assigned_role)

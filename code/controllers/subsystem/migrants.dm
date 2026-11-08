@@ -312,34 +312,34 @@ SUBSYSTEM_DEF(migrants)
 	if(spawn_on_location)
 		character.forceMove(assignment.spawn_location)
 
-	to_chat(character, span_alertsyndie("I am a [role.name]!"))
+//	to_chat(character, span_alertsyndie("I am a [role.name]!"))
 	var/wave_greet = isnull(greet_text) ? wave.greet_text : greet_text
 	if(wave_greet)
 		to_chat(character, span_notice("[wave_greet]"))
-	if(role.greet_text)
-		to_chat(character, span_notice("[role.greet_text]"))
+//	if(role.greet_text)
+//		to_chat(character, span_notice("[role.greet_text]"))
 
-	if(role.outfit)
-		var/datum/outfit/outfit = new role.outfit()
-		outfit.equip(character)
+//	if(role.outfit)
+//		var/datum/outfit/outfit = new role.outfit()
+//		outfit.equip(character)
 
-	if(role.antag_datum)
-		character.mind.add_antag_datum(role.antag_datum)
+//	if(role.antag_datum)
+//		character.mind.add_antag_datum(role.antag_datum)
 
 	// Adding antag datums can move your character to places, so here's a bandaid
 	if(spawn_on_location)
 		character.forceMove(assignment.spawn_location)
 
-	if(role.grant_lit_torch)
-		grant_lit_torch(character)
+//	if(role.grant_lit_torch)
+//		grant_lit_torch(character)
 
-	role.after_spawn(character)
+//	role.after_spawn(character)
 
-	if(role.advclass_cat_rolls)
-		SSrole_class_handler.setup_class_handler(character, role.advclass_cat_rolls)
-	else
-		// Apply a special if we're not applying an adv class, otherwise let the adv class apply it afterwards
-		try_apply_character_post_equipment(character, character.client)
+//	if(role.advclass_cat_rolls)
+//		SSrole_class_handler.setup_class_handler(character, role.advclass_cat_rolls)
+//	else
+//		// Apply a special if we're not applying an adv class, otherwise let the adv class apply it afterwards
+//		try_apply_character_post_equipment(character, character.client)
 
 /datum/controller/subsystem/migrants/proc/get_priority_players(list/players, role_type, wave_type)
 	var/list/weighted = list()
@@ -376,12 +376,12 @@ SUBSYSTEM_DEF(migrants)
 	if(!player.prefs)
 		return FALSE
 	var/datum/preferences/prefs = player.prefs
-	if(role.disallowed_races && (prefs.pref_species.type in role.disallowed_races))
-		return FALSE
-	if(role.allowed_sexes && !(prefs.gender in role.allowed_sexes))
-		return FALSE
-	if(role.allowed_ages && !(prefs.age in role.allowed_ages))
-		return FALSE
+//	if(role.disallowed_races && (prefs.pref_species.type in role.disallowed_races))
+//		return FALSE
+//	if(role.allowed_sexes && !(prefs.gender in role.allowed_sexes))
+//		return FALSE
+//	if(role.allowed_ages && !(prefs.age in role.allowed_ages))
+//		return FALSE
 	return TRUE
 
 /datum/controller/subsystem/migrants/proc/wave_eligible(datum/migrant_wave/wave)
@@ -528,11 +528,11 @@ SUBSYSTEM_DEF(migrants)
 	var/list/needs = list()
 	for(var/role_type in wave.required_roles)
 		var/datum/migrant_role/role = MIGRANT_ROLE(role_type)
-		needs += "[wave.required_roles[role_type]] [role.name]"
+//		needs += "[wave.required_roles[role_type]] [role.name]"
 	var/list/slots = list()
 	for(var/role_type in wave.optional_roles)
 		var/datum/migrant_role/role = MIGRANT_ROLE(role_type)
-		slots += "[wave.optional_roles[role_type]] [role.name]"
+//		slots += "[wave.optional_roles[role_type]] [role.name]"
 
 	var/line = "<b>A wave is forming: [wave.name]</b>"
 	if(length(needs))

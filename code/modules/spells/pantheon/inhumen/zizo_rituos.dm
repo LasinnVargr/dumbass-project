@@ -79,12 +79,12 @@
 
 	ADD_TRAIT(user, TRAIT_ARCYNE, "[type]")
 
-	if(user.mind?.has_antag_datum(/datum/antagonist/vampire))
-		user.visible_message(span_boldwarning("[user]'s prayers are unanswered!"))
-		user.mind?.RemoveSpell(src)
-		qdel(src)
-		anti_spam = FALSE
-		return TRUE
+//	if(user.mind?.has_antag_datum(/datum/antagonist/vampire))
+//		user.visible_message(span_boldwarning("[user]'s prayers are unanswered!"))
+//		user.mind?.RemoveSpell(src)
+//		qdel(src)
+//		anti_spam = FALSE
+//		return TRUE
 
 	switch(path_choice)
 		if("Progress")
