@@ -47,7 +47,7 @@
 	handle_sleep()
 
 	if(HAS_TRAIT(src, TRAIT_IN_FRENZY))
-		handle_automated_frenzy()
+//		handle_automated_frenzy()
 
 	if(stat != DEAD)
 		return 1

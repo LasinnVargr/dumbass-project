@@ -20,9 +20,9 @@
 	var/obj/item/organ/eyes/night_vision/vampire/eyes = mymob?.getorganslot(ORGAN_SLOT_EYES)
 	if(!istype(eyes))
 		return
-	if(eyes.sight_owns_planes())
-		render_target = VAMPIRE_SIGHT_TARGET(plane)
-		return
+//	if(eyes.sight_owns_planes())
+//		render_target = VAMPIRE_SIGHT_TARGET(plane)
+//		return
 	if(render_target == VAMPIRE_SIGHT_TARGET(plane))
 		render_target = null
 

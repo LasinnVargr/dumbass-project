@@ -328,4 +328,4 @@
 			if(!victim.has_status_effect(/datum/status_effect/debuff/kiss_ecstasy))
 				victim.apply_status_effect(/datum/status_effect/debuff/kiss_ecstasy)
 
-	user.drinksomeblood(grabbed, sublimb_grabbed)
+//	user.drinksomeblood(grabbed, sublimb_grabbed)

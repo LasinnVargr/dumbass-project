@@ -125,10 +125,10 @@
 //				should_reek = FALSE
 //				break
 
-	if(should_reek && redolent_scent_type != "Pleasant")
-		apply_status_effect(/datum/status_effect/debuff/redolent_stink)
-	else
-		remove_status_effect(/datum/status_effect/debuff/redolent_stink)
+//	if(should_reek && redolent_scent_type != "Pleasant")
+//		apply_status_effect(/datum/status_effect/debuff/redolent_stink)
+//	else
+//		remove_status_effect(/datum/status_effect/debuff/redolent_stink)
 
 	if(!should_reek)
 		return

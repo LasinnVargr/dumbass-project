@@ -7,9 +7,9 @@
 		to_chat(caster, span_warning("You're already shapeshifted!"))
 		return
 
-	if(!do_after(caster, (SHAPESHIFT_MOVEAFTER - caster.get_vampire_generation()) SECONDS, target = caster))
-		to_chat(caster, span_userdanger("You are unable to concentrate enough to shapeshift!"))
-		return
+//	if(!do_after(caster, (SHAPESHIFT_MOVEAFTER - caster.get_vampire_generation()) SECONDS, target = caster))
+//		to_chat(caster, span_userdanger("You are unable to concentrate enough to shapeshift!"))
+//		return
 
 	return ..()
 

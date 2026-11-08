@@ -48,11 +48,11 @@
 		in_sunlight = FALSE
 
 /datum/component/sunlight_vulnerability/proc/apply_sunlight_damage(mob/living/carbon/human/H)
-	H.adjust_bloodpool(-bloodpool_drain)
+//	H.adjust_bloodpool(-bloodpool_drain)
 	var/datum/component/vampire_disguise/disguise_comp = H.GetComponent(/datum/component/vampire_disguise)
 	if(disguise_comp && disguise_comp.disguised)
-		if(H.get_bloodpool() > disguise_comp.min_bloodpool * 2)
-			return
+//		if(H.get_bloodpool() > disguise_comp.min_bloodpool * 2)
+//			return
 		disguise_comp.force_undisguise(H)
 		to_chat(H, span_warning("The sunlight breaks my disguise!"))
 

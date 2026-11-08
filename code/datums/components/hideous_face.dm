@@ -39,6 +39,6 @@
 	if ((H.wear_mask?.flags_inv & HIDEFACE) && (H.head?.flags_inv & HIDEFACE))
 		return
 
-	if(!H.CheckEyewitness(H, H, 7, FALSE, ignore_kindred = TRUE))
-		return
+//	if(!H.CheckEyewitness(H, H, 7, FALSE, ignore_kindred = TRUE))
+//		return
 	seen_callback?.Invoke(H)

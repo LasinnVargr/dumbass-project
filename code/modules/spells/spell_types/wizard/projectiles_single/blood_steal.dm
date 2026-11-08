@@ -62,5 +62,5 @@
 					span_userdanger("My blood erupts from my body!"), \
 					span_hear("..."), COMBAT_MESSAGE_RANGE, target)
 			new /obj/effect/decal/cleanable/blood/puddle(H.loc)
-			sender.adjust_bloodpool(400)
+//			sender.adjust_bloodpool(400)
 	qdel(src)

@@ -132,7 +132,7 @@
 ///obj/effect/proc_holder/spell/self/saddleborn/sendaway/spiderborn/get_mount(mob/living/carbon/human/user)
 //	if(!ishuman(user) || !HAS_TRAIT(user, TRAIT_SPIDERBORN))
 //		return null
-	return user.spiderborn_mount?.resolve()
+//	return user.spiderborn_mount?.resolve()
 
 /obj/effect/proc_holder/spell/self/saddleborn/whistle/spiderborn
 	name = "Spider: Recall"
@@ -141,4 +141,4 @@
 ///obj/effect/proc_holder/spell/self/saddleborn/whistle/spiderborn/get_mount(mob/living/carbon/human/user)
 //	if(!ishuman(user) || !HAS_TRAIT(user, TRAIT_SPIDERBORN))
 //		return null
-	return user.spiderborn_mount?.resolve()
+//	return user.spiderborn_mount?.resolve()

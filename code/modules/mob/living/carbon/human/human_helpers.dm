@@ -325,16 +325,16 @@
 //		remove_walk_to_trait()
 //		return
 
-	if(can_frenzy_move())
-		var/turf/current_pos = get_turf(src)
+//	if(can_frenzy_move())
+//		var/turf/current_pos = get_turf(src)
 //		var/turf/target_pos = get_turf(walk_to_target)
 
-		// Only regenerate path if we've moved to a different position or don't have a cached path
+//		// Only regenerate path if we've moved to a different position or don't have a cached path
 //		if(!walk_to_cached_path || walk_to_last_pos != current_pos)
 //			walk_to_cached_path = get_path_to(src, target_pos, TYPE_PROC_REF(/turf, Heuristic_cardinal_3d), 33, 250, 1)
 //			walk_to_last_pos = current_pos
 
-		var/moved = FALSE
+//		var/moved = FALSE
 
 //		if(length(walk_to_cached_path))
 //			walk(src, 0) // Stop any existing walk
@@ -348,10 +348,10 @@
 //			walk_towards(src, walk_to_target, 0, total_multiplicative_slowdown())
 //			moved = TRUE
 
-		if(moved)
+//		if(moved)
 //			walk_to_steps_taken++
 
-	addtimer(CALLBACK(src, PROC_REF(walk_to_caster)), total_multiplicative_slowdown())
+//	addtimer(CALLBACK(src, PROC_REF(walk_to_caster)), total_multiplicative_slowdown())
 
 /mob/living/carbon/human/proc/remove_walk_to_trait()
 	REMOVE_TRAIT(src, TRAIT_MOVEMENT_BLOCKED, VAMPIRE_TRAIT)

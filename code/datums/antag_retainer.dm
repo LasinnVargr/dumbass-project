@@ -45,9 +45,9 @@
 //					if(D && D.increase_votepwr)
 //						vampyr++
 //						continue
-	if(vampyr)
-		if(!wwoelf)
-			return "vampire"
+//	if(vampyr)
+//		if(!wwoelf)
+//			return "vampire"
 	if(wwoelf)
 		if(!vampyr)
 			return "werewolf"

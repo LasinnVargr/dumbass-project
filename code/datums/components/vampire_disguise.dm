@@ -46,13 +46,13 @@
 		return
 
 	// Check if we have enough blood to maintain disguise
-	if(source.get_bloodpool() < disguise_upkeep)
-		to_chat(source, span_warning("My disguise fails as I run out of blood!"))
-		remove_disguise(source)
-		return
+//	if(source.get_bloodpool() < disguise_upkeep)
+//		to_chat(source, span_warning("My disguise fails as I run out of blood!"))
+//		remove_disguise(source)
+//		return
 
 	// Drain bloodpool
-	source.adjust_bloodpool(-disguise_upkeep)
+//	source.adjust_bloodpool(-disguise_upkeep)
 
 /datum/component/vampire_disguise/proc/apply_disguise(mob/living/carbon/human/H)
 	if(disguised)
@@ -62,9 +62,9 @@
 		to_chat(H, span_warning("I must wait before transforming again."))
 		return FALSE
 
-	if(H.get_bloodpool() < min_bloodpool)
-		to_chat(H, span_warning("I don't have enough blood to maintain a disguise."))
-		return FALSE
+//	if(H.get_bloodpool() < min_bloodpool)
+//		to_chat(H, span_warning("I don't have enough blood to maintain a disguise."))
+//		return FALSE
 
 	disguised = TRUE
 	COOLDOWN_START(src, transform_cooldown, 5 SECONDS)
@@ -120,8 +120,8 @@
 	return TRUE
 
 /datum/component/vampire_disguise/proc/force_undisguise(mob/living/carbon/human/H)
-	if(!disguised || (H.get_vampire_generation() >= GENERATION_METHUSELAH))
-		return FALSE
+//	if(!disguised || (H.get_vampire_generation() >= GENERATION_METHUSELAH))
+//		return FALSE
 
 	H.visible_message(span_silver("[H]'s curse manifests!"), ignored_mobs = list(H))
 	remove_disguise(H)

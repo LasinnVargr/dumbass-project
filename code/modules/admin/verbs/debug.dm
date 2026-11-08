@@ -1116,11 +1116,11 @@ GLOBAL_LIST_EMPTY(loadout_selected_advclasses)
 		// For migrant roles, set the name directly
 		var/datum/migrant_role/migrant_datum = new job_type_path()
 //		var/title = migrant_datum.name
-		H.job = title
+//		H.job = title
 		H.advjob = null
-		to_chat(H, span_notice("Examine title set to: [title]"))
-		message_admins("[key_name_admin(usr)] set examine title for [ADMIN_LOOKUPFLW(H)] to [title].")
-		log_admin("[key_name(usr)] set examine title for [key_name(H)] to [title].")
+//		to_chat(H, span_notice("Examine title set to: [title]"))
+//		message_admins("[key_name_admin(usr)] set examine title for [ADMIN_LOOKUPFLW(H)] to [title].")
+//		log_admin("[key_name(usr)] set examine title for [key_name(H)] to [title].")
 //		qdel(migrant_datum)
 	else
 		// Get the job datum directly from the path

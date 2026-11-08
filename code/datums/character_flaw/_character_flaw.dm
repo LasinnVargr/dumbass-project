@@ -752,7 +752,7 @@ GLOBAL_LIST_INIT(character_flaws, list(
 //			H.vices += L
 //			L.on_mob_creation(H)
 
-/datum/charflaw/marked_by_baotha/proc/grant_fertility_boon(mob/user)
+///datum/charflaw/marked_by_baotha/proc/grant_fertility_boon(mob/user)
 	if(QDELETED(user))
 		return
 	ADD_TRAIT(user, TRAIT_BAOTHA_FERTILITY_BOON, TRAIT_GENERIC)

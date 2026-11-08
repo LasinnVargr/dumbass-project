@@ -895,7 +895,7 @@
 //	if(!oral && force >= SEX_FORCE_HIGH && (user.has_flaw(/datum/charflaw/addiction/sadist) || effective_target.has_flaw(/datum/charflaw/addiction/masochist)))
 //		effective_target.emote("paincrit", forced = TRUE) // this satiates the sadomasochists in range
 	if(ishuman(user) && ishuman(target) && user.client && target.client)
-		eora_register_consensual_pair(user, target)
+//		eora_register_consensual_pair(user, target)
 
 /datum/sex_controller/proc/just_ejaculated()
 	return (last_ejaculation_time + 2 SECONDS >= world.time)
@@ -1862,7 +1862,7 @@
 //				return
 //			if(answer == "Yae")
 //				bottom.werewolf_infect_attempt()
-		return
+//		return
 
 
 //	if(WWbottom && WWbottom.transformed && !WWtop)

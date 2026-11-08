@@ -208,11 +208,11 @@
 			weather_plane?.alpha = 255
 			sight_flags &= ~SEE_BLACKNESS
 	owner.update_sight()
-	update_vampire_sight()
+//	update_vampire_sight()
 
 /obj/item/organ/eyes/night_vision/vampire/Insert(mob/living/carbon/M, special = FALSE, drop_if_replaced = FALSE, initialising)
 	. = ..()
-	update_vampire_sight()
+//	update_vampire_sight()
 
 /obj/item/organ/eyes/night_vision/vampire/Remove(mob/living/carbon/M, special = 0)
 	. = ..()

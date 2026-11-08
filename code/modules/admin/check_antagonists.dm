@@ -225,10 +225,10 @@
 //			direct_scent_targets += tracked_target
 
 //		var/target_ref = "\ref[tracked_target]"
-		if(!tracking_gnolls_by_target_ref[target_ref])
-			tracking_gnolls_by_target_ref[target_ref] = list()
+//		if(!tracking_gnolls_by_target_ref[target_ref])
+//			tracking_gnolls_by_target_ref[target_ref] = list()
 
-		var/list/tracking_gnolls = tracking_gnolls_by_target_ref[target_ref]
+//		var/list/tracking_gnolls = tracking_gnolls_by_target_ref[target_ref]
 //		if(!(gnoll_mob in tracking_gnolls))
 //			tracking_gnolls += gnoll_mob
 
