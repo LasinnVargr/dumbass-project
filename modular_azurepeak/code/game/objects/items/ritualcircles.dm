@@ -2278,50 +2278,50 @@
 //			to_chat(target, span_userdanger("THIS FOUL RITE! MY BODY RENDS ITSELF ASUNDER!"))
 //			target.werewolf_untransform()
 //			Wereless.on_removal()
-			ADD_TRAIT(I, TRAIT_SILVER_BLESSED, POULTICE_TRAIT)
-			ADD_TRAIT(I, TRAIT_PACIFISM, POULTICE_TRAIT)
-			I.emote("agony", forced = TRUE)
-			I.Stun(30)
-			I.Knockdown(30)
-			I.Jitter(30)
-			return
-		else
-			target.fullscreen_redflash("redflash3")
-			target.emote("agony", forced = TRUE)
-			to_chat(target, span_userdanger("THIS FOUL RITE! IT BURNS ME TO MY CORE!"))
+//			ADD_TRAIT(I, TRAIT_SILVER_BLESSED, POULTICE_TRAIT)
+//			ADD_TRAIT(I, TRAIT_PACIFISM, POULTICE_TRAIT)
+//			I.emote("agony", forced = TRUE)
+//			I.Stun(30)
+//			I.Knockdown(30)
+//			I.Jitter(30)
+//			return
+//		else
+//			target.fullscreen_redflash("redflash3")
+//			target.emote("agony", forced = TRUE)
+//			to_chat(target, span_userdanger("THIS FOUL RITE! IT BURNS ME TO MY CORE!"))
 //			Were.on_removal()
-			ADD_TRAIT(target, TRAIT_SILVER_BLESSED, POULTICE_TRAIT)
-			target.poultice_pacify()
-			target.Stun(30)
-			target.Knockdown(30)
-			target.Jitter(30)
-			return
+//			ADD_TRAIT(target, TRAIT_SILVER_BLESSED, POULTICE_TRAIT)
+//			target.poultice_pacify()
+//			target.Stun(30)
+//			target.Knockdown(30)
+//			target.Jitter(30)
+//			return
 
-	else if(Vamp)
-		if(Vamp.generation >= GENERATION_METHUSELAH || HAS_TRAIT(target, TRAIT_BLOODPOOL_BORN)) //Vampire Lords + their bloodpool summons cannot be deconverted.
-			to_chat(target, span_userdanger("This wretched rite weighs heavy on my soul. An insult I shall never forget, for as long as I die."))
-			loc.visible_message(span_danger("[target] viscerally rejects the One's admonishment. They cannot be saved."))
-			target.Stun(30)
-			target.Knockdown(30)
-			return
+//	else if(Vamp)
+//		if(Vamp.generation >= GENERATION_METHUSELAH || HAS_TRAIT(target, TRAIT_BLOODPOOL_BORN)) //Vampire Lords + their bloodpool summons cannot be deconverted.
+//			to_chat(target, span_userdanger("This wretched rite weighs heavy on my soul. An insult I shall never forget, for as long as I die."))
+//			loc.visible_message(span_danger("[target] viscerally rejects the One's admonishment. They cannot be saved."))
+//			target.Stun(30)
+//			target.Knockdown(30)
+//			return
 
-		if(alert(target, "The rite is burning my nature from my veins! Do I resist the anointment?", "Rite of Admonishment", "YIELD", "RESIST") == "RESIST") //Opt in convert, opt in deconvert
-			to_chat(target, span_userdanger("This wretched rite weighs heavy on my soul. But I am consigned to my reverie, and my heart remains still."))
-			loc.visible_message(span_danger("[target] viscerally rejects the One's admonishment. They refuse to be saved."))
-			target.Stun(30)
-			target.Knockdown(30)
-			return
-		else
-			target.fullscreen_redflash("redflash3")
-			target.emote("agony", forced = TRUE)
-			to_chat(target, span_userdanger("THIS FOUL RITE! MY STILL HEART QUICKENS ONCE MORE!"))
-			Vamp.on_removal()
-			ADD_TRAIT(target, TRAIT_SILVER_BLESSED, POULTICE_TRAIT)
-			target.poultice_pacify()
-			target.Stun(30)
-			target.Knockdown(30)
-			target.Jitter(30)
-			return
+//		if(alert(target, "The rite is burning my nature from my veins! Do I resist the anointment?", "Rite of Admonishment", "YIELD", "RESIST") == "RESIST") //Opt in convert, opt in deconvert
+//			to_chat(target, span_userdanger("This wretched rite weighs heavy on my soul. But I am consigned to my reverie, and my heart remains still."))
+//			loc.visible_message(span_danger("[target] viscerally rejects the One's admonishment. They refuse to be saved."))
+//			target.Stun(30)
+//			target.Knockdown(30)
+//			return
+//		else
+//			target.fullscreen_redflash("redflash3")
+//			target.emote("agony", forced = TRUE)
+//			to_chat(target, span_userdanger("THIS FOUL RITE! MY STILL HEART QUICKENS ONCE MORE!"))
+//			Vamp.on_removal()
+//			ADD_TRAIT(target, TRAIT_SILVER_BLESSED, POULTICE_TRAIT)
+//			target.poultice_pacify()
+//			target.Stun(30)
+//			target.Knockdown(30)
+//			target.Jitter(30)
+//			return
 
 
 /obj/structure/ritualcircle/psydon/proc/psydonstrip(mob/living/carbon/human/target)
