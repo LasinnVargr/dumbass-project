@@ -675,9 +675,9 @@ Inquisitorial armory down here
 				cursedblood = 1
 			if(M.mind)
 //				if(M.mind.has_antag_datum(/datum/antagonist/werewolf, FALSE))
-					cursedblood = 3
+//					cursedblood = 3
 //				if(M.mind.has_antag_datum(/datum/antagonist/werewolf/lesser, FALSE))
-					cursedblood = 2
+//					cursedblood = 2
 				if(M.mind.has_antag_datum(/datum/antagonist/vampire, FALSE))
 					cursedblood = 2
 				if(M.mind.has_antag_datum(/datum/antagonist/vampire))

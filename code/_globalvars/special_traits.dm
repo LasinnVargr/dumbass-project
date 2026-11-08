@@ -178,10 +178,10 @@ GLOBAL_LIST_INIT(special_traits, build_special_traits())
 		ADD_TRAIT(character, bonus, TRAIT_GENERIC)
 
 /proc/virtue_check(datum/virtue/V, heretic = FALSE)
-	if(V)
+//	if(V)
 //		if(istype(V,/datum/virtue/heretic) && !heretic)
-			return FALSE
-		return TRUE
+//			return FALSE
+	return TRUE
 	return FALSE
 
 /proc/apply_charflaw_equipment(mob/living/carbon/human/character, client/player)

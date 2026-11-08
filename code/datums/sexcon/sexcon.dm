@@ -914,7 +914,7 @@
 
 /datum/sex_controller/proc/handle_charge(dt)
 //	if(user.has_flaw(/datum/charflaw/addiction/lovefiend))
-		dt *= 2
+//		dt *= 2
 	adjust_charge(dt * CHARGE_RECHARGE_RATE)
 	if(is_spent())
 		if(arousal > 60)
@@ -939,10 +939,10 @@
 /datum/sex_controller/proc/update_erect_state()
 	var/obj/item/organ/penis/penis = user.getorganslot(ORGAN_SLOT_PENIS)
 
-	if(user.mind)
+//	if(user.mind)
 //		var/datum/antagonist/werewolf/W = user.mind.has_antag_datum(/datum/antagonist/werewolf/)
 //		if(W && W.transformed == TRUE)
-			user.regenerate_icons()
+//			user.regenerate_icons()
 
 	if(penis && hascall(penis, "update_erect_state"))
 		penis.update_erect_state()

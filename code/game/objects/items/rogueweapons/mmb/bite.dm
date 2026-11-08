@@ -117,16 +117,16 @@
 			/*
 				WEREWOLF INFECTION VIA BITE
 			*/
-			if(istype(user.dna.species, /datum/species/werewolf))
-				if(HAS_TRAIT(src, TRAIT_SILVER_BLESSED))
-					to_chat(user, span_warning("BLEH! [bite_victim] tastes of SILVER! My gift cannot take hold."))
-				else
+//			if(istype(user.dna.species, /datum/species/werewolf))
+//				if(HAS_TRAIT(src, TRAIT_SILVER_BLESSED))
+//					to_chat(user, span_warning("BLEH! [bite_victim] tastes of SILVER! My gift cannot take hold."))
+//				else
 //					if(caused_wound?.werewolf_infect_attempt())
-						to_chat(user, span_danger("You feel your beastly gift trickling from your mouth into [bite_victim]'s wound..."))
-					if(prob(30))
+//						to_chat(user, span_danger("You feel your beastly gift trickling from your mouth into [bite_victim]'s wound..."))
+//					if(prob(30))
 //						user.werewolf_feed(bite_victim, 10)
-			if(istype(user.dna.species, /datum/species/gnoll))
-				if(prob(30))
+//			if(istype(user.dna.species, /datum/species/gnoll))
+//				if(prob(30))
 //					user.gnoll_feed(bite_victim, 10)
 			/*
 				ZOMBIE INFECTION VIA BITE
