@@ -140,7 +140,7 @@
 
 /datum/stressevent/bleeding/can_apply(mob/living/user)
 //	if(user.has_flaw(/datum/charflaw/addiction/masochist))
-		return FALSE
+//		return FALSE
 	return TRUE
 //
 /datum/stressevent/painmax
@@ -150,7 +150,7 @@
 
 /datum/stressevent/painmax/can_apply(mob/living/user)
 //	if(user.has_flaw(/datum/charflaw/addiction/masochist))
-		return FALSE
+//		return FALSE
 	return TRUE
 //
 /datum/stressevent/freakout

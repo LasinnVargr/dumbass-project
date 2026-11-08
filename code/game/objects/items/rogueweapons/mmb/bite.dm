@@ -257,13 +257,13 @@
 			/*
 				WEREWOLF CHEW. WEREWOLFIFICATION
 			*/
-			if(istype(user.dna.species, /datum/species/werewolf))
-				if(HAS_TRAIT(C, TRAIT_SILVER_BLESSED))
-					to_chat(user, span_warning("BLEH! [C] tastes of SILVER! My gift cannot take hold."))
-				else
+//			if(istype(user.dna.species, /datum/species/werewolf))
+//				if(HAS_TRAIT(C, TRAIT_SILVER_BLESSED))
+//					to_chat(user, span_warning("BLEH! [C] tastes of SILVER! My gift cannot take hold."))
+//				else
 //					if(caused_wound?.werewolf_infect_attempt())
-						to_chat(user, span_danger("You feel your beastly gift trickling into [C]'s wound..."))
-					if(prob(30))
+//						to_chat(user, span_danger("You feel your beastly gift trickling into [C]'s wound..."))
+//					if(prob(30))
 //						user.werewolf_feed(C, 10)
 
 			/*
