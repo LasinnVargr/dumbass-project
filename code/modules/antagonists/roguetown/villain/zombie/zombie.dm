@@ -474,13 +474,13 @@
 	if(mind.has_antag_datum(/datum/antagonist/vampire))
 		return FALSE
 //	if(mind.has_antag_datum(/datum/antagonist/werewolf))
-		return FALSE
+//		return FALSE
 	if(mind.has_antag_datum(/datum/antagonist/zombie))
 		return FALSE
 	if(mind.has_antag_datum(/datum/antagonist/skeleton))
 		return FALSE
 //	if(mind.has_antag_datum(/datum/antagonist/gnoll))
-		return FALSE
+//		return FALSE
 	if(HAS_TRAIT(src, TRAIT_ZOMBIE_IMMUNE))
 		return FALSE
 	return mind.add_antag_datum(/datum/antagonist/zombie)

@@ -258,7 +258,7 @@
 	if(!L.mind)
 //		var/datum/component/precious_creature/saddleborn = L.GetComponent(/datum/component/precious_creature)
 //		if(!saddleborn)
-			damage *= npc_simple_damage_mult // bonus damage against NPCs.
+//			damage *= npc_simple_damage_mult // bonus damage against NPCs.
 	if(blocked != 100) // not completely blocked
 		if(damage && L.get_blood_volume() && damage_type == BRUTE)
 			var/splatter_dir = dir

@@ -41,7 +41,7 @@
 	if(!HAS_TRAIT(user, TRAIT_CHASTITY_SPIKED))
 		return FALSE
 //	if(!user.has_flaw(/datum/charflaw/addiction/masochist))
-		return FALSE
+//		return FALSE
 	return TRUE
 
 /// Cursed device override for has_chastity_penis().

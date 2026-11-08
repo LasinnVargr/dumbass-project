@@ -85,7 +85,7 @@ GLOBAL_LIST_INIT(towner_posting_descriptors, list(
 //		var/datum/advclass/AC = path
 //		var/n = initial(AC.name)
 //		if(n)
-			out += n
+//			out += n
 	return out
 
 /proc/towner_bearer_summary(tier)

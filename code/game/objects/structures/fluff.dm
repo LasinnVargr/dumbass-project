@@ -1490,13 +1490,13 @@
 						// Excommunication check for both participants
 						var/excomm_found = FALSE
 //						for(var/excomm_name in GLOB.excommunicated_players)
-							var/clean_excomm = LOWER_TEXT(trim(excomm_name))
-							if(thegroom && clean_excomm == LOWER_TEXT(trim(thegroom.real_name)))
-								excomm_found = TRUE
-								break
-							if(thebride && clean_excomm == LOWER_TEXT(trim(thebride.real_name)))
-								excomm_found = TRUE
-								break
+//							var/clean_excomm = LOWER_TEXT(trim(excomm_name))
+//							if(thegroom && clean_excomm == LOWER_TEXT(trim(thegroom.real_name)))
+//								excomm_found = TRUE
+//								break
+//							if(thebride && clean_excomm == LOWER_TEXT(trim(thebride.real_name)))
+//								excomm_found = TRUE
+//								break
 						if(!excomm_found)
 							// Prompt priest for surname
 							var/surname = reject_bad_name(input(user, "Enter a surname for the couple:", "Marriage Ceremony") as text|null)

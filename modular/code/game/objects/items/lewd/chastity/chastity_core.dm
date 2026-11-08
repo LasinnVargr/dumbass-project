@@ -362,9 +362,9 @@ GLOBAL_LIST_INIT(chastity_standard_traits, list(
 	if(!H?.client?.prefs)
 		return FALSE
 //	if(istype(H.client.prefs.virtue, /datum/virtue/combat/devotee))
-		return TRUE
+//		return TRUE
 //	if(istype(H.client.prefs.virtuetwo, /datum/virtue/combat/devotee))
-		return TRUE
+//		return TRUE
 	return FALSE
 
 /// Returns TRUE if H's patron would consider chastity virtuous.
@@ -401,16 +401,16 @@ GLOBAL_LIST_INIT(chastity_standard_traits, list(
 		return
 
 //	if((H.has_flaw(/datum/charflaw/addiction/godfearing) || has_devotee_virtue(H)) && patron_approves_chastity(H))
-		H.add_stress(/datum/stressevent/chastity_devout)
+//		H.add_stress(/datum/stressevent/chastity_devout)
 
 //	if(H.has_flaw(/datum/charflaw/addiction/masochist) && HAS_TRAIT(H, TRAIT_CHASTITY_SPIKED))
-		H.add_stress(/datum/stressevent/chastity_masochist)
+//		H.add_stress(/datum/stressevent/chastity_masochist)
 
 	if(H.mind?.assigned_role in GLOB.church_positions)
 		H.add_stress(/datum/stressevent/chastity_church)
 
 //	if(H.has_flaw(/datum/charflaw/addiction/lovefiend) || istype(H.patron, /datum/patron/inhumen/baotha))
-		H.add_stress(/datum/stressevent/chastity_frustration)
+//		H.add_stress(/datum/stressevent/chastity_frustration)
 
 	if(chastity_flat)
 		var/obj/item/organ/penis/penis = H.getorganslot(ORGAN_SLOT_PENIS)

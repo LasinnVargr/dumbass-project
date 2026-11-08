@@ -2027,7 +2027,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	var/dismember_damtype = I.damtype
 //	var/datum/component/martyrweapon/martyr = I.GetComponent(/datum/component/martyrweapon)
 //	if(martyr?.is_active)
-		dismember_damtype = BRUTE
+//		dismember_damtype = BRUTE
 	if(affecting.brute_dam && prob(probability) && affecting.dismember(dismember_damtype, user.used_intent?.blade_class, user, selzone, vorpal = I.vorpal))
 		bloody = 1
 		I.add_mob_blood(H)

@@ -1948,11 +1948,11 @@
 		else if(H.mind?.has_antag_datum(/datum/antagonist/zombie))
 			state2use = "mood_zombidle"
 //		else if(H.mind?.has_antag_datum(/datum/antagonist/lich))
-			state2use = "mood_boneidle"
-		else if(H.stat && H.IsSleeping())
-			state2use = "mood_sleep"
-		else if(H.nausea >= 100)
-			state2use = "mood_sick"
+//			state2use = "mood_boneidle"
+//		else if(H.stat && H.IsSleeping())
+//			state2use = "mood_sleep"
+//		else if(H.nausea >= 100)
+//			state2use = "mood_sick"
 	icon_state = state2use
 
 

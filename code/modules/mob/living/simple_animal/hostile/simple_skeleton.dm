@@ -135,7 +135,7 @@
 		// lich also gets to have friendlies, as a treat
 //		var/datum/antagonist/lich/lich_antag = user.mind.has_antag_datum(/datum/antagonist/lich)
 //		if(lich_antag && user.real_name)
-			faction = list("undead", "[user.mind.current.real_name]_faction", "[user.real_name]_faction") //no changes. Undead faction + lich_name faction
+//			faction = list("undead", "[user.mind.current.real_name]_faction", "[user.real_name]_faction") //no changes. Undead faction + lich_name faction
 	damage_check = world.time
 	if(is_summoned) //check, if it NOT summoned skeleton, he lifetime - infinity. For mapping-spawned skeltons
 		addtimer(CALLBACK(src, PROC_REF(deathtime)), 1 MINUTES)
@@ -160,7 +160,7 @@
 
 /mob/living/simple_animal/hostile/rogue/skeleton/proc/can_control(mob/user)
 //	if(!(user.mind?.has_antag_datum(/datum/antagonist/lich)))
-		return FALSE
+//		return FALSE
 	if (!(user.name in friends))
 		return FALSE
 

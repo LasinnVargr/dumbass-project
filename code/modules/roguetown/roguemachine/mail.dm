@@ -369,7 +369,7 @@
 				if(HAS_TRAIT(I.signee, TRAIT_CABAL) || HAS_TRAIT(I.signee, TRAIT_HORDE) || HAS_TRAIT(I.signee, TRAIT_DEPRAVED) || HAS_TRAIT(I.signee, TRAIT_COMMIE))
 					correct = TRUE
 //				if(I.signee.name in GLOB.excommunicated_players)
-					correct = TRUE
+//					correct = TRUE
 				if(I.paired)
 					if(HAS_TRAIT(I.paired.subject, TRAIT_INQUISITION))
 						selfreport = TRUE
@@ -495,7 +495,7 @@
 				if(HAS_TRAIT(I.paired.subject, TRAIT_CABAL) || HAS_TRAIT(I.paired.subject, TRAIT_HORDE) || HAS_TRAIT(I.paired.subject, TRAIT_DEPRAVED) || HAS_TRAIT(I.paired.subject, TRAIT_COMMIE))
 					correct = TRUE
 //				if(I.paired.subject.name in GLOB.excommunicated_players)
-					correct = TRUE
+//					correct = TRUE
 				if(GLOB.indexed && !selfreport)
 					if(HAS_TRAIT(I.paired.subject.mind, TRAIT_INDEXED))
 						indexed = TRUE

@@ -1023,10 +1023,10 @@ SUBSYSTEM_DEF(job)
 		return FALSE
 
 //	if(istype(P.virtue, /datum/virtue/utility/resident))
-		return TRUE
+//		return TRUE
 
 //	if(P.statpack?.name == "Virtuous" && istype(P.virtuetwo, /datum/virtue/utility/resident))
-		return TRUE
+//		return TRUE
 
 	return FALSE
 

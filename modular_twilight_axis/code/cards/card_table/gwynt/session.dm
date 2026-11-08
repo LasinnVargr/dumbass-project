@@ -165,20 +165,20 @@ GLOBAL_VAR_INIT(ccg_music_channel, null)
 	if(!prob(10))
 		return
 //	if(ccg_soundtrack_has_antag(player_one, /datum/antagonist/lich) || ccg_soundtrack_has_antag(player_two, /datum/antagonist/lich))
-		soundtrack_files[target_ckey] = CCG_SOUNDTRACK_LAST_SIEGE
-		soundtrack_titles[target_ckey] = "Last Siege"
-		soundtrack_repeats[target_ckey] = FALSE
-		return
+//		soundtrack_files[target_ckey] = CCG_SOUNDTRACK_LAST_SIEGE
+//		soundtrack_titles[target_ckey] = "Last Siege"
+//		soundtrack_repeats[target_ckey] = FALSE
+//		return
 	if(ccg_soundtrack_is_open_vampire_lord(player_one) || ccg_soundtrack_is_open_vampire_lord(player_two))
 		soundtrack_files[target_ckey] = CCG_SOUNDTRACK_VAMPIRE_NEGOTIATIONS
 		soundtrack_titles[target_ckey] = "Vampire Negotiations"
 		soundtrack_repeats[target_ckey] = FALSE
 		return
 //	if(ccg_soundtrack_has_antag(player_one, /datum/antagonist/bandit) || ccg_soundtrack_has_antag(player_two, /datum/antagonist/bandit))
-		soundtrack_files[target_ckey] = CCG_SOUNDTRACK_BANDIT_CONFRONTATION
-		soundtrack_titles[target_ckey] = "Bandit Confrontation"
-		soundtrack_repeats[target_ckey] = FALSE
-		return
+//		soundtrack_files[target_ckey] = CCG_SOUNDTRACK_BANDIT_CONFRONTATION
+//		soundtrack_titles[target_ckey] = "Bandit Confrontation"
+//		soundtrack_repeats[target_ckey] = FALSE
+//		return
 
 /datum/ccg_match/proc/soundtrack_title_for(mob/user)
 	if(user?.ckey && soundtrack_titles[user.ckey])

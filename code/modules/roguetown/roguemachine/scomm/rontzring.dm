@@ -45,10 +45,10 @@
 
 /obj/item/mattcoin/doStrip(mob/stripper, mob/owner)
 //	if(!(stripper?.mind.has_antag_datum(/datum/antagonist/bandit))) //You're not a bandit, you can't strip the bandit coin
-		to_chat(stripper, "[src] turns to ash in my hands!")
-		playsound(stripper.loc, 'sound/items/firesnuff.ogg', 100, FALSE, -1)
-		qdel(src)
-		return FALSE
+//		to_chat(stripper, "[src] turns to ash in my hands!")
+//		playsound(stripper.loc, 'sound/items/firesnuff.ogg', 100, FALSE, -1)
+//		qdel(src)
+//		return FALSE
 	. = ..()
 
 /obj/item/mattcoin/attack_self(mob/living/user)

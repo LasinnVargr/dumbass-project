@@ -1608,12 +1608,12 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 		return list("priority" = 16, "group" = "major", "label" = "Lesser Vampire")
 
 //	if(istype(A, /datum/antagonist/werewolf))
-		if(A.name == "Lesser Verevolf")
-			return list("priority" = 20, "group" = "major", "label" = "Lesser Werewolf")
-		return list("priority" = 21, "group" = "major", "label" = "Werewolf")
+//		if(A.name == "Lesser Verevolf")
+//			return list("priority" = 20, "group" = "major", "label" = "Lesser Werewolf")
+//		return list("priority" = 21, "group" = "major", "label" = "Werewolf")
 
 //	if(istype(A, /datum/antagonist/lich))
-		return list("priority" = 30, "group" = "major", "label" = "Lich")
+//		return list("priority" = 30, "group" = "major", "label" = "Lich")
 
 	if(istype(A, /datum/antagonist/skeleton/knight))
 		return list("priority" = 40, "group" = "minor", "label" = "Death Knight")
@@ -1629,11 +1629,11 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 		return list("priority" = 45, "group" = "minor", "label" = "Skeleton")
 
 //	if(istype(A, /datum/antagonist/bandit))
-		return list("priority" = 50, "group" = "minor", "label" = "Bandit")
+//		return list("priority" = 50, "group" = "minor", "label" = "Bandit")
 //	if(istype(A, /datum/antagonist/wretch))
-		return list("priority" = 51, "group" = "minor", "label" = "Wretch")
+//		return list("priority" = 51, "group" = "minor", "label" = "Wretch")
 //	if(istype(A, /datum/antagonist/gnoll))
-		return list("priority" = 52, "group" = "minor", "label" = "Gnoll")
+//		return list("priority" = 52, "group" = "minor", "label" = "Gnoll")
 
 	var/list/extra_candidate = get_orbit_extra_antag_candidate(A, special_role)
 	if(extra_candidate)

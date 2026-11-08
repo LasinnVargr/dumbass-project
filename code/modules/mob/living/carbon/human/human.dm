@@ -1344,9 +1344,9 @@
 /// excommunication or bounty, or make everyone who knew them forget them.
 /proc/rename_character_records(old_name, new_name)
 //	for(var/list/names as anything in list(GLOB.outlawed_players, GLOB.excommunicated_players, GLOB.apostasy_players, GLOB.court_agents))
-		var/index = names.Find(old_name)
-		if(index)
-			names[index] = new_name
+//		var/index = names.Find(old_name)
+//		if(index)
+//			names[index] = new_name
 //	if(old_name in GLOB.lord_titles)
 //		GLOB.lord_titles[new_name] = GLOB.lord_titles[old_name]
 //		GLOB.lord_titles -= old_name

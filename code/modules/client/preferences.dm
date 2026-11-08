@@ -781,9 +781,9 @@ GLOBAL_LIST_EMPTY(chosen_names)
 				if(job_preferences[job] > highest_pref)
 					highest_pref = SSjob.GetJob(job)
 //			if(!isnull(highest_pref) && !istype(highest_pref, /datum/job/roguetown/jester))
-				dat += "<div style='text-align: center'><br>Subclass Preview:<br> <a href='?_src_=prefs;preference=subclassoutfit;task=input'>[preview_subclass ? "[preview_subclass.name]" : "None"]</a></div>"
-			else
-				preview_subclass = null
+//				dat += "<div style='text-align: center'><br>Subclass Preview:<br> <a href='?_src_=prefs;preference=subclassoutfit;task=input'>[preview_subclass ? "[preview_subclass.name]" : "None"]</a></div>"
+//			else
+//				preview_subclass = null
 			var/arousal_preview_label
 			switch(preview_erect_state)
 				if(ERECT_STATE_PARTIAL)

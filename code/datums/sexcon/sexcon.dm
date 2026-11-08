@@ -812,8 +812,8 @@
 	else
 		to_chat(user, span_love("<i>Spurt!</i>"))
 //	if(user.has_status_effect(/datum/status_effect/debuff/false_sensation))
-		to_chat(user, span_warning("Not enough..."))
-	else
+//		to_chat(user, span_warning("Not enough..."))
+//	else
 //		if(user.has_flaw(/datum/charflaw/addiction/lovefiend))
 //			user.sate_addiction(/datum/charflaw/addiction/lovefiend)
 //		if(user.has_flaw(/datum/charflaw/addiction/baothamarked))
@@ -893,7 +893,7 @@
 				effective_target.add_stress(/datum/stressevent/unseemly_made_love)
 			user.add_stress(/datum/stressevent/cummax)
 //	if(!oral && force >= SEX_FORCE_HIGH && (user.has_flaw(/datum/charflaw/addiction/sadist) || effective_target.has_flaw(/datum/charflaw/addiction/masochist)))
-		effective_target.emote("paincrit", forced = TRUE) // this satiates the sadomasochists in range
+//		effective_target.emote("paincrit", forced = TRUE) // this satiates the sadomasochists in range
 	if(ishuman(user) && ishuman(target) && user.client && target.client)
 		eora_register_consensual_pair(user, target)
 
@@ -931,9 +931,9 @@
 
 /datum/sex_controller/proc/try_apply_false_sensation()
 //	if(!user.has_flaw(/datum/charflaw/addiction/lovefiend) && !user.has_flaw(/datum/charflaw/addiction/baothamarked))
-		return
+//		return
 //	if(!user.has_status_effect(/datum/status_effect/debuff/false_sensation)) // So chat isn't spammed
-		to_chat(user, span_warning("My arousal is hollow and false. It won't sate my urges."))
+//		to_chat(user, span_warning("My arousal is hollow and false. It won't sate my urges."))
 //	user.apply_status_effect(/datum/status_effect/debuff/false_sensation)
 
 /datum/sex_controller/proc/update_erect_state()
@@ -1853,24 +1853,24 @@
 //		WWbottom = bottom.mind.has_antag_datum(/datum/antagonist/werewolf/)
 
 //	if(WWtop && WWbottom)
-		return
+//		return
 
 //	if(WWtop && WWtop.transformed && !WWbottom)
-		if(prob(infection_probability))
-			var/answer = tgui_alert(top, "Infect your mate?", "Please answer in [DisplayTimeText(200)]!", list("Yae","Nae"),200)
-			if(!answer || answer == "Nae")
-				return
-			if(answer == "Yae")
+//		if(prob(infection_probability))
+//			var/answer = tgui_alert(top, "Infect your mate?", "Please answer in [DisplayTimeText(200)]!", list("Yae","Nae"),200)
+//			if(!answer || answer == "Nae")
+//				return
+//			if(answer == "Yae")
 //				bottom.werewolf_infect_attempt()
 		return
 
 
 //	if(WWbottom && WWbottom.transformed && !WWtop)
-		if(prob(infection_probability))
-			var/answer = tgui_alert(bottom, "Infect your mate?", "Please answer in [DisplayTimeText(200)]!", list("Yae","Nae"),200)
-			if(!answer || answer == "Nae")
-				return
-			if(answer == "Yae")
+//		if(prob(infection_probability))
+//			var/answer = tgui_alert(bottom, "Infect your mate?", "Please answer in [DisplayTimeText(200)]!", list("Yae","Nae"),200)
+//			if(!answer || answer == "Nae")
+//				return
+//			if(answer == "Yae")
 //				top.werewolf_infect_attempt()
 		return
 
@@ -1914,7 +1914,7 @@
 	if(mind.has_antag_datum(/datum/antagonist/vampire))
 		return
 //	if(mind.has_antag_datum(/datum/antagonist/werewolf))
-		return
+//		return
 	if(mind.has_antag_datum(/datum/antagonist/zombie))
 		return
 	if(mind.has_antag_datum(/datum/antagonist/skeleton))

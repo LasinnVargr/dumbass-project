@@ -291,7 +291,7 @@
 		return
 
 //	if(!H.gnoll_bloodpool_feed())
-		return
+//		return
 
 	playsound(loc, 'sound/misc/drink_blood.ogg', 100, FALSE, -4)
 	H.changeNext_move(CLICK_CD_MELEE)

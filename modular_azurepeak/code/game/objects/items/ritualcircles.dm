@@ -1285,9 +1285,9 @@
 			if(!user.mind)
 				return
 //			if(user.mind.necro_crystal_count() >= user.mind.necro_crystal_cap())
-				var/confirm = alert(user, "Your pact with Zizo allows no more relics while your existing ones remain bound. Sever your oldest crystal - and the dead bound to it - to forge a new one?", "Rite of the Dark Crystal", "Sever and Replace", "Cancel")
-				if(confirm != "Sever and Replace")
-					return
+//				var/confirm = alert(user, "Your pact with Zizo allows no more relics while your existing ones remain bound. Sever your oldest crystal - and the dead bound to it - to forge a new one?", "Rite of the Dark Crystal", "Sever and Replace", "Cancel")
+//				if(confirm != "Sever and Replace")
+//					return
 			if(!do_after(user, 5 SECONDS))
 				return
 			user.say("ZIZO! ZIZO! DAME OF AMBITION!!")
@@ -2266,16 +2266,16 @@
 
 	//Werewolf deconversion
 //	if(Were && !Wereless) //The roundstart elder/alpha werewolf, it cannot be saved
-		to_chat(target, span_userdanger("This wretched rite weighs heavy on my soul. Dendor's blessing shall not be quit of me so easily"))
-		loc.visible_message(span_danger("[target] viscerally rejects the One's admonishment. They cannot be saved."))
-		target.Stun(30)
-		target.Knockdown(30)
-		return
+//		to_chat(target, span_userdanger("This wretched rite weighs heavy on my soul. Dendor's blessing shall not be quit of me so easily"))
+//		loc.visible_message(span_danger("[target] viscerally rejects the One's admonishment. They cannot be saved."))
+//		target.Stun(30)
+//		target.Knockdown(30)
+//		return
 
 //	else if(Wereless) //A lesser werewolf can be deconverted
 //		if(Wereless.transformed == TRUE)
-			var/mob/living/carbon/human/I = target.stored_mob
-			to_chat(target, span_userdanger("THIS FOUL RITE! MY BODY RENDS ITSELF ASUNDER!"))
+//			var/mob/living/carbon/human/I = target.stored_mob
+//			to_chat(target, span_userdanger("THIS FOUL RITE! MY BODY RENDS ITSELF ASUNDER!"))
 //			target.werewolf_untransform()
 //			Wereless.on_removal()
 			ADD_TRAIT(I, TRAIT_SILVER_BLESSED, POULTICE_TRAIT)

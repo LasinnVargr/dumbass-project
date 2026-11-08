@@ -162,7 +162,7 @@
 		return real_name
 	var/obj/item/bodypart/O = get_bodypart(BODY_ZONE_HEAD)
 //	if( !O || (HAS_TRAIT(src, TRAIT_DISFIGURED) && !HAS_TRAIT(src, TRAIT_SCARRED)) || !real_name || (O.skeletonized && !mind?.has_antag_datum(/datum/antagonist/lich)))	//disfigured. use id-name if possible (but scarred people are still recognizable)
-		return if_no_face
+//		return if_no_face
 	return real_name
 
 //gets name from ID or PDA itself, ID inside PDA doesn't matter
@@ -246,7 +246,7 @@
 
 	if(mind)
 //		if(mind.has_antag_datum(/datum/antagonist/werewolf))
-			return 50
+//			return 50
 
 	damage += dna.species.punch_damage
 	return damage

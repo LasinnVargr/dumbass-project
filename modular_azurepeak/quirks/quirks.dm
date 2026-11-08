@@ -122,8 +122,8 @@
 	if(should_reek && mind?.antag_datums)
 		for(var/datum/antagonist/D in mind.antag_datums)
 //			if(istype(D, /datum/antagonist/vampire/lord) || istype(D, /datum/antagonist/werewolf) || istype(D, /datum/antagonist/skeleton) || istype(D, /datum/antagonist/zombie) || istype(D, /datum/antagonist/lich))
-				should_reek = FALSE
-				break
+//				should_reek = FALSE
+//				break
 
 	if(should_reek && redolent_scent_type != "Pleasant")
 		apply_status_effect(/datum/status_effect/debuff/redolent_stink)

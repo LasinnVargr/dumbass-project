@@ -65,7 +65,7 @@
 //	var/datum/antagonist/maniac/maniac = user.mind?.has_antag_datum(/datum/antagonist/maniac)
 	var/datum/antagonist/skeleton/skeleton = user.mind?.has_antag_datum(/datum/antagonist/skeleton)
 //	if(maniac && (user != src))
-		race_name = "disgusting pig"
+//		race_name = "disgusting pig"
 	if(skeleton && (user != src))
 		race_name = "[pick("shambling", "taut", "decrepit")]"
 
@@ -126,24 +126,24 @@
 	if(HAS_TRAIT(user, TRAIT_ROYALSERVANT))
 		var/datum/job/our_job = SSjob.name_occupations[job]
 //		if(length(culinary_preferences) && is_type_in_list(our_job, list(/datum/job/roguetown/lord, /datum/job/roguetown/lady, /datum/job/roguetown/exlady, /datum/job/roguetown/prince, /datum/job/roguetown/hand, /datum/job/roguetown/steward, /datum/job/roguetown/councillor, /datum/job/roguetown/physician, /datum/job/roguetown/knight, /datum/advclass/knight/irregularknight, /datum/job/roguetown/magician, /datum/job/roguetown/dungeoneer)))
-			var/obj/item/reagent_containers/food/snacks/fav_food = src.culinary_preferences[CULINARY_FAVOURITE_FOOD]
-			var/datum/reagent/consumable/fav_drink = src.culinary_preferences[CULINARY_FAVOURITE_DRINK]
-			if(fav_food)
-				if(fav_drink)
-					. += span_notice("Their favourites are [fav_food.name] and [fav_drink.name].")
-				else
-					. += span_notice("Their favourite is [fav_food.name].")
-			else if(fav_drink)
-				. += span_notice("Their favourite is [fav_drink.name].")
-			var/obj/item/reagent_containers/food/snacks/hated_food = src.culinary_preferences[CULINARY_HATED_FOOD]
-			var/datum/reagent/consumable/hated_drink = src.culinary_preferences[CULINARY_HATED_DRINK]
-			if(hated_food)
-				if(hated_drink)
-					. += span_notice("They hate [hated_food.name] and [hated_drink.name].")
-				else
-					. += span_notice("They hate [hated_food.name].")
-			else if(hated_drink)
-				. += span_notice("They hate [hated_drink.name].")
+//			var/obj/item/reagent_containers/food/snacks/fav_food = src.culinary_preferences[CULINARY_FAVOURITE_FOOD]
+//			var/datum/reagent/consumable/fav_drink = src.culinary_preferences[CULINARY_FAVOURITE_DRINK]
+//			if(fav_food)
+//				if(fav_drink)
+//					. += span_notice("Their favourites are [fav_food.name] and [fav_drink.name].")
+//				else
+//					. += span_notice("Their favourite is [fav_food.name].")
+//			else if(fav_drink)
+//				. += span_notice("Their favourite is [fav_drink.name].")
+//			var/obj/item/reagent_containers/food/snacks/hated_food = src.culinary_preferences[CULINARY_HATED_FOOD]
+//			var/datum/reagent/consumable/hated_drink = src.culinary_preferences[CULINARY_HATED_DRINK]
+//			if(hated_food)
+//				if(hated_drink)
+//					. += span_notice("They hate [hated_food.name] and [hated_drink.name].")
+//				else
+//					. += span_notice("They hate [hated_food.name].")
+//			else if(hated_drink)
+//				. += span_notice("They hate [hated_drink.name].")
 
 	var/is_stupid = FALSE
 	var/is_smart = FALSE
@@ -776,9 +776,9 @@
 				. += span_revennotice("[t_He] look[p_s()] as blunt-minded as a rock.")
 
 //	if(maniac)
-		var/obj/item/organ/heart/heart = getorganslot(ORGAN_SLOT_HEART)
+//		var/obj/item/organ/heart/heart = getorganslot(ORGAN_SLOT_HEART)
 //		if(heart?.inscryption && (heart.inscryption_key in maniac.key_nums))
-			. += span_danger("[t_He] know[p_s()] [heart.inscryption_key], I AM SURE OF IT!")
+//			. += span_danger("[t_He] know[p_s()] [heart.inscryption_key], I AM SURE OF IT!")
 
 	if(!HAS_TRAIT(src, TRAIT_GUARD_RAISED) && user != src)
 		if(isliving(user))
@@ -1177,7 +1177,7 @@
 			. += gang_message
 
 //		if(name in GLOB.excommunicated_players)
-			. += span_userdanger("HERETIC! SHAME!")
+//			. += span_userdanger("HERETIC! SHAME!")
 
 		if(HAS_TRAIT(src, TRAIT_EXCOMMUNICATED))
 			. += span_userdanger("EXCOMMUNICATED! SHAME!")//Temporary, probably going to get rid of the trait since it doesn't fit for us.
@@ -1225,13 +1225,13 @@
 				. += span_aiprivradio("[m1] marked by the debauched scent of my patron.")
 
 //			if(has_flaw(/datum/charflaw/addiction/junkie) && user.has_flaw(/datum/charflaw/addiction/junkie))
-				. += span_deadsay("[m1] carrying the same dust marks on their nose as I.")
+//				. += span_deadsay("[m1] carrying the same dust marks on their nose as I.")
 
 //			if(has_flaw(/datum/charflaw/addiction/smoker) && user.has_flaw(/datum/charflaw/addiction/smoker))
-				. += span_suppradio("[m1] enveloped by the familiar, faint stench of smoke. I know it well.")
+//				. += span_suppradio("[m1] enveloped by the familiar, faint stench of smoke. I know it well.")
 
 //			if(has_flaw(/datum/charflaw/addiction/alcoholic) && user.has_flaw(/datum/charflaw/addiction/alcoholic))
-				. += span_syndradio("[m1] struggling to hide the hangover, and the stench of spirits. We're alike.")
+//				. += span_syndradio("[m1] struggling to hide the hangover, and the stench of spirits. We're alike.")
 
 			if(has_flaw(/datum/charflaw/paranoid) && user.has_flaw(/datum/charflaw/paranoid))
 				var/mob/living/carbon/human/H = user
@@ -1240,9 +1240,9 @@
 				else
 					. += span_nicegreen("[m1] one of the good ones. [m1] just as afraid as I am.")
 //			if(has_flaw(/datum/charflaw/addiction/masochist) && user.has_flaw(/datum/charflaw/addiction/sadist))
-				. += span_secradio("[m1] marked by scars inflicted for pleasure. A delectable target for my urges.")
+//				. += span_secradio("[m1] marked by scars inflicted for pleasure. A delectable target for my urges.")
 //			if(has_flaw(/datum/charflaw/addiction/sadist) && user.has_flaw(/datum/charflaw/addiction/masochist))
-				. += span_secradio("[m1] looking with eyes filled with a desire to inflict pain. So exciting.")
+//				. += span_secradio("[m1] looking with eyes filled with a desire to inflict pain. So exciting.")
 			if(HAS_TRAIT(user, TRAIT_EMPATH) && HAS_TRAIT(src, TRAIT_PERMAMUTE))
 				. += span_notice("[m1] lacks a voice. [m1] is a mute!")
 

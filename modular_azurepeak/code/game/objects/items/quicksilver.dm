@@ -72,18 +72,18 @@
 	user.visible_message(span_notice("[user] begins to anoint [M] with [src]."))
 	if(do_after(user, 10 SECONDS, target = M))
 //		if(!Were && !Vamp)
-			user.visible_message(span_notice("[user] anoints [M]'s brow with [src]."))
-			ADD_TRAIT(M, TRAIT_SILVER_BLESSED, POULTICE_TRAIT)
-			success = 1
-		else
-			to_chat(M, span_userdanger("This silver concoction burns! It threatens to undo me!"))
-			M.emote("agony", forced = TRUE)
-			M.adjustFireLoss(25)
-			M.fire_act(3,3) //Not too bad, but not a single pat to put out.
-			user.visible_message(span_danger("[src] bursts into flames on [M]'s brow, yet [user] vies to complete the anointment."))
-			if(do_after(user, 10 SECONDS, target = M))
-				user.visible_message(span_danger("[user] anoints [M]'s brow with [src]."))
-				success = 1
+//			user.visible_message(span_notice("[user] anoints [M]'s brow with [src]."))
+//			ADD_TRAIT(M, TRAIT_SILVER_BLESSED, POULTICE_TRAIT)
+//			success = 1
+//		else
+//			to_chat(M, span_userdanger("This silver concoction burns! It threatens to undo me!"))
+//			M.emote("agony", forced = TRUE)
+//			M.adjustFireLoss(25)
+//			M.fire_act(3,3) //Not too bad, but not a single pat to put out.
+//			user.visible_message(span_danger("[src] bursts into flames on [M]'s brow, yet [user] vies to complete the anointment."))
+//			if(do_after(user, 10 SECONDS, target = M))
+//				user.visible_message(span_danger("[user] anoints [M]'s brow with [src]."))
+//				success = 1
 	if(!success)
 		return
 
@@ -100,16 +100,16 @@
 
 	//Werewolf deconversion
 //	if(Were && !Wereless) //The roundstart elder/alpha werewolf, it cannot be saved
-		to_chat(M, span_userdanger("This wretched silver weighs heavy on my brow. Dendor's blessing shall not be quit of me so easily."))
-		user.visible_message(span_danger("The quicksilver poultice boils away from [M]'s brow, viscerally rejecting the divine anointment."))
-		M.Stun(30)
-		M.Knockdown(30)
-		return
+//		to_chat(M, span_userdanger("This wretched silver weighs heavy on my brow. Dendor's blessing shall not be quit of me so easily."))
+//		user.visible_message(span_danger("The quicksilver poultice boils away from [M]'s brow, viscerally rejecting the divine anointment."))
+//		M.Stun(30)
+//		M.Knockdown(30)
+//		return
 
 //	else if(Wereless) //A lesser werewolf can be deconverted
 //		if(Wereless.transformed == TRUE)
-			var/mob/living/carbon/human/I = M.stored_mob
-			to_chat(M, span_userdanger("THE FOUL SILVER! MY BODY RENDS ITSELF ASUNDER!"))
+//			var/mob/living/carbon/human/I = M.stored_mob
+//			to_chat(M, span_userdanger("THE FOUL SILVER! MY BODY RENDS ITSELF ASUNDER!"))
 //			M.werewolf_untransform()
 //			Wereless.on_removal()
 			ADD_TRAIT(I, TRAIT_SILVER_BLESSED, POULTICE_TRAIT)
