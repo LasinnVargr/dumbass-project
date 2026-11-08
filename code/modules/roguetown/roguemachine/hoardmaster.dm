@@ -59,10 +59,12 @@
 		var/cost = PA.cost
 //		if(B.favor >= cost)
 //			B.favor -= cost
-			playsound(loc, 'sound/misc/hoardmasterpurchase.ogg', 80, FALSE, -1)
-		else
-			say("Earn your keep first!")
-			return
+//			playsound(loc, 'sound/misc/hoardmasterpurchase.ogg', 80, FALSE, -1)
+//		else
+//			say("Earn your keep first!")
+//			return
+		say("Earn your keep first!")
+		return
 		var/shoplength = PA.contains.len
 		var/l
 		for(l=1,l<=shoplength,l++)
