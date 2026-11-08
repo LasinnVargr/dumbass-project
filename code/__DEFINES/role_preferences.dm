@@ -58,18 +58,18 @@
 #define ROLE_NOTORIOUS_BOUNTY	"Notorious Bounty Target"
 
 GLOBAL_LIST_INIT(special_roles_rogue, list(
-	ROLE_MANIAC = /datum/antagonist/maniac,
-	ROLE_PREBEL = /datum/antagonist/prebel,
-	ROLE_BANDIT = /datum/antagonist/bandit,
-	ROLE_ASPIRANT = /datum/antagonist/aspirant,
-	ROLE_WEREWOLF = /datum/antagonist/werewolf,
-	ROLE_NBEAST = /datum/antagonist/vampire/lord,
-	ROLE_VAMPIRE = /datum/antagonist/vampire,
-	ROLE_LICH = /datum/antagonist/lich,
-	ROLE_DREAMWALKER = /datum/antagonist/dreamwalker,
-	ROLE_GNOLL = /datum/antagonist/gnoll,
+// [DISABLED: zombie project] 	ROLE_MANIAC = /datum/antagonist/maniac,
+// [DISABLED: zombie project] 	ROLE_PREBEL = /datum/antagonist/prebel,
+// [DISABLED: zombie project] 	ROLE_BANDIT = /datum/antagonist/bandit,
+// [DISABLED: zombie project] 	ROLE_ASPIRANT = /datum/antagonist/aspirant,
+// [DISABLED: zombie project] 	ROLE_WEREWOLF = /datum/antagonist/werewolf,
+// [DISABLED: zombie project] 	ROLE_NBEAST = /datum/antagonist/vampire/lord,
+// [DISABLED: zombie project] 	ROLE_VAMPIRE = /datum/antagonist/vampire,
+// [DISABLED: zombie project] 	ROLE_LICH = /datum/antagonist/lich,
+// [DISABLED: zombie project] 	ROLE_DREAMWALKER = /datum/antagonist/dreamwalker,
+// [DISABLED: zombie project] 	ROLE_GNOLL = /datum/antagonist/gnoll,
 	ROLE_THIEVESGUILD = /datum/antagonist/thievesguild,
-	ROLE_ASSASSIN = /datum/antagonist/assassin,
+// [DISABLED: zombie project] 	ROLE_ASSASSIN = /datum/antagonist/assassin,
 ))
 
 //Job defines for what happens when you fail to qualify for any job during job selection

@@ -5,7 +5,7 @@ GLOBAL_LIST_INIT(charflaw_singletons, init_charflaw_singletons())
 /// Associative list mapping the "menu name" of each vice in the list to its typepath. This list is all of the vices you can choose. 
 /// Used primarily for adding a vice, but also for randomly picking a vice from the selectable space. Try pick_assoc().
 GLOBAL_LIST_INIT(character_flaws, list(
-	"Alcoholic"=/datum/charflaw/addiction/alcoholic,
+// [DISABLED: zombie project] 	"Alcoholic"=/datum/charflaw/addiction/alcoholic,
 	"Asundered Mind (+2 Q-Points)"=/datum/charflaw/mind_broken,
 	"Bad Sight (+2 Q-Points)"=/datum/charflaw/badsight,
 	"Blindness (+2 Q-Points)"=/datum/charflaw/noeyeall,
@@ -15,33 +15,33 @@ GLOBAL_LIST_INIT(character_flaws, list(
 	"Critical Weakness (+2 Q-Points)"=/datum/charflaw/critweakness,
 	"Cyclops (L) (+2 Q-Points)"=/datum/charflaw/noeyel,
 	"Cyclops (R) (+2 Q-Points)"=/datum/charflaw/noeyer,
-	"Devout Follower"=/datum/charflaw/addiction/godfearing,
+// [DISABLED: zombie project] 	"Devout Follower"=/datum/charflaw/addiction/godfearing,
 	"Greedy"=/datum/charflaw/greedy,
 	"Indebted"=/datum/charflaw/indebted,
 	"Isolationist"=/datum/charflaw/isolationist,
-	"Caffiend"=/datum/charflaw/addiction/caffiend,
-	"Junkie"=/datum/charflaw/addiction/junkie,
-	"Lawless"=/datum/charflaw/lawless,
+// [DISABLED: zombie project] 	"Caffiend"=/datum/charflaw/addiction/caffiend,
+// [DISABLED: zombie project] 	"Junkie"=/datum/charflaw/addiction/junkie,
+// [DISABLED: zombie project] 	"Lawless"=/datum/charflaw/lawless,
 	"Marked by Baotha" =/datum/charflaw/marked_by_baotha,
 	"Leper (+2 Q-Points)"=/datum/charflaw/leprosy,
 	"Loose Straps"=/datum/charflaw/loose_armor,
-	"Masochist"=/datum/charflaw/addiction/masochist,
+// [DISABLED: zombie project] 	"Masochist"=/datum/charflaw/addiction/masochist,
 	"Missing Nose"=/datum/charflaw/missing_nose,
 	"Mute (+2 Q-Points)"=/datum/charflaw/mute,
 	"Narcoleptic (+2 Q-Points)"=/datum/charflaw/narcoleptic,
 	"Nude Sleeper"=/datum/charflaw/nude_sleeper,
 	"Nudist"=/datum/charflaw/nudist,
-	"Nymphomaniac"=/datum/charflaw/addiction/lovefiend,
+// [DISABLED: zombie project] 	"Nymphomaniac"=/datum/charflaw/addiction/lovefiend,
 	"Pacifism"=/datum/charflaw/pacifism,
 	"Paranoid"=/datum/charflaw/paranoid,
 	"Random or No Flaw"=/datum/charflaw/randflaw,
-	"Sadist"=/datum/charflaw/addiction/sadist,
+// [DISABLED: zombie project] 	"Sadist"=/datum/charflaw/addiction/sadist,
 	"Silver Weakness"=/datum/charflaw/silverweakness,
 	"Sleepless (+2 Q-Points)"=/datum/charflaw/sleepless,
-	"Smoker"=/datum/charflaw/addiction/smoker,
+// [DISABLED: zombie project] 	"Smoker"=/datum/charflaw/addiction/smoker,
 	"Unintelligible (+2 Q-Points)"=/datum/charflaw/unintelligible,
-	"Wood Arm (L) (+2 Q-Points)"=/datum/charflaw/limbloss/arm_l,
-	"Wood Arm (R) (+2 Q-Points)"=/datum/charflaw/limbloss/arm_r,
+// [DISABLED: zombie project] 	"Wood Arm (L) (+2 Q-Points)"=/datum/charflaw/limbloss/arm_l,
+// [DISABLED: zombie project] 	"Wood Arm (R) (+2 Q-Points)"=/datum/charflaw/limbloss/arm_r,
 	"Hemophage (+2 Q-Points)"=/datum/charflaw/hemophage,
 	"Feeble-bodied"=/datum/charflaw/weak,
 	"Frail"=/datum/charflaw/frail,
@@ -755,7 +755,7 @@ GLOBAL_LIST_INIT(character_flaws, list(
 ///datum/charflaw/marked_by_baotha/proc/grant_fertility_boon(mob/user)
 //	if(QDELETED(user))
 //		return
-	ADD_TRAIT(user, TRAIT_BAOTHA_FERTILITY_BOON, TRAIT_GENERIC)
+// [DISABLED: zombie project] 	ADD_TRAIT(user, TRAIT_BAOTHA_FERTILITY_BOON, TRAIT_GENERIC)
 
 /datum/charflaw/hemophage
 	name = "Hemophage"

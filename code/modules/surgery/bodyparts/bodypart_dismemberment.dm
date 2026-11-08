@@ -67,7 +67,7 @@
 	if(C.buckled)
 		if(istype(C.buckled, /obj/structure/guillotine))
 			guillotine_execution = TRUE
-		if(istype(C.buckled, /obj/structure/fluff/psycross))
+// [DISABLED: zombie project] 		if(istype(C.buckled, /obj/structure/fluff/psycross))
 //			if(C.real_name in GLOB.excommunicated_players)
 //				stress2give = /datum/stressevent/viewsinpunish
 
@@ -195,7 +195,7 @@
 	if(C.buckled)
 		if(istype(C.buckled, /obj/structure/guillotine))
 			guillotine_execution = TRUE
-		if(istype(C.buckled, /obj/structure/fluff/psycross))
+// [DISABLED: zombie project] 		if(istype(C.buckled, /obj/structure/fluff/psycross))
 //			if(C.real_name in GLOB.excommunicated_players)
 //				stress2give = /datum/stressevent/viewsinpunish
 

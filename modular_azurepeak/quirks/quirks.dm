@@ -119,8 +119,8 @@
 /mob/living/carbon/human/proc/handle_redolent_scent()
 	var/should_reek = is_redolent_reeking() && can_smell()
 
-	if(should_reek && mind?.antag_datums)
-		for(var/datum/antagonist/D in mind.antag_datums)
+// [DISABLED: zombie project] 	if(should_reek && mind?.antag_datums)
+// [DISABLED: zombie project] 		for(var/datum/antagonist/D in mind.antag_datums)
 //			if(istype(D, /datum/antagonist/vampire/lord) || istype(D, /datum/antagonist/werewolf) || istype(D, /datum/antagonist/skeleton) || istype(D, /datum/antagonist/zombie) || istype(D, /datum/antagonist/lich))
 //				should_reek = FALSE
 //				break
@@ -130,8 +130,8 @@
 //	else
 //		remove_status_effect(/datum/status_effect/debuff/redolent_stink)
 
-//	if(!should_reek)
-//		return
+	if(!should_reek)
+		return
 	if(world.time < redolent_last_aura_tick + redolent_aura_tick_delay(redolent_scent_type))
 		return
 	redolent_last_aura_tick = world.time

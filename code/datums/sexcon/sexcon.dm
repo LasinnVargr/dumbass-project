@@ -894,10 +894,10 @@
 			user.add_stress(/datum/stressevent/cummax)
 //	if(!oral && force >= SEX_FORCE_HIGH && (user.has_flaw(/datum/charflaw/addiction/sadist) || effective_target.has_flaw(/datum/charflaw/addiction/masochist)))
 //		effective_target.emote("paincrit", forced = TRUE) // this satiates the sadomasochists in range
-	if(ishuman(user) && ishuman(target) && user.client && target.client)
+// [DISABLED: zombie project] 	if(ishuman(user) && ishuman(target) && user.client && target.client)
 //		eora_register_consensual_pair(user, target)
 
-///datum/sex_controller/proc/just_ejaculated()
+/datum/sex_controller/proc/just_ejaculated()
 	return (last_ejaculation_time + 2 SECONDS >= world.time)
 
 /datum/sex_controller/proc/set_charge(amount)

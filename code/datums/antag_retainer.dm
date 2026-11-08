@@ -29,14 +29,15 @@
 	var/bandit_contribute = 0
 
 /proc/vampire_werewolf()
-	var/vampyr = 0
-	var/wwoelf = 0
-	for(var/mob/living/carbon/human/player in GLOB.human_list)
-		if(player.mind)
-			if(player.stat != DEAD)
-				if(isbrain(player)) //also technically dead
-					continue
-				if(is_in_roguetown(player))
+	return null // [DISABLED: zombie project] stub so callers still compile; original body commented below
+// [DISABLED: zombie project] 	var/vampyr = 0
+// [DISABLED: zombie project] 	var/wwoelf = 0
+// [DISABLED: zombie project] 	for(var/mob/living/carbon/human/player in GLOB.human_list)
+// [DISABLED: zombie project] 		if(player.mind)
+// [DISABLED: zombie project] 			if(player.stat != DEAD)
+// [DISABLED: zombie project] 				if(isbrain(player)) //also technically dead
+// [DISABLED: zombie project] 					continue
+// [DISABLED: zombie project] 				if(is_in_roguetown(player))
 //					var/datum/antagonist/D = player.mind.has_antag_datum(/datum/antagonist/werewolf)
 //					if(D && D.increase_votepwr)
 //						wwoelf++

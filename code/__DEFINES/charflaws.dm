@@ -9,16 +9,16 @@
 		/datum/charflaw/noeyer,\
 		/datum/charflaw/leprosy,\
 		/datum/charflaw/disfigured,\
-		/datum/charflaw/limbloss/arm_l,\
-		/datum/charflaw/limbloss/arm_r,\
+		/* [DISABLED: zombie project] /datum/charflaw/limbloss/arm_l, */\
+		/* [DISABLED: zombie project] /datum/charflaw/limbloss/arm_r, */\
 		/datum/charflaw/nudist,\
 		/datum/charflaw/missing_nose\
 	)
 
 #define CHARFLAWS_MUTUAL_TYPES list(\
-		/datum/charflaw/addiction/lovefiend,\
-		/datum/charflaw/addiction/junkie,\
-		/datum/charflaw/addiction/smoker,\
-		/datum/charflaw/addiction/alcoholic,\
+		/* [DISABLED: zombie project] /datum/charflaw/addiction/lovefiend, */\
+		/* [DISABLED: zombie project] /datum/charflaw/addiction/junkie, */\
+		/* [DISABLED: zombie project] /datum/charflaw/addiction/smoker, */\
+		/* [DISABLED: zombie project] /datum/charflaw/addiction/alcoholic, */\
 		/datum/charflaw/paranoid\
 	)

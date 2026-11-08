@@ -12,10 +12,10 @@ GLOBAL_LIST_INIT(towner_posting_descriptors, list(
 			"You need not travel; the bearer brings the strongbox to you.",
 		),
 		"postable_advclasses" = list(
-			/datum/advclass/blacksmith,
-			/datum/advclass/guildsman/blacksmith,
-			/datum/advclass/guildsman/engineer,
-			/datum/advclass/guildmaster,
+			// [DISABLED: zombie project] /datum/advclass/blacksmith,
+			// [DISABLED: zombie project] /datum/advclass/guildsman/blacksmith,
+			// [DISABLED: zombie project] /datum/advclass/guildsman/engineer,
+			// [DISABLED: zombie project] /datum/advclass/guildmaster,
 		),
 	),
 	QUEST_TOWNER_MINER_OREVEIN = list(
@@ -26,9 +26,9 @@ GLOBAL_LIST_INIT(towner_posting_descriptors, list(
 			"You need not travel; the bearer brings the crate to you.",
 		),
 		"postable_advclasses" = list(
-			/datum/advclass/miner,
-			/datum/advclass/builder,
-			/datum/advclass/guildmaster,
+			// [DISABLED: zombie project] /datum/advclass/miner,
+			// [DISABLED: zombie project] /datum/advclass/builder,
+			// [DISABLED: zombie project] /datum/advclass/guildmaster,
 		),
 	),
 ))

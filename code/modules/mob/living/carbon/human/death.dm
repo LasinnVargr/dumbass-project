@@ -48,8 +48,8 @@
 		SSdroning.kill_loop(client)
 		SSdroning.kill_rain(client)
 
-	if(mind)
-		if(!gibbed)
+// [DISABLED: zombie project] 	if(mind)
+// [DISABLED: zombie project] 		if(!gibbed)
 //			var/datum/antagonist/vampire/VD = mind.has_antag_datum(/datum/antagonist/vampire)
 //			if(VD)
 //				dust(just_ash=TRUE,drop_items=TRUE)
