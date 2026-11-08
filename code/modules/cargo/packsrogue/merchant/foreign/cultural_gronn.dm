@@ -7,7 +7,7 @@
 /datum/supply_pack/rogue/gronn/battleaxe
 	name = "Zayran Battleaxe"
 	cost = 130
-	contains = list(/obj/item/rogueweapon/stoneaxe/woodcut/steel/atgervi)
+//	contains = list(/obj/item/rogueweapon/stoneaxe/woodcut/steel/atgervi)
 	ship_qty_min = 1
 	ship_qty_max = 3
 
@@ -48,28 +48,28 @@
 /datum/supply_pack/rogue/gronn/varangian_hauberk
 	name = "Nöküd Hauberk"
 	cost = 180
-	contains = list(/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/atgervi)
+//	contains = list(/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/atgervi)
 	ship_qty_min = 1
 	ship_qty_max = 2
 
 /datum/supply_pack/rogue/gronn/shamanic_coat
 	name = "Shamanic Coat"
 	cost = 110
-	contains = list(/obj/item/clothing/suit/roguetown/armor/leather/heavy/atgervi)
+//	contains = list(/obj/item/clothing/suit/roguetown/armor/leather/heavy/atgervi)
 	ship_qty_min = 1
 	ship_qty_max = 2
 
 /datum/supply_pack/rogue/gronn/kite_shield
 	name = "Gronnic Kite Shield"
 	cost = 90
-	contains = list(/obj/item/rogueweapon/shield/atgervi)
+//	contains = list(/obj/item/rogueweapon/shield/atgervi)
 	ship_qty_min = 1
 	ship_qty_max = 3
 
 /datum/supply_pack/rogue/gronn/fur_gloves
 	name = "Fur-Lined Leather Gloves"
 	cost = 40
-	contains = list(/obj/item/clothing/gloves/roguetown/angle/atgervi)
+//	contains = list(/obj/item/clothing/gloves/roguetown/angle/atgervi)
 	ship_qty_min = 2
 	ship_qty_max = 4
 
@@ -83,21 +83,21 @@
 /datum/supply_pack/rogue/gronn/beast_claws
 	name = "Beast Claws Gauntlets"
 	cost = 140
-	contains = list(/obj/item/clothing/gloves/roguetown/plate/atgervi)
+//	contains = list(/obj/item/clothing/gloves/roguetown/plate/atgervi)
 	ship_qty_min = 1
 	ship_qty_max = 2
 
 /datum/supply_pack/rogue/gronn/fur_pants
 	name = "Gronnic Fur Pants"
 	cost = 50
-	contains = list(/obj/item/clothing/under/roguetown/trou/leather/atgervi)
+//	contains = list(/obj/item/clothing/under/roguetown/trou/leather/atgervi)
 	ship_qty_min = 2
 	ship_qty_max = 4
 
 /datum/supply_pack/rogue/gronn/leather_boots
 	name = "Ba'atur Leather Boots"
 	cost = 45
-	contains = list(/obj/item/clothing/shoes/roguetown/boots/leather/atgervi)
+//	contains = list(/obj/item/clothing/shoes/roguetown/boots/leather/atgervi)
 	ship_qty_min = 2
 	ship_qty_max = 4
 
@@ -106,13 +106,13 @@
 	no_name_quantity = TRUE
 	cost = 540
 	contains = list(
-		/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/atgervi,
+//		/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/atgervi,
 		/obj/item/clothing/suit/roguetown/armor/brigandine/gronn,
 		/obj/item/clothing/head/roguetown/helmet/bascinet/atgervi,
-		/obj/item/clothing/gloves/roguetown/angle/atgervi,
-		/obj/item/clothing/under/roguetown/trou/leather/atgervi,
-		/obj/item/clothing/shoes/roguetown/boots/leather/atgervi,
-		/obj/item/rogueweapon/shield/atgervi,
+//		/obj/item/clothing/gloves/roguetown/angle/atgervi,
+//		/obj/item/clothing/under/roguetown/trou/leather/atgervi,
+//		/obj/item/clothing/shoes/roguetown/boots/leather/atgervi,
+//		/obj/item/rogueweapon/shield/atgervi,
 	)
 	ship_qty_min = 1
 	ship_qty_max = 1
@@ -122,11 +122,11 @@
 	no_name_quantity = TRUE
 	cost = 380
 	contains = list(
-		/obj/item/clothing/suit/roguetown/armor/leather/heavy/atgervi,
+//		/obj/item/clothing/suit/roguetown/armor/leather/heavy/atgervi,
 		/obj/item/clothing/head/roguetown/helmet/leather/shaman_hood,
 		/obj/item/clothing/gloves/roguetown/angle/gronnfur,
-		/obj/item/clothing/under/roguetown/trou/leather/atgervi,
-		/obj/item/clothing/shoes/roguetown/boots/leather/atgervi,
+//		/obj/item/clothing/under/roguetown/trou/leather/atgervi,
+//		/obj/item/clothing/shoes/roguetown/boots/leather/atgervi,
 	)
 	ship_qty_min = 1
 	ship_qty_max = 1

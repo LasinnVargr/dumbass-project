@@ -376,11 +376,11 @@
 
 /datum/status_effect/buff/cum_consumed/on_apply()
 	. = ..()
-	if(owner.has_flaw(/datum/charflaw/addiction/lovefiend))
+//	if(owner.has_flaw(/datum/charflaw/addiction/lovefiend))
 		owner.add_stress(/datum/stressevent/cumconsumed)
 
 /datum/status_effect/buff/cum_consumed/on_remove()
-	if(owner.has_flaw(/datum/charflaw/addiction/lovefiend))
+//	if(owner.has_flaw(/datum/charflaw/addiction/lovefiend))
 		owner.remove_stress(/datum/stressevent/cumconsumed)
 	. = ..()
 

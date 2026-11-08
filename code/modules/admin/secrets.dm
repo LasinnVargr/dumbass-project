@@ -234,13 +234,13 @@
 					continue
 				if(is_special_character(H))
 					continue
-				var/datum/antagonist/traitor/T = new()
-				T.give_objectives = FALSE
+//				var/datum/antagonist/traitor/T = new()
+//				T.give_objectives = FALSE
 				var/datum/objective/new_objective = new
 				new_objective.owner = H
 				new_objective.explanation_text = objective
-				T.add_objective(new_objective)
-				H.mind.add_antag_datum(T)
+//				T.add_objective(new_objective)
+//				H.mind.add_antag_datum(T)
 			message_admins("<span class='adminnotice'>[key_name_admin(usr)] used everyone is a traitor secret. Objective is [objective]</span>")
 			log_admin("[key_name(usr)] used everyone is a traitor secret. Objective is [objective]")
 

@@ -40,7 +40,7 @@
 	desc = "I can notice when people are in pain."
 	warning_text = "This quirk costs nothing and does not apply if you are playing a role that is already an empath!"
 	added_traits = list(TRAIT_EMPATH)
-	incompatible_virtues = list(/datum/virtue/utility/socialite)
+//	incompatible_virtues = list(/datum/virtue/utility/socialite)
 	incompatible_traits = list(TRAIT_EMPATH)
 
 /datum/quirk/fabledlover
@@ -49,7 +49,7 @@
 	warning_text = "This quirk costs nothing and does not apply if you are playing a role that is already a fabled lover!"
 	point_cost = 2
 	added_traits = list(TRAIT_GOODLOVER)
-	incompatible_virtues = list(/datum/virtue/utility/socialite, /datum/virtue/utility/performer)
+//	incompatible_virtues = list(/datum/virtue/utility/socialite, /datum/virtue/utility/performer)
 	incompatible_traits = list(TRAIT_GOODLOVER)
 
 /datum/quirk/gossiper
@@ -59,7 +59,7 @@
 	warning_text = "This quirk costs nothing and does not apply if you are playing a role that is already a noble!"
 	point_cost = 2
 	added_traits = list(TRAIT_GOSSIPER)
-	incompatible_virtues = list(/datum/virtue/utility/tracker)
+//	incompatible_virtues = list(/datum/virtue/utility/tracker)
 	incompatible_traits = list(TRAIT_NOBLE)
 
 /datum/quirk/hobbyistmusician
@@ -76,7 +76,7 @@
 	desc = "I'm simply built bigger than most. My strength and hardiness has nothing to show for my size, though."
 	custom_text = "This quirk increases your sprite size. Incompatible with the Giant virtue."
 	point_cost = 3
-	incompatible_virtues = list(/datum/virtue/size/giant)
+//	incompatible_virtues = list(/datum/virtue/size/giant)
 
 /datum/quirk/largeframe/apply_to_human(mob/living/carbon/human/recipient)
 	recipient.transform = recipient.transform.Scale(1.25, 1.25)
@@ -121,7 +121,7 @@
 
 	if(should_reek && mind?.antag_datums)
 		for(var/datum/antagonist/D in mind.antag_datums)
-			if(istype(D, /datum/antagonist/vampire/lord) || istype(D, /datum/antagonist/werewolf) || istype(D, /datum/antagonist/skeleton) || istype(D, /datum/antagonist/zombie) || istype(D, /datum/antagonist/lich))
+//			if(istype(D, /datum/antagonist/vampire/lord) || istype(D, /datum/antagonist/werewolf) || istype(D, /datum/antagonist/skeleton) || istype(D, /datum/antagonist/zombie) || istype(D, /datum/antagonist/lich))
 				should_reek = FALSE
 				break
 
@@ -235,7 +235,7 @@
 	"Heirloom Amulet" = /obj/item/clothing/neck/roguetown/ornateamulet/noble,
 	"Hefty Coinpurse" = /obj/item/storage/belt/rogue/pouch/coins/virtuepouch
 	)
-	incompatible_vices = list(/datum/charflaw/lawless)
+//	incompatible_vices = list(/datum/charflaw/lawless)
 	incompatible_quirks = list(/datum/quirk/disgracednoble, /datum/quirk/gossiper)
 	incompatible_traits = list(TRAIT_NOBLE)
 
@@ -248,7 +248,7 @@
 	desc = "My experience in the wilds allows me to fall asleep on surfaces like treebranches as if they were beds."
 	custom_text = "This does not make branches effective beds or allow you to walk on them, simply that you can sleep on them easily."
 	added_traits = list(TRAIT_OUTDOORSMAN)
-	incompatible_virtues = list(/datum/virtue/utility/woodwalker)
+//	incompatible_virtues = list(/datum/virtue/utility/woodwalker)
 
 /datum/quirk/pretty
 	name = "Pretty"
@@ -256,7 +256,7 @@
 	warning_text = "This quirk costs nothing and does not apply if you are playing a role that is already beautiful!"
 	point_cost = 2
 	added_traits = list(TRAIT_PRETTY)
-	incompatible_virtues = list(/datum/virtue/utility/socialite)
+//	incompatible_virtues = list(/datum/virtue/utility/socialite)
 	incompatible_quirks = list(/datum/quirk/ugly)
 	incompatible_traits = list(TRAIT_BEAUTIFUL)
 
@@ -267,7 +267,7 @@
 	warning_text = "This quirk costs nothing and does not apply if you are playing a role that already possesses an unnatural metabolism!"
 	point_cost = 2
 	added_traits = list(TRAIT_RAW_EATER)
-	incompatible_virtues = list(/datum/virtue/utility/feral_appetite)
+//	incompatible_virtues = list(/datum/virtue/utility/feral_appetite)
 	incompatible_traits = list(TRAIT_NASTY_EATER, TRAIT_ORGAN_EATER, TRAIT_WILD_EATER)
 
 /datum/quirk/roughlover
@@ -299,7 +299,7 @@
 	desc = "My face is ugly and makes everyone who looks at me miserable."
 	point_cost = 0
 	added_traits = list(TRAIT_UNSEEMLY)
-	incompatible_virtues = list(/datum/virtue/utility/socialite)
+//	incompatible_virtues = list(/datum/virtue/utility/socialite)
 
 /datum/quirk/underdarkchef
 	name = "Underdark Chef"
@@ -313,7 +313,7 @@
 	desc = "My appearance is deeply unsettling to most. There's something profoundly wrong about my features."
 	point_cost = 1
 	added_traits = list(TRAIT_UNSETTLING)
-	incompatible_virtues = list(/datum/virtue/utility/socialite)
+//	incompatible_virtues = list(/datum/virtue/utility/socialite)
 	incompatible_quirks = list(/datum/quirk/ugly, /datum/quirk/pretty)
 
 /datum/quirk/selfaware

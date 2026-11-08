@@ -33,7 +33,7 @@
 
 /obj/structure/roguemachine/Hoardmaster/examine(mob/user)
 	. = ..()
-	if(user.mind?.has_antag_datum(/datum/antagonist/bandit))
+//	if(user.mind?.has_antag_datum(/datum/antagonist/bandit))
 		. += "Formerly a covetous creature, this one now shares its Hoard with the Freefolk. Protecting the transactor's Hoard, and trading it for Favor."
 		return
 	else
@@ -50,15 +50,15 @@
 		return
 	if(href_list["buy"])
 		var/mob/M = usr
-		var/datum/antagonist/bandit/B = M.mind.has_antag_datum(/datum/antagonist/bandit)
+//		var/datum/antagonist/bandit/B = M.mind.has_antag_datum(/datum/antagonist/bandit)
 		var/path = text2path(href_list["buy"])
 		if(!ispath(path, /datum/supply_pack))
 			message_admins("silly MOTHERFUCKER [usr.key] IS TRYING TO BUY A [path] WITH THE HOARDMASTER")
 			return
 		var/datum/supply_pack/PA = SSmerchant.supply_packs[path]
 		var/cost = PA.cost
-		if(B.favor >= cost)
-			B.favor -= cost
+//		if(B.favor >= cost)
+//			B.favor -= cost
 			playsound(loc, 'sound/misc/hoardmasterpurchase.ogg', 80, FALSE, -1)
 		else
 			say("Earn your keep first!")
@@ -83,7 +83,7 @@
 /obj/structure/roguemachine/Hoardmaster/attack_hand(mob/living/user)
 	if(!HAS_TRAIT(user, TRAIT_COMMIE))
 		return
-	var/datum/antagonist/bandit/B = usr.mind.has_antag_datum(/datum/antagonist/bandit)
+//	var/datum/antagonist/bandit/B = usr.mind.has_antag_datum(/datum/antagonist/bandit)
 	. = ..()
 	if(.)
 		return
@@ -92,7 +92,7 @@
 	user.changeNext_move(CLICK_CD_INTENTCAP)
 	var/contents
 	contents = "<center>Wishes for the Free<BR>"
-	contents += "<a href='?src=[REF(src)];change=1'>Your favor:</a> [B.favor]<BR>"
+//	contents += "<a href='?src=[REF(src)];change=1'>Your favor:</a> [B.favor]<BR>"
 
 
 	var/list/unlocked_cats = list("Supplies", "Medicaments", "Clothing")

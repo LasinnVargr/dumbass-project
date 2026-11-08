@@ -1211,27 +1211,27 @@ GLOBAL_LIST_INIT(loadout_items, init_subtypes(/datum/loadout_item))
 
 /datum/loadout_item/psicross/gronngraggar
 	name = "Amulet of the Moose"
-	path = /obj/item/clothing/neck/roguetown/psicross/inhumen/graggar/gronn
+//	path = /obj/item/clothing/neck/roguetown/psicross/inhumen/graggar/gronn
 
 /datum/loadout_item/psicross/gronnmatthios
 	name = "Amulet of the Bear"
-	path = /obj/item/clothing/neck/roguetown/psicross/inhumen/matthios/gronn
+//	path = /obj/item/clothing/neck/roguetown/psicross/inhumen/matthios/gronn
 
 /datum/loadout_item/psicross/gronnzizo
 	name = "Amulet of the Wolf"
-	path = /obj/item/clothing/neck/roguetown/psicross/inhumen/gronn
+//	path = /obj/item/clothing/neck/roguetown/psicross/inhumen/gronn
 
 /datum/loadout_item/psicross/gronnmbaotha
 	name = "Amulet of the Leopard"
-	path = /obj/item/clothing/neck/roguetown/psicross/inhumen/baotha/gronn
+//	path = /obj/item/clothing/neck/roguetown/psicross/inhumen/baotha/gronn
 
 /datum/loadout_item/psicross/gronnabyssor
 	name = "Amulet of the Kraken"
-	path = /obj/item/clothing/neck/roguetown/psicross/abyssor/gronn
+//	path = /obj/item/clothing/neck/roguetown/psicross/abyssor/gronn
 
 /datum/loadout_item/psicross/gronndendor
 	name = "Amulet of the Volfskinned Man"
-	path = /obj/item/clothing/neck/roguetown/psicross/dendor/gronn
+//	path = /obj/item/clothing/neck/roguetown/psicross/dendor/gronn
 
 /datum/loadout_item/wedding_band
 	name = "silver wedding band"
@@ -1912,7 +1912,7 @@ GLOBAL_LIST_INIT(loadout_items, init_subtypes(/datum/loadout_item))
 
 /datum/loadout_item/tri_shamanic_coat
 	name = "Shamanic Coat"
-	path = /obj/item/clothing/suit/roguetown/armor/leather/heavy/atgervi
+//	path = /obj/item/clothing/suit/roguetown/armor/leather/heavy/atgervi
 	triumph_cost = 3
 
 /datum/loadout_item/tri_spellcaster_hat
@@ -1955,7 +1955,7 @@ GLOBAL_LIST_INIT(loadout_items, init_subtypes(/datum/loadout_item))
 // GLOVES (Alphabetically Ordered)
 /datum/loadout_item/tri_atgervi_gloves
 	name = "Atgervi Gloves"
-	path = /obj/item/clothing/gloves/roguetown/angle/atgervi
+//	path = /obj/item/clothing/gloves/roguetown/angle/atgervi
 	triumph_cost = 2
 
 /datum/loadout_item/tri_eastern_gloves
@@ -1986,7 +1986,7 @@ GLOBAL_LIST_INIT(loadout_items, init_subtypes(/datum/loadout_item))
 // BOOTS & SHOES (Alphabetically Ordered)
 /datum/loadout_item/tri_atgervi_boots
 	name = "Atgervi Boots"
-	path = /obj/item/clothing/shoes/roguetown/boots/leather/atgervi
+//	path = /obj/item/clothing/shoes/roguetown/boots/leather/atgervi
 
 
 /datum/loadout_item/tri_grenzelhoft_boots
@@ -2018,7 +2018,7 @@ GLOBAL_LIST_INIT(loadout_items, init_subtypes(/datum/loadout_item))
 // PANTS (Alphabetically Ordered)
 /datum/loadout_item/tri_atgervi_pants
 	name = "Atgervi Fur Pants"
-	path = /obj/item/clothing/under/roguetown/trou/leather/atgervi
+//	path = /obj/item/clothing/under/roguetown/trou/leather/atgervi
 	triumph_cost = 4
 
 /datum/loadout_item/tri_eastern_pants_1

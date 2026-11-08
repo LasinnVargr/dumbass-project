@@ -10,7 +10,7 @@
 	can_cauterize = FALSE
 	passive_healing = 0.5
 
-	werewolf_infection_probability = 0
+//	werewolf_infection_probability = 0
 
 /datum/wound/bruise/small
 	name = "bruise"

@@ -8,7 +8,7 @@
 	map_file_name = "roguetest.dmm"
 	realm_name = "Roguetest"
 	slot_adjust = list(
-		/datum/job/roguetown/villager = 42,
+//		/datum/job/roguetown/villager = 42,
 		/datum/job/roguetown/adventurer = 69
 	)
 	title_adjust = list(
@@ -18,8 +18,8 @@
 		/datum/job/roguetown/lord = "The Gronnmen are coming."
 	)
 	blacklist = list(
-		/datum/job/roguetown/slaver,
-		/datum/job/roguetown/rockhillslave,
-		/datum/job/roguetown/baron,
-		/datum/job/roguetown/baron_retainer,
+//		/datum/job/roguetown/slaver,
+//		/datum/job/roguetown/rockhillslave,
+//		/datum/job/roguetown/baron,
+//		/datum/job/roguetown/baron_retainer,
 	)

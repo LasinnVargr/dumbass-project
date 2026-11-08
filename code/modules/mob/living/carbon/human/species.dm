@@ -2025,8 +2025,8 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	var/probability = I.get_dismemberment_chance(affecting, user, selzone)
 	//stopgap fix, this should prevent oathed martyr decaps from ashing the head
 	var/dismember_damtype = I.damtype
-	var/datum/component/martyrweapon/martyr = I.GetComponent(/datum/component/martyrweapon)
-	if(martyr?.is_active)
+//	var/datum/component/martyrweapon/martyr = I.GetComponent(/datum/component/martyrweapon)
+//	if(martyr?.is_active)
 		dismember_damtype = BRUTE
 	if(affecting.brute_dam && prob(probability) && affecting.dismember(dismember_damtype, user.used_intent?.blade_class, user, selzone, vorpal = I.vorpal))
 		bloody = 1

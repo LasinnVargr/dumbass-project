@@ -1230,7 +1230,7 @@
 	keylock = TRUE
 	grant_resident_key = TRUE
 	resident_key_type = /obj/item/roguekey/townie
-	resident_role = /datum/job/roguetown/villager
+//	resident_role = /datum/job/roguetown/villager
 	lockid = null //Will be randomized
 
 /obj/structure/mineral_door/wood/mercenary
@@ -1238,7 +1238,7 @@
 	keylock = TRUE
 	grant_resident_key = TRUE
 	resident_key_type = /obj/item/roguekey/townie
-	resident_role = /datum/job/roguetown/mercenary
+//	resident_role = /datum/job/roguetown/mercenary
 	lockid = null //Will be randomized
 
 /obj/structure/mineral_door/wood/towner/generic
@@ -1247,35 +1247,35 @@
 	resident_key_amount = 2
 
 /obj/structure/mineral_door/wood/towner/blacksmith
-	resident_advclass = list(/datum/advclass/blacksmith, /datum/advclass/masterblacksmith)
+//	resident_advclass = list(/datum/advclass/blacksmith, /datum/advclass/masterblacksmith)
 	lockid = "towner_blacksmith"
 
 /obj/structure/mineral_door/wood/towner/cheesemaker
-	resident_advclass = list(/datum/advclass/cheesemaker)
+//	resident_advclass = list(/datum/advclass/cheesemaker)
 	lockid = "towner_cheesemaker"
 
 /obj/structure/mineral_door/wood/towner/miner
-	resident_advclass = list(/datum/advclass/miner, /datum/advclass/minermaster)
+//	resident_advclass = list(/datum/advclass/miner, /datum/advclass/minermaster)
 	lockid = "towner_miner"
 
 /obj/structure/mineral_door/wood/towner/seamstress
-	resident_advclass = list(/datum/advclass/seamstress)
+//	resident_advclass = list(/datum/advclass/seamstress)
 	lockid = "towner_seamstress"
 
 /obj/structure/mineral_door/wood/towner/woodworker
-	resident_advclass = list(/datum/advclass/woodworker)
+//	resident_advclass = list(/datum/advclass/woodworker)
 	lockid = "towner_woodworker"
 
 /obj/structure/mineral_door/wood/towner/fisher
-	resident_advclass = list(/datum/advclass/fisher)
+//	resident_advclass = list(/datum/advclass/fisher)
 	lockid = "towner_fisher"
 
 /obj/structure/mineral_door/wood/towner/hunter
-	resident_advclass = list(/datum/advclass/hunter)
+//	resident_advclass = list(/datum/advclass/hunter)
 	lockid = "towner_hunter"
 
 /obj/structure/mineral_door/wood/towner/witch
-	resident_advclass = list(/datum/advclass/witch)
+//	resident_advclass = list(/datum/advclass/witch)
 	lockid = "towner_witch"
 
 /obj/structure/mineral_door/wood/bath
@@ -1283,21 +1283,21 @@
 	keylock = TRUE
 	grant_resident_key = TRUE
 	resident_key_type = /obj/item/roguekey/bath
-	resident_role = /datum/job/roguetown/nightmaiden
+//	resident_role = /datum/job/roguetown/nightmaiden
 	lockid = null //Will be randomized
 
 /obj/structure/mineral_door/wood/bath/bathmaid
 	icon_state = "woodwindow"
-	resident_advclass = list(/datum/advclass/nightmaiden)
+//	resident_advclass = list(/datum/advclass/nightmaiden)
 
 /obj/structure/mineral_door/wood/bath/courtesan
-	resident_advclass = list(/datum/advclass/nightmaiden/concubine, /datum/advclass/nightmaiden/courtesan, /datum/advclass/nightmaiden/dominatrix)
+//	resident_advclass = list(/datum/advclass/nightmaiden/concubine, /datum/advclass/nightmaiden/courtesan, /datum/advclass/nightmaiden/dominatrix)
 
 /obj/structure/mineral_door/wood/wretched
 	locked = TRUE
 	keylock = TRUE
 	grant_resident_key = TRUE
 	resident_key_type = /obj/item/roguekey/townie// should be every wretch class - ideally we can get resident_role to accept lists but until then this'll do
-	resident_advclass = list(/datum/advclass/witch, /datum/advclass/wretch/licker, /datum/advclass/wretch/deserter, /datum/advclass/wretch/deserter/maa, /datum/advclass/wretch/berserker, /datum/advclass/wretch/roguemage, /datum/advclass/wretch/necromancer, /datum/advclass/wretch/heretic, /datum/advclass/wretch/heretic/spy, /datum/advclass/wretch/outlaw, /datum/advclass/wretch/poacher, /datum/advclass/wretch/plaguebearer, /datum/advclass/wretch/pyromaniac, /datum/advclass/wretch/vigilante, /datum/advclass/wretch/blackoakwyrm, /datum/advclass/wretch/antipope, /datum/advclass/wretch/ancientchampion)
+//	resident_advclass = list(/datum/advclass/witch, /datum/advclass/wretch/licker, /datum/advclass/wretch/deserter, /datum/advclass/wretch/deserter/maa, /datum/advclass/wretch/berserker, /datum/advclass/wretch/roguemage, /datum/advclass/wretch/necromancer, /datum/advclass/wretch/heretic, /datum/advclass/wretch/heretic/spy, /datum/advclass/wretch/outlaw, /datum/advclass/wretch/poacher, /datum/advclass/wretch/plaguebearer, /datum/advclass/wretch/pyromaniac, /datum/advclass/wretch/vigilante, /datum/advclass/wretch/blackoakwyrm, /datum/advclass/wretch/antipope, /datum/advclass/wretch/ancientchampion)
 	lockid = null //Will be randomized
 

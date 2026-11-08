@@ -674,9 +674,9 @@ Inquisitorial armory down here
 			if(HAS_TRAIT(M, TRAIT_HEMOPHAGE))
 				cursedblood = 1
 			if(M.mind)
-				if(M.mind.has_antag_datum(/datum/antagonist/werewolf, FALSE))
+//				if(M.mind.has_antag_datum(/datum/antagonist/werewolf, FALSE))
 					cursedblood = 3
-				if(M.mind.has_antag_datum(/datum/antagonist/werewolf/lesser, FALSE))
+//				if(M.mind.has_antag_datum(/datum/antagonist/werewolf/lesser, FALSE))
 					cursedblood = 2
 				if(M.mind.has_antag_datum(/datum/antagonist/vampire, FALSE))
 					cursedblood = 2

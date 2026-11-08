@@ -54,7 +54,7 @@
 	var/mob/living/carbon/human/performer = owner
 	if(performer.advjob != "Herald of Progress")// juuust to be safe.
 		return stress_to_apply
-	if(performer.has_status_effect(/datum/status_effect/buff/herald_progress_harmony))
+//	if(performer.has_status_effect(/datum/status_effect/buff/herald_progress_harmony))
 		return stress_to_apply
 	if(listener.patron && istype(listener.patron, /datum/patron/inhumen/zizo))
 		return stress_to_apply

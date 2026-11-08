@@ -1282,12 +1282,12 @@
 				qdel(W)
 				for(var/mob/player in GLOB.player_list)
 					if(player.mind)
-						if(player.mind.has_antag_datum(/datum/antagonist/bandit))
-							var/datum/antagonist/bandit/bandit_players = player.mind.has_antag_datum(/datum/antagonist/bandit)
+//						if(player.mind.has_antag_datum(/datum/antagonist/bandit))
+//							var/datum/antagonist/bandit/bandit_players = player.mind.has_antag_datum(/datum/antagonist/bandit)
 							record_round_statistic(STATS_SHRINE_VALUE, W.get_real_price())
-							bandit_players.favor += donatedamnt
-							bandit_players.totaldonated += donatedamnt
-							to_chat(player, ("<font color='yellow'>[user.name] donates [donatedamnt] to the shrine! You now have [bandit_players.favor] favor.</font>"))
+//							bandit_players.favor += donatedamnt
+//							bandit_players.totaldonated += donatedamnt
+//							to_chat(player, ("<font color='yellow'>[user.name] donates [donatedamnt] to the shrine! You now have [bandit_players.favor] favor.</font>"))
 
 			else
 				to_chat(user, span_warning("This item isn't a good offering."))
@@ -1489,7 +1489,7 @@
 					if(thegroom && thebride)
 						// Excommunication check for both participants
 						var/excomm_found = FALSE
-						for(var/excomm_name in GLOB.excommunicated_players)
+//						for(var/excomm_name in GLOB.excommunicated_players)
 							var/clean_excomm = LOWER_TEXT(trim(excomm_name))
 							if(thegroom && clean_excomm == LOWER_TEXT(trim(thegroom.real_name)))
 								excomm_found = TRUE
@@ -1602,64 +1602,64 @@
 		to_chat(user, span_warning("No weapon was chosen."))
 
 /obj/structure/fluff/psycross/proc/summon_and_equip_sword(mob/user)
-	var/obj/item/rogueweapon/sword/long/martyr/I = SSroguemachine.martyrweapon
+//	var/obj/item/rogueweapon/sword/long/martyr/I = SSroguemachine.martyrweapon
 
-	if(I)
-		I.anti_stall()
+//	if(I)
+//		I.anti_stall()
 
-	I = new /obj/item/rogueweapon/sword/long/martyr(src.loc)
+//	I = new /obj/item/rogueweapon/sword/long/martyr(src.loc)
 
-	if(user.put_in_hands(I))
+//	if(user.put_in_hands(I))
 		to_chat(user, span_notice("The martyr sword appears in your hand."))
 	else
 		to_chat(user, span_warning("Your hands are full! The sword falls to the ground."))
 
-	return I
+//	return I
 
 /obj/structure/fluff/psycross/proc/summon_and_equip_axe(mob/user)
-	var/obj/item/rogueweapon/greataxe/steel/doublehead/martyr/I = SSroguemachine.martyrweapon
+//	var/obj/item/rogueweapon/greataxe/steel/doublehead/martyr/I = SSroguemachine.martyrweapon
 
-	if(I)
-		I.anti_stall()
+//	if(I)
+//		I.anti_stall()
 
-	I = new /obj/item/rogueweapon/greataxe/steel/doublehead/martyr(src.loc)
+//	I = new /obj/item/rogueweapon/greataxe/steel/doublehead/martyr(src.loc)
 
-	if(user.put_in_hands(I))
+//	if(user.put_in_hands(I))
 		to_chat(user, span_notice("The martyr axe appears in your hand."))
 	else
 		to_chat(user, span_warning("Your hands are full! The axe falls to the ground."))
 
-	return I
+//	return I
 
 /obj/structure/fluff/psycross/proc/summon_and_equip_mace(mob/user)
-	var/obj/item/rogueweapon/mace/goden/martyr/I = SSroguemachine.martyrweapon
+//	var/obj/item/rogueweapon/mace/goden/martyr/I = SSroguemachine.martyrweapon
 
-	if(I)
-		I.anti_stall()
+//	if(I)
+//		I.anti_stall()
 
-	I = new /obj/item/rogueweapon/mace/goden/martyr(src.loc)
+//	I = new /obj/item/rogueweapon/mace/goden/martyr(src.loc)
 
-	if(user.put_in_hands(I))
+//	if(user.put_in_hands(I))
 		to_chat(user, span_notice("The martyr mace appears in your hand."))
 	else
 		to_chat(user, span_warning("Your hands are full! The mace falls to the ground."))
 
-	return I
+//	return I
 
 /obj/structure/fluff/psycross/proc/summon_and_equip_spear(mob/user)
-	var/obj/item/rogueweapon/spear/partizan/martyr/I = SSroguemachine.martyrweapon
+//	var/obj/item/rogueweapon/spear/partizan/martyr/I = SSroguemachine.martyrweapon
 
-	if(I)
-		I.anti_stall()
+//	if(I)
+//		I.anti_stall()
 
-	I = new /obj/item/rogueweapon/spear/partizan/martyr(src.loc)
+//	I = new /obj/item/rogueweapon/spear/partizan/martyr(src.loc)
 
-	if(user.put_in_hands(I))
+//	if(user.put_in_hands(I))
 		to_chat(user, span_notice("The martyr trident appears in your hand."))
 	else
 		to_chat(user, span_warning("Your hands are full! The spear falls to the ground."))
 
-	return I
+//	return I
 
 /obj/structure/fluff/psycross/attack_hand(mob/user)
 	. = ..()

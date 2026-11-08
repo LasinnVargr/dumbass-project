@@ -65,13 +65,13 @@
 		to_chat(user, span_warning("I need a holy cross nearby to properly apply this.")) //Like Anastasis
 		return
 
-	var/datum/antagonist/werewolf/Were = M.mind.has_antag_datum(/datum/antagonist/werewolf/)
-	var/datum/antagonist/werewolf/lesser/Wereless = M.mind.has_antag_datum(/datum/antagonist/werewolf/lesser/)
+//	var/datum/antagonist/werewolf/Were = M.mind.has_antag_datum(/datum/antagonist/werewolf/)
+//	var/datum/antagonist/werewolf/lesser/Wereless = M.mind.has_antag_datum(/datum/antagonist/werewolf/lesser/)
 	var/datum/antagonist/vampire/Vamp = M.mind.has_antag_datum(/datum/antagonist/vampire)
 
 	user.visible_message(span_notice("[user] begins to anoint [M] with [src]."))
 	if(do_after(user, 10 SECONDS, target = M))
-		if(!Were && !Vamp)
+//		if(!Were && !Vamp)
 			user.visible_message(span_notice("[user] anoints [M]'s brow with [src]."))
 			ADD_TRAIT(M, TRAIT_SILVER_BLESSED, POULTICE_TRAIT)
 			success = 1
@@ -99,19 +99,19 @@
 
 
 	//Werewolf deconversion
-	if(Were && !Wereless) //The roundstart elder/alpha werewolf, it cannot be saved
+//	if(Were && !Wereless) //The roundstart elder/alpha werewolf, it cannot be saved
 		to_chat(M, span_userdanger("This wretched silver weighs heavy on my brow. Dendor's blessing shall not be quit of me so easily."))
 		user.visible_message(span_danger("The quicksilver poultice boils away from [M]'s brow, viscerally rejecting the divine anointment."))
 		M.Stun(30)
 		M.Knockdown(30)
 		return
 
-	else if(Wereless) //A lesser werewolf can be deconverted
-		if(Wereless.transformed == TRUE)
+//	else if(Wereless) //A lesser werewolf can be deconverted
+//		if(Wereless.transformed == TRUE)
 			var/mob/living/carbon/human/I = M.stored_mob
 			to_chat(M, span_userdanger("THE FOUL SILVER! MY BODY RENDS ITSELF ASUNDER!"))
-			M.werewolf_untransform()
-			Wereless.on_removal()
+//			M.werewolf_untransform()
+//			Wereless.on_removal()
 			ADD_TRAIT(I, TRAIT_SILVER_BLESSED, POULTICE_TRAIT)
 			ADD_TRAIT(I, TRAIT_PACIFISM, POULTICE_TRAIT)
 			I.emote("agony", forced = TRUE)
@@ -123,7 +123,7 @@
 			M.fullscreen_redflash("redflash3")
 			M.emote("agony", forced = TRUE)
 			to_chat(M, span_userdanger("THE FOUL SILVER! IT BURNS ME TO MY CORE!"))
-			Were.on_removal()
+//			Were.on_removal()
 			ADD_TRAIT(M, TRAIT_SILVER_BLESSED, POULTICE_TRAIT)
 			M.poultice_pacify()
 			M.Stun(30)

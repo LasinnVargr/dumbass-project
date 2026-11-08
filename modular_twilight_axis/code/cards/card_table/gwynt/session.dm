@@ -164,7 +164,7 @@ GLOBAL_VAR_INIT(ccg_music_channel, null)
 	soundtrack_repeats[target_ckey] = TRUE
 	if(!prob(10))
 		return
-	if(ccg_soundtrack_has_antag(player_one, /datum/antagonist/lich) || ccg_soundtrack_has_antag(player_two, /datum/antagonist/lich))
+//	if(ccg_soundtrack_has_antag(player_one, /datum/antagonist/lich) || ccg_soundtrack_has_antag(player_two, /datum/antagonist/lich))
 		soundtrack_files[target_ckey] = CCG_SOUNDTRACK_LAST_SIEGE
 		soundtrack_titles[target_ckey] = "Last Siege"
 		soundtrack_repeats[target_ckey] = FALSE
@@ -174,7 +174,7 @@ GLOBAL_VAR_INIT(ccg_music_channel, null)
 		soundtrack_titles[target_ckey] = "Vampire Negotiations"
 		soundtrack_repeats[target_ckey] = FALSE
 		return
-	if(ccg_soundtrack_has_antag(player_one, /datum/antagonist/bandit) || ccg_soundtrack_has_antag(player_two, /datum/antagonist/bandit))
+//	if(ccg_soundtrack_has_antag(player_one, /datum/antagonist/bandit) || ccg_soundtrack_has_antag(player_two, /datum/antagonist/bandit))
 		soundtrack_files[target_ckey] = CCG_SOUNDTRACK_BANDIT_CONFRONTATION
 		soundtrack_titles[target_ckey] = "Bandit Confrontation"
 		soundtrack_repeats[target_ckey] = FALSE

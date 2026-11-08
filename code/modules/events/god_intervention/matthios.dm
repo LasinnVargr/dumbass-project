@@ -1,12 +1,14 @@
-/datum/round_event_control/matthios_fingers
-	name = "Matthios' Fingers"
-	track = EVENT_TRACK_INTERVENTION
-	typepath = /datum/round_event/matthios_fingers
-	weight = 8
-	earliest_start = 10 MINUTES
-	max_occurrences = 2
-	min_players = 20
-	allowed_storytellers = list(/datum/storyteller/matthios)
-
-/datum/round_event/matthios_fingers/start()
-	SSmapping.add_world_trait(/datum/world_trait/matthios_fingers, 20 MINUTES)
+// [DISABLED: zombie project] Everything below is commented out on purpose. Do not delete. See RULES_AND_LESSONS.md
+// /datum/round_event_control/matthios_fingers
+// 	name = "Matthios' Fingers"
+// 	track = EVENT_TRACK_INTERVENTION
+// 	typepath = /datum/round_event/matthios_fingers
+// 	weight = 8
+// 	earliest_start = 10 MINUTES
+// 	max_occurrences = 2
+// 	min_players = 20
+// 	allowed_storytellers = list(/datum/storyteller/matthios)
+//
+// /datum/round_event/matthios_fingers/start()
+// 	SSmapping.add_world_trait(/datum/world_trait/matthios_fingers, 20 MINUTES)
+//

@@ -472,7 +472,7 @@ GLOBAL_LIST_EMPTY(personal_objective_minds)
 
 
 /datum/mind/proc/remove_traitor()
-	remove_antag_datum(/datum/antagonist/traitor)
+//	remove_antag_datum(/datum/antagonist/traitor)
 
 
 /datum/mind/proc/remove_all_antag() //For the Lazy amongst us.
@@ -781,8 +781,8 @@ GLOBAL_LIST_EMPTY(personal_objective_minds)
 	announce_antagonist_objectives()
 
 /datum/mind/proc/make_Traitor()
-	if(!(has_antag_datum(/datum/antagonist/traitor)))
-		add_antag_datum(/datum/antagonist/traitor)
+//	if(!(has_antag_datum(/datum/antagonist/traitor)))
+//		add_antag_datum(/datum/antagonist/traitor)
 
 
 /datum/mind/proc/AddSpell(datum/spell_or_action, mob/living/user)
@@ -1378,7 +1378,7 @@ GLOBAL_LIST_EMPTY(personal_objective_minds)
 	return (max_util > 0) && (get_utility_points_spent() < max_util)
 
 /datum/mind/proc/has_spellmiracle_block_antag()
-	for(var/antag_type in SPELLMIRACLE_BLOCK_ANTAGS)
+//	for(var/antag_type in SPELLMIRACLE_BLOCK_ANTAGS)
 		if(has_antag_datum(antag_type))
 			return TRUE
 	return FALSE

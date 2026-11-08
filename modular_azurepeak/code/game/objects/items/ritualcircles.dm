@@ -524,16 +524,16 @@
 
 	switch(choice)
 		if("Harmonious Spear")
-			new_weapon = new /obj/item/rogueweapon/halberd/glaive/dreamscape(user.loc)
+//			new_weapon = new /obj/item/rogueweapon/halberd/glaive/dreamscape(user.loc)
 			skill_to_teach = /datum/skill/combat/polearms
 		if("Oozing Sword")
-			new_weapon = new /obj/item/rogueweapon/greatsword/bsword/dreamscape(user.loc)
+//			new_weapon = new /obj/item/rogueweapon/greatsword/bsword/dreamscape(user.loc)
 			skill_to_teach = /datum/skill/combat/swords
 		if("Dreamreaver Greataxe")
 			new_weapon = new /obj/item/rogueweapon/greataxe/dreamscape(user.loc)
 			skill_to_teach = /datum/skill/combat/axes
 		if("Thunderous Trident")
-			new_weapon = new /obj/item/rogueweapon/spear/dreamscape_trident(user.loc)
+//			new_weapon = new /obj/item/rogueweapon/spear/dreamscape_trident(user.loc)
 			skill_to_teach = /datum/skill/combat/polearms
 
 	if(new_weapon)
@@ -1284,7 +1284,7 @@
 		if("Rite of the Dark Crystal")
 			if(!user.mind)
 				return
-			if(user.mind.necro_crystal_count() >= user.mind.necro_crystal_cap())
+//			if(user.mind.necro_crystal_count() >= user.mind.necro_crystal_cap())
 				var/confirm = alert(user, "Your pact with Zizo allows no more relics while your existing ones remain bound. Sever your oldest crystal - and the dead bound to it - to forge a new one?", "Rite of the Dark Crystal", "Sever and Replace", "Cancel")
 				if(confirm != "Sever and Replace")
 					return
@@ -1300,12 +1300,12 @@
 			if(!do_after(user, 5 SECONDS))
 				return
 			// re-check cap right before committing, in case circumstances changed during the chant
-			if(user.mind.necro_crystal_count() >= user.mind.necro_crystal_cap())
-				user.mind.necro_retire_oldest_crystal()
+//			if(user.mind.necro_crystal_count() >= user.mind.necro_crystal_cap())
+//				user.mind.necro_retire_oldest_crystal()
 			icon_state = "zizo_active"
 			user.apply_status_effect(/datum/status_effect/debuff/ritesexpended)
 			var/obj/item/necro_relics/necro_crystal/new_crystal = new /obj/item/necro_relics/necro_crystal(loc)
-			user.mind.necro_register_crystal(new_crystal)
+//			user.mind.necro_register_crystal(new_crystal)
 			loc.visible_message(span_purple("A dark crystal materializes in the center of the ritual circle, pulsing with necromantic energy!"))
 			addtimer(VARSET_CALLBACK(src, icon_state, "zizo_chalky"), 120)
 		if("Conversion")
@@ -2260,24 +2260,24 @@
 		loc.visible_message(span_warning("With their heart stilled, the ritual will have no purchase upon [target]. It would be a waste."))
 		return
 
-	var/datum/antagonist/werewolf/Were = target.mind.has_antag_datum(/datum/antagonist/werewolf/)
-	var/datum/antagonist/werewolf/lesser/Wereless = target.mind.has_antag_datum(/datum/antagonist/werewolf/lesser/)
+//	var/datum/antagonist/werewolf/Were = target.mind.has_antag_datum(/datum/antagonist/werewolf/)
+//	var/datum/antagonist/werewolf/lesser/Wereless = target.mind.has_antag_datum(/datum/antagonist/werewolf/lesser/)
 	var/datum/antagonist/vampire/Vamp = target.mind.has_antag_datum(/datum/antagonist/vampire)
 
 	//Werewolf deconversion
-	if(Were && !Wereless) //The roundstart elder/alpha werewolf, it cannot be saved
+//	if(Were && !Wereless) //The roundstart elder/alpha werewolf, it cannot be saved
 		to_chat(target, span_userdanger("This wretched rite weighs heavy on my soul. Dendor's blessing shall not be quit of me so easily"))
 		loc.visible_message(span_danger("[target] viscerally rejects the One's admonishment. They cannot be saved."))
 		target.Stun(30)
 		target.Knockdown(30)
 		return
 
-	else if(Wereless) //A lesser werewolf can be deconverted
-		if(Wereless.transformed == TRUE)
+//	else if(Wereless) //A lesser werewolf can be deconverted
+//		if(Wereless.transformed == TRUE)
 			var/mob/living/carbon/human/I = target.stored_mob
 			to_chat(target, span_userdanger("THIS FOUL RITE! MY BODY RENDS ITSELF ASUNDER!"))
-			target.werewolf_untransform()
-			Wereless.on_removal()
+//			target.werewolf_untransform()
+//			Wereless.on_removal()
 			ADD_TRAIT(I, TRAIT_SILVER_BLESSED, POULTICE_TRAIT)
 			ADD_TRAIT(I, TRAIT_PACIFISM, POULTICE_TRAIT)
 			I.emote("agony", forced = TRUE)
@@ -2289,7 +2289,7 @@
 			target.fullscreen_redflash("redflash3")
 			target.emote("agony", forced = TRUE)
 			to_chat(target, span_userdanger("THIS FOUL RITE! IT BURNS ME TO MY CORE!"))
-			Were.on_removal()
+//			Were.on_removal()
 			ADD_TRAIT(target, TRAIT_SILVER_BLESSED, POULTICE_TRAIT)
 			target.poultice_pacify()
 			target.Stun(30)
@@ -2349,7 +2349,7 @@
 
 /obj/structure/ritualcircle/abyssor_alt_inactive/proc/dreamarmor_stage2(mob/living/carbon/human/target)
 	playsound(loc, 'sound/combat/hits/onmetal/grille (2).ogg', 50)
-	target.equipOutfit(/datum/outfit/job/roguetown/dreamwalker_armorrite)
+//	target.equipOutfit(/datum/outfit/job/roguetown/dreamwalker_armorrite)
 	target.apply_status_effect(/datum/status_effect/debuff/devitalised)
 	addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(to_chat), target, span_purple("Reality is but a fragile dream. You are the dreamer, and your will is law.")), 40)
 

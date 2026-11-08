@@ -1221,25 +1221,25 @@
 /datum/anvil_recipe/weapons/ancient/shield
 	name = "Hoplon Shield, Ancient (+1 Gilbranze)"
 	additional_items = list(/obj/item/ingot/gilbranze)
-	created_item = /obj/item/rogueweapon/shield/gilbranze
+//	created_item = /obj/item/rogueweapon/shield/gilbranze
 	display_category = ITEM_CAT_WEAPONS_SHIELDS
 
 /datum/anvil_recipe/weapons/decrepit/shield
 	name = "Hoplon Shield, Decrepit (+1 Alloy)"
 	additional_items = list(/obj/item/ingot/decrepit)
-	created_item = /obj/item/rogueweapon/shield/gilbranze/decrepit
+//	created_item = /obj/item/rogueweapon/shield/gilbranze/decrepit
 	display_category = ITEM_CAT_WEAPONS_SHIELDS
 
 /datum/anvil_recipe/weapons/ancient/shield
 	name = "Hoplon Greatshield, Ancient (+3 Gilbranze, +1 Cured Leather)"
 	additional_items = list(/obj/item/ingot/gilbranze, /obj/item/ingot/gilbranze, /obj/item/ingot/gilbranze, /obj/item/natural/hide/cured)
-	created_item = /obj/item/rogueweapon/shield/gilbranze/great
+//	created_item = /obj/item/rogueweapon/shield/gilbranze/great
 	display_category = ITEM_CAT_WEAPONS_SHIELDS
 
 /datum/anvil_recipe/weapons/decrepit/shield
 	name = "Hoplon Greatshield, Decrepit (+3 Alloy, +1 Cured Leather)"
 	additional_items = list(/obj/item/ingot/decrepit, /obj/item/ingot/decrepit, /obj/item/ingot/decrepit, /obj/item/natural/hide/cured)
-	created_item = /obj/item/rogueweapon/shield/gilbranze/great/decrepit
+//	created_item = /obj/item/rogueweapon/shield/gilbranze/great/decrepit
 	display_category = ITEM_CAT_WEAPONS_SHIELDS
 
 /datum/anvil_recipe/weapons/steel/buckler

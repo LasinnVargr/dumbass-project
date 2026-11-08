@@ -49,8 +49,8 @@ GLOBAL_VAR(king_throne)
 	var/mob/living/user = buckled_mobs[1]
 	if(user.stat != CONSCIOUS)
 		return
-	var/datum/antagonist/prebel/P = user.mind?.has_antag_datum(/datum/antagonist/prebel)
-	if(!P)
+//	var/datum/antagonist/prebel/P = user.mind?.has_antag_datum(/datum/antagonist/prebel)
+//	if(!P)
 		return
 	if(rebel_leader_sit_time == 0)
 		to_chat(user, span_notice("Finally, I'm sitting on the throne - when I get more comfortable here I'll be able to announce victory. Other rebels here will help me get comfortable faster."))
@@ -61,8 +61,8 @@ GLOBAL_VAR(king_throne)
 			continue
 		if(living_mob.stat != CONSCIOUS)
 			continue
-		var/datum/antagonist/prebel/rebel_antag = living_mob.mind?.has_antag_datum(/datum/antagonist/prebel)
-		if(!rebel_antag)
+//		var/datum/antagonist/prebel/rebel_antag = living_mob.mind?.has_antag_datum(/datum/antagonist/prebel)
+//		if(!rebel_antag)
 			continue
 		time_modifier += REBEL_THRONE_SPEEDUP_PER_PERSON
 	rebel_leader_sit_time += (dt * time_modifier)

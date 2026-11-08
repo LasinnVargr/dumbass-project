@@ -46,16 +46,16 @@
 
 /obj/item/organ/heart/examine(mob/user)
 	. = ..()
-	var/datum/antagonist/maniac/dreamer = user.mind?.has_antag_datum(/datum/antagonist/maniac)
-	if(dreamer)
+//	var/datum/antagonist/maniac/dreamer = user.mind?.has_antag_datum(/datum/antagonist/maniac)
+//	if(dreamer)
 		if(!inscryption)
 			. += "<span class='danger'><b>There is NOTHING on this heart. \
 				Should be? Following the TRUTH - not here. I need to keep LOOKING. Keep FOLLOWING my heart.</b></span>"
 		else
 			. += "<b><span class='warning'>There's something CUT on this HEART.</span>\n\"[inscryption]. Add it to the other keys to exit INRL.\"</b>"
-			if(!(inscryption in dreamer.hearts_seen))
-				dreamer.hearts_seen += inscryption
-				SEND_SOUND(dreamer, 'sound/villain/newheart.ogg')
+//			if(!(inscryption in dreamer.hearts_seen))
+//				dreamer.hearts_seen += inscryption
+//				SEND_SOUND(dreamer, 'sound/villain/newheart.ogg')
 
 /obj/item/organ/heart/update_icon()
 	if(beating)

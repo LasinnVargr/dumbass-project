@@ -151,7 +151,7 @@
 	if(applies_post_equipment)
 		if(H.dna?.species?.id == "gnoll")
 			// Gnolls should be built only from gnoll-specific prefs, not base-slot virtue/flaw/race bonus state.
-			H.apply_gnoll_preferences(FALSE)
+//			H.apply_gnoll_preferences(FALSE)
 		else
 			apply_character_post_equipment(H)
 

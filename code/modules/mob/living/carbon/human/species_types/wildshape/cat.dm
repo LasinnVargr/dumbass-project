@@ -215,7 +215,7 @@
 		var/ramount = 20
 		var/rid = /datum/reagent/medicine/healthpot
 		target.reagents.add_reagent(rid, ramount)
-		if(target.mind.has_antag_datum(/datum/antagonist/werewolf))
+//		if(target.mind.has_antag_datum(/datum/antagonist/werewolf))
 			target.visible_message(span_green("[user] is licking [target]'s wounds with its tongue!"), span_notice("My kin has covered my wounds..."))
 			rid = /datum/reagent/water
 			target.reagents.add_reagent(rid, ramount)
@@ -228,4 +228,4 @@
 					if(!BP?.wounds)
 						continue
 					for(var/datum/wound/W in BP.wounds)
-						W.werewolf_infect_attempt()
+//						W.werewolf_infect_attempt()

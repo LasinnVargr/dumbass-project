@@ -898,7 +898,7 @@
 
 /datum/crafting_recipe/roguetown/sewing/cape/desert
 	name = "desert cape"
-	result = list(/obj/item/clothing/cloak/cape/crusader)
+//	result = list(/obj/item/clothing/cloak/cape/crusader)
 	reqs = list(/obj/item/natural/cloth = 4,
 				/obj/item/natural/fibers = 2)
 	craftdiff = 3

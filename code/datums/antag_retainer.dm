@@ -37,7 +37,7 @@
 				if(isbrain(player)) //also technically dead
 					continue
 				if(is_in_roguetown(player))
-					var/datum/antagonist/D = player.mind.has_antag_datum(/datum/antagonist/werewolf)
+//					var/datum/antagonist/D = player.mind.has_antag_datum(/datum/antagonist/werewolf)
 					if(D && D.increase_votepwr)
 						wwoelf++
 						continue

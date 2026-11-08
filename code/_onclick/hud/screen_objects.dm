@@ -1947,7 +1947,7 @@
 			state2use = "mood_dead"
 		else if(H.mind?.has_antag_datum(/datum/antagonist/zombie))
 			state2use = "mood_zombidle"
-		else if(H.mind?.has_antag_datum(/datum/antagonist/lich))
+//		else if(H.mind?.has_antag_datum(/datum/antagonist/lich))
 			state2use = "mood_boneidle"
 		else if(H.stat && H.IsSleeping())
 			state2use = "mood_sleep"

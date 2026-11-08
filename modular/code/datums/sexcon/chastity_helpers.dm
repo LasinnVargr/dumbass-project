@@ -40,7 +40,7 @@
 /datum/sex_controller/proc/modular_is_masochist_in_spiked_chastity()
 	if(!HAS_TRAIT(user, TRAIT_CHASTITY_SPIKED))
 		return FALSE
-	if(!user.has_flaw(/datum/charflaw/addiction/masochist))
+//	if(!user.has_flaw(/datum/charflaw/addiction/masochist))
 		return FALSE
 	return TRUE
 

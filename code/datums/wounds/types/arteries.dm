@@ -20,7 +20,7 @@
 	sleep_healing = 0.5 //so breathless characters dont stuck near death forever
 	embed_chance = 75
 
-	werewolf_infection_probability = 100
+//	werewolf_infection_probability = 100
 
 /datum/wound/artery/can_stack_with(datum/wound/other)
 	if(istype(other, /datum/wound/artery) && (type == other.type))

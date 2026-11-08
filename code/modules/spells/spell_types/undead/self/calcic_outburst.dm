@@ -35,9 +35,9 @@
 	addtimer(CALLBACK(src, PROC_REF(lichdeath), user), 5 SECONDS)
 
 /obj/effect/proc_holder/spell/self/suicidebomb/proc/lichdeath(mob/living/user)
-	var/datum/antagonist/lich/lichman = user.mind.has_antag_datum(/datum/antagonist/lich)
+//	var/datum/antagonist/lich/lichman = user.mind.has_antag_datum(/datum/antagonist/lich)
 	explosion(get_turf(user), -1, exp_heavy, exp_light, exp_flash, 0, flame_range = exp_fire, soundin = 'sound/misc/explode/incendiary (1).ogg')
-	if(lichman && user.stat != DEAD && lichman.consume_phylactery(0)) // Use phylactery at 0 timer. Die if none.
+//	if(lichman && user.stat != DEAD && lichman.consume_phylactery(0)) // Use phylactery at 0 timer. Die if none.
 		return TRUE
 
 	user.death()

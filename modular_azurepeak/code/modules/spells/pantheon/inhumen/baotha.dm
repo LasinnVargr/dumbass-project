@@ -198,13 +198,13 @@
 		// Special cases first, since they're quick to check. These can't just fit in a list.
 		switch(vice_to_get.type)
 			// Sadists and masochists already get messages when they examine *each other*.
-			if(/datum/charflaw/addiction/sadist)
-				if(our_human.has_flaw(/datum/charflaw/addiction/masochist))
+//			if(/datum/charflaw/addiction/sadist)
+//				if(our_human.has_flaw(/datum/charflaw/addiction/masochist))
 					vice_paths += vice_to_get.type
 					vices_to_gen--
 					continue
-			if(/datum/charflaw/addiction/masochist)
-				if(our_human.has_flaw(/datum/charflaw/addiction/sadist))
+//			if(/datum/charflaw/addiction/masochist)
+//				if(our_human.has_flaw(/datum/charflaw/addiction/sadist))
 					vice_paths += vice_to_get.type
 					vices_to_gen--
 					continue
@@ -223,19 +223,19 @@
 					// Now to add Nympho, regardless of whether the caster has it themselves.
 					var/nympho_check = FALSE
 					for(var/path in vice_paths)
-						if(path == /datum/charflaw/addiction/lovefiend)
+//						if(path == /datum/charflaw/addiction/lovefiend)
 							nympho_check = TRUE
 							break
 					if(!nympho_check)
 						baothamarked_nympho_check = TRUE
-						vice_paths += /datum/charflaw/addiction/lovefiend
+//						vice_paths += /datum/charflaw/addiction/lovefiend
 						vices_to_gen--
 					continue
-			if(/datum/charflaw/addiction/lovefiend)
+//			if(/datum/charflaw/addiction/lovefiend)
 				if(baothamarked_nympho_check) // Since we don't have duplicate checking until later.
 					continue
 		// These vices have direct mutually-shared-vice examine messages. We will copy these if the caster shares them.
-		if(vice_to_get.type in CHARFLAWS_MUTUAL_TYPES)
+//		if(vice_to_get.type in CHARFLAWS_MUTUAL_TYPES)
 			for(var/datum/charflaw/vice in our_human.vices)
 				if(istype(vice, vice_to_get.type))
 					vice_paths += vice_to_get.type
@@ -243,7 +243,7 @@
 					continue
 		// These vices have an obvious physical presence, at least when unmasked.
 		// We will try to copy these if they're on the target, and later skip any fake vices that are on this list.
-		if(vice_to_get.type in CHARFLAWS_PHYSICAL_TYPES)
+//		if(vice_to_get.type in CHARFLAWS_PHYSICAL_TYPES)
 			vice_paths += vice_to_get.type
 			vices_to_gen--
 			continue
@@ -268,7 +268,7 @@
 	if(vice_type in CHARFLAWS_RANDNONE_TYPES)
 		return FALSE
 	// We already grabbed the physical vices the target has.
-	if(vice_type in CHARFLAWS_PHYSICAL_TYPES)
+//	if(vice_type in CHARFLAWS_PHYSICAL_TYPES)
 		return FALSE
 	// We already know if you're marked by Baotha.
 	if(vice_type == /datum/charflaw/marked_by_baotha)

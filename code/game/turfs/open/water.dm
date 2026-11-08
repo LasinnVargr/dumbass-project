@@ -69,7 +69,7 @@
 		return
 	var/mob/living/carbon/human/H = user
 	if(H.dna?.species?.id == "gnoll" && ispath(water_reagent, /datum/reagent/blood))
-		if(!H.gnoll_bloodpool_feed())
+//		if(!H.gnoll_bloodpool_feed())
 			return
 		playsound(src, 'sound/misc/drink_blood.ogg', 100, FALSE, -4)
 		H.changeNext_move(CLICK_CD_MELEE)
@@ -371,7 +371,7 @@
 		if(ishuman(L))
 			var/mob/living/carbon/human/H = L
 			if(ispath(water_reagent, /datum/reagent/blood) && (H.dna?.species?.id == "gnoll"))
-				if(!H.gnoll_bloodpool_feed())
+//				if(!H.gnoll_bloodpool_feed())
 					return FALSE
 				playsound(src, 'sound/misc/drink_blood.ogg', 100, FALSE, -4)
 				if(!mapped)

@@ -540,7 +540,7 @@
 	antimagic_allowed = FALSE
 	recharge_time = 600
 	ignore_cockblock = TRUE
-	use_language = TRUE
+//	use_language = TRUE
 	var/first_cast = FALSE
 
 /obj/effect/proc_holder/spell/self/howl/call_of_the_moon/cast(mob/living/carbon/human/user)

@@ -340,7 +340,7 @@
 	name = "Godless"
 	greet_text = span_notice("Gods may exist, but know what? I care not.")
 	req_text = "Non-Church Role"
-	restricted_jobs = list(CHURCH_ROLES)
+//	restricted_jobs = list(CHURCH_ROLES)
 	weight = 100
 
 /datum/special_trait/atheism/on_apply(mob/living/carbon/human/character, silent)
@@ -376,10 +376,10 @@
 	greet_text = span_boldwarning("I've been denounced by the church for either reasons legitimate or not!")
 	req_text = "Non-church role"
 	weight = 20
-	restricted_jobs = list(CHURCH_ROLES)
+//	restricted_jobs = list(CHURCH_ROLES)
 
 /datum/special_trait/hussite/on_apply(mob/living/carbon/human/character, silent)
-	GLOB.excommunicated_players += character.real_name
+//	GLOB.excommunicated_players += character.real_name
 
 /datum/special_trait/bounty
 	name = "Hunted Man"
@@ -533,7 +533,7 @@
 	name = "Vengant Bum"
 	greet_text = span_notice("I was once a nobleman, high on life until my father was murdered right in front of me. Thankfully, my mentor took me to safety and taught me all I needed to survive in these disgusting lands. They think I am a lowlife, but that's just an advantage.")
 	req_text = "Be a beggar"
-	allowed_jobs = list(/datum/job/roguetown/beggar)
+//	allowed_jobs = list(/datum/job/roguetown/beggar)
 	weight = 7
 
 /datum/special_trait/vengantbum/on_apply(mob/living/carbon/human/character, silent)
@@ -549,7 +549,7 @@
 	name = "My Precious"
 	greet_text = span_notice("The ring, it's so shiny.. so valuable, I can feel it's power. It's all mine!")
 	req_text = "Be a beggar"
-	allowed_jobs = list(/datum/job/roguetown/beggar)
+//	allowed_jobs = list(/datum/job/roguetown/beggar)
 	weight = 50
 
 /datum/special_trait/my_precious/on_apply(mob/living/carbon/human/character, silent)
@@ -565,7 +565,7 @@
 	name = "Illicit Merchant"
 	greet_text = span_notice("I'm sick of working as an underling, I will start my own trade emporium. I've got my hands on a hidden merchant key and a curious magical device")
 	req_text = "Be a Shophand"
-	allowed_jobs = list(/datum/job/roguetown/shophand)
+//	allowed_jobs = list(/datum/job/roguetown/shophand)
 	weight = 50
 
 /datum/special_trait/illicit_merchant/on_apply(mob/living/carbon/human/character, silent)

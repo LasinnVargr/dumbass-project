@@ -11,37 +11,37 @@
 /datum/anvil_recipe/armor/dwarven/plate
 	name = "Grudgebearer Dwarven Plate (+3 Steel, +1 Bronze, +1 Cured Leather)"
 	additional_items = list(/obj/item/ingot/steel, /obj/item/ingot/steel, /obj/item/ingot/steel, /obj/item/ingot/bronze, /obj/item/natural/hide/cured)
-	created_item = /obj/item/clothing/suit/roguetown/armor/plate/full/dwarven
+//	created_item = /obj/item/clothing/suit/roguetown/armor/plate/full/dwarven
 	display_category = ITEM_CAT_ARMOR_CHESTPIECES
 
 /datum/anvil_recipe/armor/dwarven/apron
 	name = "Grudgebearer Splint Apron (+3 Steel, +1 Bronze)"
 	additional_items = list(/obj/item/ingot/steel, /obj/item/ingot/steel, /obj/item/ingot/steel, /obj/item/ingot/bronze)
-	created_item = /obj/item/clothing/suit/roguetown/armor/plate/full/dwarven/smith
+//	created_item = /obj/item/clothing/suit/roguetown/armor/plate/full/dwarven/smith
 	display_category = ITEM_CAT_ARMOR_CHESTPIECES
 
 /datum/anvil_recipe/armor/dwarven/helm
 	name = "Dwarven Helm (+2 Steel, +1 Bronze)"
 	additional_items = list(/obj/item/ingot/steel, /obj/item/ingot/steel, /obj/item/ingot/bronze)
-	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/dwarven
+//	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/dwarven
 	display_category = ITEM_CAT_ARMOR_HELMETS
 
 /datum/anvil_recipe/armor/dwarven/helm/smith
 	name = "Dwarven Smith Helm (+1 Steel, +1 Bronze)"
 	additional_items = list(/obj/item/ingot/steel, /obj/item/ingot/bronze)
-	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/dwarven/smith
+//	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/dwarven/smith
 	display_category = ITEM_CAT_ARMOR_HELMETS
 
 /datum/anvil_recipe/armor/dwarven/gauntlets
 	name = "Dwarven Gauntlets (+1 Steel, +1 Bronze, +1 Cured Leather)"
 	additional_items = list(/obj/item/ingot/steel, /obj/item/ingot/bronze, /obj/item/natural/hide/cured)
-	created_item = /obj/item/clothing/gloves/roguetown/plate/dwarven
+//	created_item = /obj/item/clothing/gloves/roguetown/plate/dwarven
 	display_category = ITEM_CAT_ARMOR_GLOVES
 
 /datum/anvil_recipe/armor/dwarven/boots
 	name = "Dwarven Boots (+1 Steel, +1 Bronze, +1 Cured Leather)"
 	additional_items = list(/obj/item/ingot/steel, /obj/item/ingot/bronze, /obj/item/natural/hide/cured)
-	created_item = /obj/item/clothing/shoes/roguetown/boots/armor/dwarven
+//	created_item = /obj/item/clothing/shoes/roguetown/boots/armor/dwarven
 	display_category = ITEM_CAT_ARMOR_BOOTS
 // Dwarven weapon recipes - gated by TRAIT_DWARF_REPAIR like the armor
 

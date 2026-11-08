@@ -53,7 +53,7 @@
 /datum/supply_pack/rogue/bath_toys/herbalsoap
 	name = "Soap (Herbal)"
 	cost = 10
-	contains = list(/obj/item/soap/bath)
+//	contains = list(/obj/item/soap/bath)
 
 /datum/supply_pack/rogue/bath_toys/cursedcollargreater
 	name = "Cursed Collar"

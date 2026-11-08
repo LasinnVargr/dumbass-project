@@ -64,7 +64,7 @@
 	. = ..()
 	M.energy_add(5) // 1/6th of mana pot
 	M.apply_status_effect(/datum/status_effect/buff/vigorized)
-	M.sate_addiction(/datum/charflaw/addiction/caffiend)
+//	M.sate_addiction(/datum/charflaw/addiction/caffiend)
 
 	metabolized_caffeine += metabolization_rate
 
@@ -179,7 +179,7 @@
 	quality = DRINK_NICE
 
 /datum/reagent/consumable/poppy_milk/on_mob_life(mob/living/carbon/M)
-	M.sate_addiction(/datum/charflaw/addiction/junkie)
+//	M.sate_addiction(/datum/charflaw/addiction/junkie)
 	M.apply_status_effect(/datum/status_effect/buff/ozium)
 	return ..()
 

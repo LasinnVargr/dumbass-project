@@ -161,7 +161,7 @@
 	if( istype(src, /mob/living/carbon/human/species/skeleton)) //SPOOKY BONES
 		return real_name
 	var/obj/item/bodypart/O = get_bodypart(BODY_ZONE_HEAD)
-	if( !O || (HAS_TRAIT(src, TRAIT_DISFIGURED) && !HAS_TRAIT(src, TRAIT_SCARRED)) || !real_name || (O.skeletonized && !mind?.has_antag_datum(/datum/antagonist/lich)))	//disfigured. use id-name if possible (but scarred people are still recognizable)
+//	if( !O || (HAS_TRAIT(src, TRAIT_DISFIGURED) && !HAS_TRAIT(src, TRAIT_SCARRED)) || !real_name || (O.skeletonized && !mind?.has_antag_datum(/datum/antagonist/lich)))	//disfigured. use id-name if possible (but scarred people are still recognizable)
 		return if_no_face
 	return real_name
 
@@ -245,7 +245,7 @@
 		damage += GL.unarmed_bonus
 
 	if(mind)
-		if(mind.has_antag_datum(/datum/antagonist/werewolf))
+//		if(mind.has_antag_datum(/datum/antagonist/werewolf))
 			return 50
 
 	damage += dna.species.punch_damage

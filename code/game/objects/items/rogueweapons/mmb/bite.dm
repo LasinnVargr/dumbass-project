@@ -97,9 +97,9 @@
 			next_attack_msg += VISMSG_ARMOR_BLOCKED
 		else if(!nodmg && (HAS_TRAIT(user, TRAIT_VAMPBITE)))
 			var/ramount = 15
-			var/rid = /datum/reagent/vampsolution
+//			var/rid = /datum/reagent/vampsolution
 			reagents.add_reagent(rid, ramount)
-			rid = /datum/reagent/vampsolution
+//			rid = /datum/reagent/vampsolution
 	var/datum/wound/caused_wound
 	if(!nodmg)
 		caused_wound = affecting.bodypart_attacked_by(BCLASS_BITE, dam2do, user, user.zone_selected, crit_message = TRUE)
@@ -121,13 +121,13 @@
 				if(HAS_TRAIT(src, TRAIT_SILVER_BLESSED))
 					to_chat(user, span_warning("BLEH! [bite_victim] tastes of SILVER! My gift cannot take hold."))
 				else
-					if(caused_wound?.werewolf_infect_attempt())
+//					if(caused_wound?.werewolf_infect_attempt())
 						to_chat(user, span_danger("You feel your beastly gift trickling from your mouth into [bite_victim]'s wound..."))
 					if(prob(30))
-						user.werewolf_feed(bite_victim, 10)
+//						user.werewolf_feed(bite_victim, 10)
 			if(istype(user.dna.species, /datum/species/gnoll))
 				if(prob(30))
-					user.gnoll_feed(bite_victim, 10)
+//					user.gnoll_feed(bite_victim, 10)
 			/*
 				ZOMBIE INFECTION VIA BITE
 			*/
@@ -261,10 +261,10 @@
 				if(HAS_TRAIT(C, TRAIT_SILVER_BLESSED))
 					to_chat(user, span_warning("BLEH! [C] tastes of SILVER! My gift cannot take hold."))
 				else
-					if(caused_wound?.werewolf_infect_attempt())
+//					if(caused_wound?.werewolf_infect_attempt())
 						to_chat(user, span_danger("You feel your beastly gift trickling into [C]'s wound..."))
 					if(prob(30))
-						user.werewolf_feed(C, 10)
+//						user.werewolf_feed(C, 10)
 
 			/*
 				ZOMBIE CHEW. ZOMBIFICATION

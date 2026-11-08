@@ -9,10 +9,10 @@
 	if(!virtue_typepath)
 		return types
 	types += virtue_typepath
-	if(ispath(virtue_typepath, /datum/virtue/pack))
+//	if(ispath(virtue_typepath, /datum/virtue/pack))
 		var/datum/virtue/pack/P = GLOB.virtues[virtue_typepath]
-		if(P)
-			types += P.granted_virtues
+//		if(P)
+//			types += P.granted_virtues
 	return types
 
 /datum/preferences/proc/check_pick_virtue_conflict(pick_type, existing_type, show_message = FALSE, mob/user = null)

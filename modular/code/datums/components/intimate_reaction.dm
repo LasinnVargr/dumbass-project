@@ -226,7 +226,7 @@
 	var/obj/item/chastity/device = source.chastity_device
 	if(!device || !device.patron_approves_chastity(source))
 		return FALSE
-	return source.has_flaw(/datum/charflaw/addiction/godfearing) || device.has_devotee_virtue(source)
+//	return source.has_flaw(/datum/charflaw/addiction/godfearing) || device.has_devotee_virtue(source)
 
 /// Gets the string key for the receive flavor message.
 /// action and acting_mob are used to distinguish masturbation (self-touch), outercourse (manual by another), and penetrative contexts.

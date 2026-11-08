@@ -68,10 +68,10 @@ GLOBAL_LIST_INIT(towner_posting_descriptors, list(
 
 /proc/user_can_post_towner_type(mob/user, posting_type)
 	if(!GLOB.towner_posting_descriptors[posting_type])
-		return FALSE
-	if(towner_trade_can_post(user, posting_type))
-		return TRUE
-	return user_can_post_crown_towner(user)
+//		return FALSE
+//	if(towner_trade_can_post(user, posting_type))
+//		return TRUE
+//	return user_can_post_crown_towner(user)
 
 /proc/user_can_post_any_towner(mob/user)
 	for(var/posting_type in GLOB.towner_posting_descriptors)
@@ -82,9 +82,9 @@ GLOBAL_LIST_INIT(towner_posting_descriptors, list(
 /proc/towner_advclass_names(list/paths)
 	var/list/out = list()
 	for(var/path in paths)
-		var/datum/advclass/AC = path
-		var/n = initial(AC.name)
-		if(n)
+//		var/datum/advclass/AC = path
+//		var/n = initial(AC.name)
+//		if(n)
 			out += n
 	return out
 

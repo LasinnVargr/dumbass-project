@@ -474,10 +474,10 @@
 		if(HAS_TRAIT(user, TRAIT_REDOLENT) && !HAS_TRAIT(splashed_user, TRAIT_REDOLENT))
 			user.redolent_apply_contact_stink(splashed_user)
 		modular_record_collar_receive_event(splashed_user, user)
-	if(effective_target?.has_flaw(/datum/charflaw/addiction/lovefiend))
-		effective_target.sate_addiction(/datum/charflaw/addiction/lovefiend)
-	if(effective_target?.has_flaw(/datum/charflaw/addiction/baothamarked))
-		effective_target.sate_addiction(/datum/charflaw/addiction/baothamarked)
+//	if(effective_target?.has_flaw(/datum/charflaw/addiction/lovefiend))
+//		effective_target.sate_addiction(/datum/charflaw/addiction/lovefiend)
+//	if(effective_target?.has_flaw(/datum/charflaw/addiction/baothamarked))
+//		effective_target.sate_addiction(/datum/charflaw/addiction/baothamarked)
 	after_ejaculation()
 
 /datum/sex_controller/proc/cum_into(oral = FALSE, mob/living/carbon/human/splashed_user = null, datum/sex_action/knot_action = null, knot_swap_roles = FALSE, mob/living/carbon/human/knot_btm = null, orifice = SEX_PART_NULL, skip_knot_try = FALSE, consume_charge = TRUE, source_part = SEX_PART_NULL)
@@ -530,10 +530,10 @@
 			var/obj/item/organ/testicles/testes = user.getorganslot(ORGAN_SLOT_TESTICLES)
 			if((orifice & SEX_PART_TAIL_MAW) || !is_receiver_actively_knotted_to_user)
 				apply_creampie_drip(splashed_user, orifice, use_long = testes?.ball_size > DEFAULT_TESTICLES_SIZE)
-	if(effective_target?.has_flaw(/datum/charflaw/addiction/lovefiend))
-		effective_target.sate_addiction(/datum/charflaw/addiction/lovefiend)
-	if(effective_target?.has_flaw(/datum/charflaw/addiction/baothamarked))
-		effective_target.sate_addiction(/datum/charflaw/addiction/baothamarked)
+//	if(effective_target?.has_flaw(/datum/charflaw/addiction/lovefiend))
+//		effective_target.sate_addiction(/datum/charflaw/addiction/lovefiend)
+//	if(effective_target?.has_flaw(/datum/charflaw/addiction/baothamarked))
+//		effective_target.sate_addiction(/datum/charflaw/addiction/baothamarked)
 	if(!oral && (orifice & SEX_PART_TAIL_MAW) && !(source_part & SEX_PART_TAIL_MAW))
 		user.try_impregnate(effective_target, SEX_PART_TAIL_MAW)
 	after_ejaculation(consume_charge)
@@ -811,13 +811,13 @@
 		adjust_charge(-CHARGE_FOR_CLIMAX)
 	else
 		to_chat(user, span_love("<i>Spurt!</i>"))
-	if(user.has_status_effect(/datum/status_effect/debuff/false_sensation))
+//	if(user.has_status_effect(/datum/status_effect/debuff/false_sensation))
 		to_chat(user, span_warning("Not enough..."))
 	else
-		if(user.has_flaw(/datum/charflaw/addiction/lovefiend))
-			user.sate_addiction(/datum/charflaw/addiction/lovefiend)
-		if(user.has_flaw(/datum/charflaw/addiction/baothamarked))
-			user.sate_addiction(/datum/charflaw/addiction/baothamarked)
+//		if(user.has_flaw(/datum/charflaw/addiction/lovefiend))
+//			user.sate_addiction(/datum/charflaw/addiction/lovefiend)
+//		if(user.has_flaw(/datum/charflaw/addiction/baothamarked))
+//			user.sate_addiction(/datum/charflaw/addiction/baothamarked)
 	user.add_stress(/datum/stressevent/cumok)
 	user.emote("sexmoanhvy", forced = TRUE)
 	user.playsound_local(user, 'sound/misc/mat/end.ogg', 100)
@@ -892,7 +892,7 @@
 			else
 				effective_target.add_stress(/datum/stressevent/unseemly_made_love)
 			user.add_stress(/datum/stressevent/cummax)
-	if(!oral && force >= SEX_FORCE_HIGH && (user.has_flaw(/datum/charflaw/addiction/sadist) || effective_target.has_flaw(/datum/charflaw/addiction/masochist)))
+//	if(!oral && force >= SEX_FORCE_HIGH && (user.has_flaw(/datum/charflaw/addiction/sadist) || effective_target.has_flaw(/datum/charflaw/addiction/masochist)))
 		effective_target.emote("paincrit", forced = TRUE) // this satiates the sadomasochists in range
 	if(ishuman(user) && ishuman(target) && user.client && target.client)
 		eora_register_consensual_pair(user, target)
@@ -913,7 +913,7 @@
 	set_charge(charge + amount)
 
 /datum/sex_controller/proc/handle_charge(dt)
-	if(user.has_flaw(/datum/charflaw/addiction/lovefiend))
+//	if(user.has_flaw(/datum/charflaw/addiction/lovefiend))
 		dt *= 2
 	adjust_charge(dt * CHARGE_RECHARGE_RATE)
 	if(is_spent())
@@ -930,18 +930,18 @@
 	update_erect_state()
 
 /datum/sex_controller/proc/try_apply_false_sensation()
-	if(!user.has_flaw(/datum/charflaw/addiction/lovefiend) && !user.has_flaw(/datum/charflaw/addiction/baothamarked))
+//	if(!user.has_flaw(/datum/charflaw/addiction/lovefiend) && !user.has_flaw(/datum/charflaw/addiction/baothamarked))
 		return
-	if(!user.has_status_effect(/datum/status_effect/debuff/false_sensation)) // So chat isn't spammed
+//	if(!user.has_status_effect(/datum/status_effect/debuff/false_sensation)) // So chat isn't spammed
 		to_chat(user, span_warning("My arousal is hollow and false. It won't sate my urges."))
-	user.apply_status_effect(/datum/status_effect/debuff/false_sensation)
+//	user.apply_status_effect(/datum/status_effect/debuff/false_sensation)
 
 /datum/sex_controller/proc/update_erect_state()
 	var/obj/item/organ/penis/penis = user.getorganslot(ORGAN_SLOT_PENIS)
 
 	if(user.mind)
-		var/datum/antagonist/werewolf/W = user.mind.has_antag_datum(/datum/antagonist/werewolf/)
-		if(W && W.transformed == TRUE)
+//		var/datum/antagonist/werewolf/W = user.mind.has_antag_datum(/datum/antagonist/werewolf/)
+//		if(W && W.transformed == TRUE)
 			user.regenerate_icons()
 
 	if(penis && hascall(penis, "update_erect_state"))
@@ -1846,32 +1846,32 @@
 	var/datum/antagonist/werewolf/WWtop
 	var/datum/antagonist/werewolf/WWbottom
 	var/infection_probability = 40
-	if(top.mind.has_antag_datum(/datum/antagonist/werewolf))
-		WWtop = top.mind.has_antag_datum(/datum/antagonist/werewolf/)
+//	if(top.mind.has_antag_datum(/datum/antagonist/werewolf))
+//		WWtop = top.mind.has_antag_datum(/datum/antagonist/werewolf/)
 
-	if(bottom.mind.has_antag_datum(/datum/antagonist/werewolf))
-		WWbottom = bottom.mind.has_antag_datum(/datum/antagonist/werewolf/)
+//	if(bottom.mind.has_antag_datum(/datum/antagonist/werewolf))
+//		WWbottom = bottom.mind.has_antag_datum(/datum/antagonist/werewolf/)
 
-	if(WWtop && WWbottom)
+//	if(WWtop && WWbottom)
 		return
 
-	if(WWtop && WWtop.transformed && !WWbottom)
+//	if(WWtop && WWtop.transformed && !WWbottom)
 		if(prob(infection_probability))
 			var/answer = tgui_alert(top, "Infect your mate?", "Please answer in [DisplayTimeText(200)]!", list("Yae","Nae"),200)
 			if(!answer || answer == "Nae")
 				return
 			if(answer == "Yae")
-				bottom.werewolf_infect_attempt()
+//				bottom.werewolf_infect_attempt()
 		return
 
 
-	if(WWbottom && WWbottom.transformed && !WWtop)
+//	if(WWbottom && WWbottom.transformed && !WWtop)
 		if(prob(infection_probability))
 			var/answer = tgui_alert(bottom, "Infect your mate?", "Please answer in [DisplayTimeText(200)]!", list("Yae","Nae"),200)
 			if(!answer || answer == "Nae")
 				return
 			if(answer == "Yae")
-				top.werewolf_infect_attempt()
+//				top.werewolf_infect_attempt()
 		return
 
 /datum/proc/deadite_sex_infect_attempt(mob/living/carbon/human/top, mob/living/carbon/human/bottom)
@@ -1913,7 +1913,7 @@
 		return
 	if(mind.has_antag_datum(/datum/antagonist/vampire))
 		return
-	if(mind.has_antag_datum(/datum/antagonist/werewolf))
+//	if(mind.has_antag_datum(/datum/antagonist/werewolf))
 		return
 	if(mind.has_antag_datum(/datum/antagonist/zombie))
 		return

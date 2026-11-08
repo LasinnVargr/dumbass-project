@@ -373,10 +373,10 @@ Traitors and the like can also be revived with the previous role mostly intact.
 	var/player_key = G_found.key
 
 	//Now for special roles and equipment.
-	var/datum/antagonist/traitor/traitordatum = new_character.mind.has_antag_datum(/datum/antagonist/traitor)
-	if(traitordatum)
+//	var/datum/antagonist/traitor/traitordatum = new_character.mind.has_antag_datum(/datum/antagonist/traitor)
+//	if(traitordatum)
 		SSjob.EquipRank(new_character, new_character.mind.assigned_role, 1)
-		traitordatum.equip()
+//		traitordatum.equip()
 
 
 	SSjob.EquipRank(new_character, new_character.mind.assigned_role, 1)//Or we simply equip them.
@@ -855,7 +855,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 			humie.facial_hair_color = "999999"
 			humie.facial_hairstyle = "Knowledge"
 			humie.age = AGE_OLD
-			humie.equipOutfit(/datum/outfit/treyliam)
+//			humie.equipOutfit(/datum/outfit/treyliam)
 			humie.regenerate_icons()
 			humie.SetSleeping(25 SECONDS)
 			humie.add_stress(/datum/stressevent/maniac_woke_up)

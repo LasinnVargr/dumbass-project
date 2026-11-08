@@ -197,7 +197,7 @@
 		alert("The game hasn't started yet!")
 		return
 
-	var/list/combat_roles = get_gnoll_tracking_combat_roles()
+//	var/list/combat_roles = get_gnoll_tracking_combat_roles()
 	var/list/hunted_targets = list()
 	var/list/combat_targets = list()
 	var/list/direct_scent_targets = list()
@@ -214,11 +214,11 @@
 		else if(L.job in combat_roles)
 			combat_targets += L
 
-	for(var/datum/antagonist/gnoll/G in GLOB.antagonists)
-		var/mob/living/gnoll_mob = G.owner?.current
+//	for(var/datum/antagonist/gnoll/G in GLOB.antagonists)
+//		var/mob/living/gnoll_mob = G.owner?.current
 		if(!gnoll_mob || QDELETED(gnoll_mob))
 			continue
-		var/mob/living/tracked_target = G.get_tracked_target()
+//		var/mob/living/tracked_target = G.get_tracked_target()
 		if(!tracked_target)
 			continue
 		if(!(tracked_target in hunted_targets) && !(tracked_target in combat_targets) && !(tracked_target in direct_scent_targets))

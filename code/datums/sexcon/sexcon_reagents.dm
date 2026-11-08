@@ -83,8 +83,8 @@
 		C.sexcon.adjust_arousal(5)
 	if(istype(C, /mob/living/carbon/human))
 		var/mob/living/carbon/human/H = C
-		if(!istype(H.charflaw, /datum/charflaw/addiction/lovefiend))
-			H.charflaw = new /datum/charflaw/addiction/lovefiend(H)
+//		if(!istype(H.charflaw, /datum/charflaw/addiction/lovefiend))
+//			H.charflaw = new /datum/charflaw/addiction/lovefiend(H)
 	return
 
 /datum/reagent/consumable/ethanol/beer/emberwine/addiction_act_stage4(mob/living/carbon/human/C)

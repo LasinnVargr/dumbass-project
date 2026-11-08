@@ -334,7 +334,7 @@
 				  /obj/item/magic/elemental/shard,
 				  /obj/item/magic/elemental/shard,
 				  /obj/item/magic/elemental/fragment,)
-	reqs = list(/obj/item/phylactery = 1,
+//	reqs = list(/obj/item/phylactery = 1,
 				/datum/reagent/water/salty = 15,
 				/obj/item/natural/clay = 5,
 				/obj/item/rogueore/silver= 1,

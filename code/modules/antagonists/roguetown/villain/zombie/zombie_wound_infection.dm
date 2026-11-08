@@ -11,7 +11,7 @@
 		return
 	if(!ishuman(source) || !source.is_risen_deadite())
 		return
-	if (werewolf_infection_timer || !ishuman(owner)) // Already turning into something else
+//	if (werewolf_infection_timer || !ishuman(owner)) // Already turning into something else
 		return
 	if(!prob(ZOMBIE_INFECTION_PROBABILITY))	//Failed the probability of infection
 		return

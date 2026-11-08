@@ -68,7 +68,7 @@
 		if(istype(C.buckled, /obj/structure/guillotine))
 			guillotine_execution = TRUE
 		if(istype(C.buckled, /obj/structure/fluff/psycross))
-			if(C.real_name in GLOB.excommunicated_players)
+//			if(C.real_name in GLOB.excommunicated_players)
 				stress2give = /datum/stressevent/viewsinpunish
 
 	if(body_zone == BODY_ZONE_HEAD)
@@ -196,7 +196,7 @@
 		if(istype(C.buckled, /obj/structure/guillotine))
 			guillotine_execution = TRUE
 		if(istype(C.buckled, /obj/structure/fluff/psycross))
-			if(C.real_name in GLOB.excommunicated_players)
+//			if(C.real_name in GLOB.excommunicated_players)
 				stress2give = /datum/stressevent/viewsinpunish
 
 	if(body_zone == BODY_ZONE_HEAD)

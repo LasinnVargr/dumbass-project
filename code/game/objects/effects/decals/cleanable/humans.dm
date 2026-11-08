@@ -290,7 +290,7 @@
 	if(H.dna?.species?.id != "gnoll")
 		return
 
-	if(!H.gnoll_bloodpool_feed())
+//	if(!H.gnoll_bloodpool_feed())
 		return
 
 	playsound(loc, 'sound/misc/drink_blood.ogg', 100, FALSE, -4)

@@ -1280,7 +1280,7 @@
 	var/saved_name = get_saved_name()
 	//make reapply prefs work for gnolls
 	if(dna?.species?.id == "gnoll")
-		if(!apply_gnoll_preferences(FALSE, keep_name = TRUE))
+//		if(!apply_gnoll_preferences(FALSE, keep_name = TRUE))
 			reapply_live_preferences()
 		set_blindness(0)
 		regenerate_icons()
@@ -1343,13 +1343,13 @@
 /// Moves everything kept under a character's name over to their new one, so a rename cannot lift an outlawry,
 /// excommunication or bounty, or make everyone who knew them forget them.
 /proc/rename_character_records(old_name, new_name)
-	for(var/list/names as anything in list(GLOB.outlawed_players, GLOB.excommunicated_players, GLOB.apostasy_players, GLOB.court_agents))
+//	for(var/list/names as anything in list(GLOB.outlawed_players, GLOB.excommunicated_players, GLOB.apostasy_players, GLOB.court_agents))
 		var/index = names.Find(old_name)
 		if(index)
 			names[index] = new_name
-	if(old_name in GLOB.lord_titles)
-		GLOB.lord_titles[new_name] = GLOB.lord_titles[old_name]
-		GLOB.lord_titles -= old_name
+//	if(old_name in GLOB.lord_titles)
+//		GLOB.lord_titles[new_name] = GLOB.lord_titles[old_name]
+//		GLOB.lord_titles -= old_name
 	// Kept under both, as logs from before the rename name them the old way
 	if(old_name in GLOB.character_ckey_list)
 		GLOB.character_ckey_list[new_name] = GLOB.character_ckey_list[old_name]

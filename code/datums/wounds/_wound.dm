@@ -100,9 +100,9 @@ GLOBAL_LIST_INIT(primordial_wounds, init_primordial_wounds())
 		if(persisted_mob)
 			on_mob_loss(persisted_mob)
 
-	if(werewolf_infection_timer)
-		deltimer(werewolf_infection_timer)
-		werewolf_infection_timer = null
+//	if(werewolf_infection_timer)
+//		deltimer(werewolf_infection_timer)
+//		werewolf_infection_timer = null
 	bodypart_owner = null
 	owner = null
 	persisted_on = null
@@ -275,10 +275,10 @@ GLOBAL_LIST_INIT(primordial_wounds, init_primordial_wounds())
 /datum/wound/proc/on_mob_gain(mob/living/affected)
 	if(mob_overlay)
 		affected.update_damage_overlays()
-	if(werewolf_infection_timer)
-		deltimer(werewolf_infection_timer)
-		werewolf_infection_timer = null
-		werewolf_infect_attempt()
+//	if(werewolf_infection_timer)
+//		deltimer(werewolf_infection_timer)
+//		werewolf_infection_timer = null
+//		werewolf_infect_attempt()
 	if(mortal && HAS_TRAIT(affected, TRAIT_CRITICAL_WEAKNESS))
 		affected.emote("deathgurgle", forced = TRUE)
 		affected.death()
@@ -385,7 +385,7 @@ GLOBAL_LIST_INIT(primordial_wounds, init_primordial_wounds())
 
 /// Checks if this wound has a special infection (zombie or werewolf)
 /datum/wound/proc/has_special_infection()
-	return (werewolf_infection_timer)
+//	return (werewolf_infection_timer)
 
 /// Some wounds cannot go away naturally
 /datum/wound/proc/should_persist()

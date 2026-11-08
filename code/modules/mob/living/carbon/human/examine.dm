@@ -62,9 +62,9 @@
 	var/t_is = p_are()
 	var/obscure_name = FALSE
 	var/race_name = "<a href='?src=[REF(src)];species_lore=1'><u>[dna.species.name]</u></A>"
-	var/datum/antagonist/maniac/maniac = user.mind?.has_antag_datum(/datum/antagonist/maniac)
+//	var/datum/antagonist/maniac/maniac = user.mind?.has_antag_datum(/datum/antagonist/maniac)
 	var/datum/antagonist/skeleton/skeleton = user.mind?.has_antag_datum(/datum/antagonist/skeleton)
-	if(maniac && (user != src))
+//	if(maniac && (user != src))
 		race_name = "disgusting pig"
 	if(skeleton && (user != src))
 		race_name = "[pick("shambling", "taut", "decrepit")]"
@@ -125,7 +125,7 @@
 	var/skipface = (wear_mask && (wear_mask.flags_inv & HIDEFACE)) || (head && (head.flags_inv & HIDEFACE))
 	if(HAS_TRAIT(user, TRAIT_ROYALSERVANT))
 		var/datum/job/our_job = SSjob.name_occupations[job]
-		if(length(culinary_preferences) && is_type_in_list(our_job, list(/datum/job/roguetown/lord, /datum/job/roguetown/lady, /datum/job/roguetown/exlady, /datum/job/roguetown/prince, /datum/job/roguetown/hand, /datum/job/roguetown/steward, /datum/job/roguetown/councillor, /datum/job/roguetown/physician, /datum/job/roguetown/knight, /datum/advclass/knight/irregularknight, /datum/job/roguetown/magician, /datum/job/roguetown/dungeoneer)))
+//		if(length(culinary_preferences) && is_type_in_list(our_job, list(/datum/job/roguetown/lord, /datum/job/roguetown/lady, /datum/job/roguetown/exlady, /datum/job/roguetown/prince, /datum/job/roguetown/hand, /datum/job/roguetown/steward, /datum/job/roguetown/councillor, /datum/job/roguetown/physician, /datum/job/roguetown/knight, /datum/advclass/knight/irregularknight, /datum/job/roguetown/magician, /datum/job/roguetown/dungeoneer)))
 			var/obj/item/reagent_containers/food/snacks/fav_food = src.culinary_preferences[CULINARY_FAVOURITE_FOOD]
 			var/datum/reagent/consumable/fav_drink = src.culinary_preferences[CULINARY_FAVOURITE_DRINK]
 			if(fav_food)
@@ -775,9 +775,9 @@
 			if(-INFINITY to -5)
 				. += span_revennotice("[t_He] look[p_s()] as blunt-minded as a rock.")
 
-	if(maniac)
+//	if(maniac)
 		var/obj/item/organ/heart/heart = getorganslot(ORGAN_SLOT_HEART)
-		if(heart?.inscryption && (heart.inscryption_key in maniac.key_nums))
+//		if(heart?.inscryption && (heart.inscryption_key in maniac.key_nums))
 			. += span_danger("[t_He] know[p_s()] [heart.inscryption_key], I AM SURE OF IT!")
 
 	if(!HAS_TRAIT(src, TRAIT_GUARD_RAISED) && user != src)
@@ -1060,8 +1060,8 @@
 			else
 				. += span_notice("Something about them seems... different.")
 
-		if(GLOB.lord_titles[name])
-			. += span_notice("[m3] been granted the title of \"[GLOB.lord_titles[name]]\".")
+//		if(GLOB.lord_titles[name])
+//			. += span_notice("[m3] been granted the title of \"[GLOB.lord_titles[name]]\".")
 
 		// Agents of the Bathhouse (granted by a token of the Bathhouse) are a discreet roll:
 		// only those who work the stews - or fellow agents - recognise one, and only while
@@ -1079,8 +1079,8 @@
 			else
 				. += span_notice("A noble!")
 
-		if(ministry_active?.active)
-			. += span_notice("[m3] the office of [ministry_active.display_title].")
+//		if(ministry_active?.active)
+//			. += span_notice("[m3] the office of [ministry_active.display_title].")
 		// Leashed pet status effect message
 		if(has_status_effect(/datum/status_effect/leash_pet))
 			. += span_warning("A leash is hooked to their collar. They are being led like a pet.")
@@ -1176,7 +1176,7 @@
 		if (gang_message)
 			. += gang_message
 
-		if(name in GLOB.excommunicated_players)
+//		if(name in GLOB.excommunicated_players)
 			. += span_userdanger("HERETIC! SHAME!")
 
 		if(HAS_TRAIT(src, TRAIT_EXCOMMUNICATED))
@@ -1218,19 +1218,19 @@
 				. += span_greentext("<b>[m1] an agent of the court!</b>")
 
 		if(user != src && !HAS_TRAIT(src, TRAIT_GUARD_RAISED) && ishuman(user))
-			if(has_flaw(/datum/charflaw/addiction/lovefiend) && user.has_flaw(/datum/charflaw/addiction/lovefiend))
+//			if(has_flaw(/datum/charflaw/addiction/lovefiend) && user.has_flaw(/datum/charflaw/addiction/lovefiend))
 				. += span_aiprivradio("[m1] as lovesick as I.")
 
 			if(has_flaw(/datum/charflaw/marked_by_baotha) && HAS_TRAIT(user, TRAIT_DEPRAVED))
 				. += span_aiprivradio("[m1] marked by the debauched scent of my patron.")
 
-			if(has_flaw(/datum/charflaw/addiction/junkie) && user.has_flaw(/datum/charflaw/addiction/junkie))
+//			if(has_flaw(/datum/charflaw/addiction/junkie) && user.has_flaw(/datum/charflaw/addiction/junkie))
 				. += span_deadsay("[m1] carrying the same dust marks on their nose as I.")
 
-			if(has_flaw(/datum/charflaw/addiction/smoker) && user.has_flaw(/datum/charflaw/addiction/smoker))
+//			if(has_flaw(/datum/charflaw/addiction/smoker) && user.has_flaw(/datum/charflaw/addiction/smoker))
 				. += span_suppradio("[m1] enveloped by the familiar, faint stench of smoke. I know it well.")
 
-			if(has_flaw(/datum/charflaw/addiction/alcoholic) && user.has_flaw(/datum/charflaw/addiction/alcoholic))
+//			if(has_flaw(/datum/charflaw/addiction/alcoholic) && user.has_flaw(/datum/charflaw/addiction/alcoholic))
 				. += span_syndradio("[m1] struggling to hide the hangover, and the stench of spirits. We're alike.")
 
 			if(has_flaw(/datum/charflaw/paranoid) && user.has_flaw(/datum/charflaw/paranoid))
@@ -1239,9 +1239,9 @@
 					. += span_nicegreen("[m1] privy to the dangers of all these strangers around us. [m1] just as afraid as I am.")
 				else
 					. += span_nicegreen("[m1] one of the good ones. [m1] just as afraid as I am.")
-			if(has_flaw(/datum/charflaw/addiction/masochist) && user.has_flaw(/datum/charflaw/addiction/sadist))
+//			if(has_flaw(/datum/charflaw/addiction/masochist) && user.has_flaw(/datum/charflaw/addiction/sadist))
 				. += span_secradio("[m1] marked by scars inflicted for pleasure. A delectable target for my urges.")
-			if(has_flaw(/datum/charflaw/addiction/sadist) && user.has_flaw(/datum/charflaw/addiction/masochist))
+//			if(has_flaw(/datum/charflaw/addiction/sadist) && user.has_flaw(/datum/charflaw/addiction/masochist))
 				. += span_secradio("[m1] looking with eyes filled with a desire to inflict pain. So exciting.")
 			if(HAS_TRAIT(user, TRAIT_EMPATH) && HAS_TRAIT(src, TRAIT_PERMAMUTE))
 				. += span_notice("[m1] lacks a voice. [m1] is a mute!")

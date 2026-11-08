@@ -27,7 +27,7 @@
 			return
 		// FAR less aggressive version of chunkyfingers, designed to be used with nudist. Shrimply lets the user still use neat stuff like orison without letting them weaponize.
 		if(HAS_TRAIT(user, TRAIT_GNARLYDIGITS))
-			if(istype(src, /obj/item/rogueweapon) && !istype(src, /obj/item/rogueweapon/werewolf_claw) && !istype(src, /obj/item/rogueweapon/surgery/cautery/branding))
+//			if(istype(src, /obj/item/rogueweapon) && !istype(src, /obj/item/rogueweapon/werewolf_claw) && !istype(src, /obj/item/rogueweapon/surgery/cautery/branding))
 				to_chat(user, span_warning("My fingers are too misshapen to use this puny implement."))
 				return
 		if(HAS_TRAIT(user, TRAIT_WEAPONLESS))//allows tool use, but not weapons. For disciple aurafarmers who go true unarmed.

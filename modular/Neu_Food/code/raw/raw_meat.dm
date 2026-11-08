@@ -497,8 +497,8 @@
 	H.key = C.key
 
 	H.set_species(/datum/species/gnoll)
-	var/datum/advclass/gnoll_impure/G = new()
-	G.equipme(H)
+//	var/datum/advclass/gnoll_impure/G = new()
+//	G.equipme(H)
 
 	visible_message(span_warning("The [src.name] bloats and tears open as a gnoll claw bursts through!"))
 	playsound(H.loc, 'sound/magic/slimesquish.ogg', 100, TRUE)
@@ -527,8 +527,8 @@
 	H.key = user.key
 
 	H.set_species(/datum/species/gnoll)
-	var/datum/advclass/gnoll_impure/C = new()
-	C.equipme(H)
+//	var/datum/advclass/gnoll_impure/C = new()
+//	C.equipme(H)
 
 	user.visible_message(span_warning("The [src.name] melds into [user]'s flesh as they transform into an Impure Gnoll!"))
 	playsound(user.loc, 'sound/magic/slimesquish.ogg', 100, TRUE)

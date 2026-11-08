@@ -870,7 +870,7 @@ GLOBAL_LIST_EMPTY(loadout_selected_advclasses)
 	H.clear_fullscreen("blind")
 	// Force end any hugbox timers by calling the end proc (safe to call even if not in hugbox)
 	if(hascall(H, "adv_hugboxing_end"))
-		H.adv_hugboxing_end()
+//		H.adv_hugboxing_end()
 	
 	// Apply examine title
 	if(is_migrant)
@@ -1107,8 +1107,8 @@ GLOBAL_LIST_EMPTY(loadout_selected_advclasses)
 		is_migrant = TRUE
 	
 	// Clear any excommunicated/outlawed status before applying new title
-	if(H.real_name in GLOB.excommunicated_players)
-		GLOB.excommunicated_players -= H.real_name
+//	if(H.real_name in GLOB.excommunicated_players)
+//		GLOB.excommunicated_players -= H.real_name
 	if(H.real_name in GLOB.outlawed_players)
 		GLOB.outlawed_players -= H.real_name
 	
@@ -1192,10 +1192,10 @@ GLOBAL_LIST_EMPTY(loadout_selected_advclasses)
 	// Remove from excommunicated and outlawed lists (clears examine text like "HERETIC! SHAME!")
 	// Check both real_name and name to be thorough
 	if(H.real_name)
-		GLOB.excommunicated_players -= H.real_name
+//		GLOB.excommunicated_players -= H.real_name
 		GLOB.outlawed_players -= H.real_name
 	if(H.name && H.name != H.real_name)
-		GLOB.excommunicated_players -= H.name
+//		GLOB.excommunicated_players -= H.name
 		GLOB.outlawed_players -= H.name
 	
 	// Clear job and advjob to remove examine title

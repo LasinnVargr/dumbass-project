@@ -297,7 +297,7 @@
 
 /datum/crafting_recipe/roguetown/engineering/minershelmet
 	name = "reinforced miners helmet"
-	result = /obj/item/clothing/head/roguetown/helmet/kettle/minershelm
+//	result = /obj/item/clothing/head/roguetown/helmet/kettle/minershelm
 	reqs = list(/obj/item/flashlight/flare/torch/lantern/bronzelamptern = 1, /obj/item/clothing/head/roguetown/articap = 1,/obj/item/roguegear/bronze = 1)
 	craftdiff = 2
 	structurecraft = /obj/machinery/artificer_table

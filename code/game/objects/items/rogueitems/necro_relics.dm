@@ -107,7 +107,7 @@
 	active_skeletons += W
 
 	target.mind.AddSpell(new /obj/effect/proc_holder/spell/self/suicidebomb/lesser)
-	addtimer(CALLBACK(target, TYPE_PROC_REF(/mob/living/carbon/human, choose_name_popup), "FORTIFIED SKELETON"), 3 SECONDS)
+//	addtimer(CALLBACK(target, TYPE_PROC_REF(/mob/living/carbon/human, choose_name_popup), "FORTIFIED SKELETON"), 3 SECONDS)
 	addtimer(CALLBACK(target, TYPE_PROC_REF(/mob/living/carbon/human, choose_pronouns_and_body)), 7 SECONDS)
 	target.mind.AddSpell(new /obj/effect/proc_holder/spell/self/suicidebomb/lesser)
 	target.faction |= list("[user.mind.current.real_name]_faction")

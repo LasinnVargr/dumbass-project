@@ -50,8 +50,8 @@
 		record_featured_stat(FEATURED_STATS_THIEVES, src)
 		record_featured_stat(FEATURED_STATS_CRIMINALS, src)
 		GLOB.azure_round_stats[STATS_ITEMS_PICKPOCKETED]++
-	if(has_flaw(/datum/charflaw/addiction/kleptomaniac))
-		sate_addiction(/datum/charflaw/addiction/kleptomaniac)
+//	if(has_flaw(/datum/charflaw/addiction/kleptomaniac))
+//		sate_addiction(/datum/charflaw/addiction/kleptomaniac)
 	grant_pickpocket_xp(victim, exp_to_gain)
 
 /// A steal-odds label floated over one grid item. Client-local, so only the thief sees it, never the mark.

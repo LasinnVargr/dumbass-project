@@ -18,7 +18,7 @@
 		else
 			M.emote(pick("twitch_s","chuckle"))
 	M.apply_status_effect(/datum/status_effect/buff/weed)
-	M.sate_addiction(/datum/charflaw/addiction/smoker)
+//	M.sate_addiction(/datum/charflaw/addiction/smoker)
 	..()
 
 /datum/reagent/drug/space_drugs/on_mob_end_metabolize(mob/living/M)
@@ -82,7 +82,7 @@
 	..()
 
 /datum/reagent/drug/nicotine/on_mob_life(mob/living/carbon/M)
-	M.sate_addiction(/datum/charflaw/addiction/smoker)
+//	M.sate_addiction(/datum/charflaw/addiction/smoker)
 	..()
 	return TRUE
 

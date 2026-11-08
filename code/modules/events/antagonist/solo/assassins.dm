@@ -1,79 +1,81 @@
-/datum/round_event_control/antagonist/solo/assassins
-	name = "Assassins"
-	tags = list(
-		TAG_COMBAT,
-		TAG_VILLIAN,
-		TAG_BLOOD
-	)
-	roundstart = TRUE
-	antag_flag = ROLE_ASSASSIN
-	shared_occurence_type = SHARED_MINOR_THREAT
-
-	restricted_roles = list(
-		"Grand Duke",
-		"Grand Duchess",
-		"Consort",
-		"Marshal",
-		"Bandit",
-		"Bishop",
-		"Acolyte",
-		"Martyr",
-		"Templar",
-		"Captain",
-		"Knight Captain",
-		"Watch Captain",
-		"Master Warden",
-		"Knight",
-		"Court Magician",
-		"Inquisitor",
-		"Orthodoxist",
-		"Absolver",
-		"Vampire",
-		"Vampire Lord",
-		"Vampire Servant",
-		"Vampire Guard",
-		"Vampire Spawn",
-		"Werewolf",
-		"Lich",
-		"Wretch",
-		"Veteran",
-		"Knight Captain",
-		"Bandit"
-	)
-
-	base_antags = 2
-	maximum_antags = 4
-
-	earliest_start = 0 SECONDS
-	max_occurrences = 2
-
-	weight = 10
-
-	typepath = /datum/round_event/antagonist/solo/assassins
-	antag_datum = /datum/antagonist/assassin
-
-/datum/round_event/antagonist/solo/assassins/start()
-	for(var/datum/mind/antag_mind as anything in setup_minds)
-		var/datum/job/original_job = SSjob.GetJob(antag_mind.assigned_role)
-		if(antag_mind.current.client)
-			SSrole_class_handler.cancel_class_handler(antag_mind.current.client.ckey)
-		SSjob.AssignRole(antag_mind.current, "Assassin")
-		if(original_job)
-			if(original_job.total_positions == 1)
-				original_job.current_positions = max(original_job.current_positions, 1)
-			else
-				original_job.current_positions += 1
-		SSmapping.retainer.assassins |= antag_mind.current
-		antag_mind.add_antag_datum(/datum/antagonist/assassin)
-	SSrole_class_handler.assassins_in_round = TRUE
-
-/datum/round_event_control/antagonist/solo/assassins/canSpawnEvent(players_amt, gamemode, fake_check)
-	. = ..()
-	if(!.)
-		return
-	var/list/candidates = get_candidates()
-
-	if(length(candidates) < 1)
-		return FALSE
-
-	return TRUE
+// [DISABLED: zombie project] Everything below is commented out on purpose. Do not delete. See RULES_AND_LESSONS.md
+// /datum/round_event_control/antagonist/solo/assassins
+// 	name = "Assassins"
+// 	tags = list(
+// 		TAG_COMBAT,
+// 		TAG_VILLIAN,
+// 		TAG_BLOOD
+// 	)
+// 	roundstart = TRUE
+// 	antag_flag = ROLE_ASSASSIN
+// 	shared_occurence_type = SHARED_MINOR_THREAT
+//
+// 	restricted_roles = list(
+// 		"Grand Duke",
+// 		"Grand Duchess",
+// 		"Consort",
+// 		"Marshal",
+// 		"Bandit",
+// 		"Bishop",
+// 		"Acolyte",
+// 		"Martyr",
+// 		"Templar",
+// 		"Captain",
+// 		"Knight Captain",
+// 		"Watch Captain",
+// 		"Master Warden",
+// 		"Knight",
+// 		"Court Magician",
+// 		"Inquisitor",
+// 		"Orthodoxist",
+// 		"Absolver",
+// 		"Vampire",
+// 		"Vampire Lord",
+// 		"Vampire Servant",
+// 		"Vampire Guard",
+// 		"Vampire Spawn",
+// 		"Werewolf",
+// 		"Lich",
+// 		"Wretch",
+// 		"Veteran",
+// 		"Knight Captain",
+// 		"Bandit"
+// 	)
+//
+// 	base_antags = 2
+// 	maximum_antags = 4
+//
+// 	earliest_start = 0 SECONDS
+// 	max_occurrences = 2
+//
+// 	weight = 10
+//
+// 	typepath = /datum/round_event/antagonist/solo/assassins
+// 	antag_datum = /datum/antagonist/assassin
+//
+// /datum/round_event/antagonist/solo/assassins/start()
+// 	for(var/datum/mind/antag_mind as anything in setup_minds)
+// 		var/datum/job/original_job = SSjob.GetJob(antag_mind.assigned_role)
+// 		if(antag_mind.current.client)
+// 			SSrole_class_handler.cancel_class_handler(antag_mind.current.client.ckey)
+// 		SSjob.AssignRole(antag_mind.current, "Assassin")
+// 		if(original_job)
+// 			if(original_job.total_positions == 1)
+// 				original_job.current_positions = max(original_job.current_positions, 1)
+// 			else
+// 				original_job.current_positions += 1
+// 		SSmapping.retainer.assassins |= antag_mind.current
+// 		antag_mind.add_antag_datum(/datum/antagonist/assassin)
+// 	SSrole_class_handler.assassins_in_round = TRUE
+//
+// /datum/round_event_control/antagonist/solo/assassins/canSpawnEvent(players_amt, gamemode, fake_check)
+// 	. = ..()
+// 	if(!.)
+// 		return
+// 	var/list/candidates = get_candidates()
+//
+// 	if(length(candidates) < 1)
+// 		return FALSE
+//
+// 	return TRUE
+//

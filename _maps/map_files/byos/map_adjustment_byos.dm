@@ -42,19 +42,19 @@
 		// /datum/job/roguetown/archivist = list(display_title = "Scribe", f_title = "Scribe"),
 
 		// Common Folk
-		/datum/job/roguetown/villager = list(display_title = "Colonist", f_title = "Colonist"),
+//		/datum/job/roguetown/villager = list(display_title = "Colonist", f_title = "Colonist"),
 		// /datum/job/roguetown/farmer = list(display_title = "Settler", f_title = "Settler"),
 		// /datum/job/roguetown/servant = list(display_title = "Servant", f_title = "Servant"),
 		// /datum/job/roguetown/lunatic = list(display_title = "Madman", f_title = "Madwoman"),
 
 		// Outcasts & Misc
-		/datum/job/roguetown/bandit = list(display_title = "Pirate", f_title = "Pirate"),
-		/datum/job/roguetown/orphan = list(display_title = "Stowaway", f_title = "Stowaway"),
-		/datum/job/roguetown/beggar = list(display_title = "Stowaway", f_title = "Stowaway"),
+//		/datum/job/roguetown/bandit = list(display_title = "Pirate", f_title = "Pirate"),
+//		/datum/job/roguetown/orphan = list(display_title = "Stowaway", f_title = "Stowaway"),
+//		/datum/job/roguetown/beggar = list(display_title = "Stowaway", f_title = "Stowaway"),
 	)
 	tutorial_adjust = list(
 		/datum/job/roguetown/lord = "You have been sent by the queen to oversee the colony of New Kingsfield. CHANGE THIS LATER.",
-		/datum/job/roguetown/bandit = "At some point in your lyfe, you'd fallen to the wrong side of the PIRATESHIP!. Whether by butchery or finesse, you're known throughout the SEVEN SEAS. Yet one of many faces in a SALTY PORT tavern, hung up on a wall. A tale told by the locals. Now, you lyve in a PIRATES COVE with your fellows, to avoid an unpleasant end."
+//		/datum/job/roguetown/bandit = "At some point in your lyfe, you'd fallen to the wrong side of the PIRATESHIP!. Whether by butchery or finesse, you're known throughout the SEVEN SEAS. Yet one of many faces in a SALTY PORT tavern, hung up on a wall. A tale told by the locals. Now, you lyve in a PIRATES COVE with your fellows, to avoid an unpleasant end."
 		// /datum/job/roguetown/orphan = "CHANGE THIS LATER!",
 
 	)
@@ -67,17 +67,17 @@
 		/datum/job/roguetown/azeb,
 		/datum/job/roguetown/azebagha,
 		/datum/job/roguetown/slavemaster,
-		/datum/job/roguetown/slaver,
-		/datum/job/roguetown/rockhillslave,
-		/datum/job/roguetown/baron,
-		/datum/job/roguetown/baron_retainer,
+//		/datum/job/roguetown/slaver,
+//		/datum/job/roguetown/rockhillslave,
+//		/datum/job/roguetown/baron,
+//		/datum/job/roguetown/baron_retainer,
 		/datum/job/roguetown/adventurer/courtslave,
 		/datum/job/roguetown/dtchaplain,
 		
 		// /datum/job/roguetown/adventurer//Adventurers
 		// /datum/job/roguetown/wretch,
 		// /datum/job/roguetown/bandit,
-		/datum/job/roguetown/pilgrim,//everyone came on the boat so no real difference with towner
+//		/datum/job/roguetown/pilgrim,//everyone came on the boat so no real difference with towner
 		// /datum/job/roguetown/trader,
 		// /datum/job/roguetown/assassin,
 
@@ -85,13 +85,13 @@
 		// /datum/job/roguetown/knight,
 		// /datum/job/roguetown/hand,
 		// /datum/job/roguetown/suitor, //long walks on the beach?
-		/datum/job/roguetown/steward,
+//		/datum/job/roguetown/steward,
 		// /datum/job/roguetown/consort,
 		// /datum/job/roguetown/captain,
-		/datum/job/roguetown/marshal, //nyeah fuck you
+//		/datum/job/roguetown/marshal, //nyeah fuck you
 
 		//church. 
-		/datum/job/roguetown/keeper, //no beast
+//		/datum/job/roguetown/keeper, //no beast
 		// /datum/job/roguetown/monk,
 		// /datum/job/roguetown/templar,
 		// /datum/job/roguetown/priest,
@@ -108,23 +108,23 @@
 		// /datum/job/roguetown/guardsman,
 		// /datum/job/roguetown/warden,
 		// /datum/job/roguetown/wardenmaster,//Probably the best possible place for 'em!
-		/datum/job/roguetown/dungeoneer,
+//		/datum/job/roguetown/dungeoneer,
 		// /datum/job/roguetown/sergeant,
 		// /datum/job/roguetown/squire,
 		// /datum/job/roguetown/veteran,
 		// /datum/job/roguetown/vanguard,//eh probably fine
-		/datum/job/roguetown/guardsman,//Not a city map
-		/datum/job/roguetown/watchcaptain,//Not a city map
+//		/datum/job/roguetown/guardsman,//Not a city map
+//		/datum/job/roguetown/watchcaptain,//Not a city map
 
 		//trader (probably fine to keep as it is)
 
-		/datum/job/roguetown/crier,
+//		/datum/job/roguetown/crier,
 		// /datum/job/roguetown/archivist,//idk they can study the island
 		// /datum/job/roguetown/barkeep,//there IS a bar I guess?
 		// /datum/job/roguetown/guildmaster,
 		// /datum/job/roguetown/guildsman,
 		// /datum/job/roguetown/merchant,//important
-		/datum/job/roguetown/niteman,
+//		/datum/job/roguetown/niteman,
 		// /datum/job/roguetown/tailor,
 		// /datum/job/roguetown/elder,
 		
@@ -133,9 +133,9 @@
 		// /datum/job/roguetown/prisonerb,
 		// /datum/job/roguetown/prisonerr,
 		// /datum/job/roguetown/hostage,
-		/datum/job/roguetown/nightmaiden,
+//		/datum/job/roguetown/nightmaiden,
 		// /datum/job/roguetown/cook,
-		/datum/job/roguetown/knavewench,
+//		/datum/job/roguetown/knavewench,
 		// /datum/job/roguetown/lunatic,
 
 
@@ -146,7 +146,7 @@
 		// /datum/job/roguetown/servant,
 		// /datum/job/roguetown/apothecary,
 		// /datum/job/roguetown/churchling,
-		/datum/job/roguetown/clerk,
+//		/datum/job/roguetown/clerk,
 		// /datum/job/roguetown/wapprentice,
 		// /datum/job/roguetown/orphan,
 		// /datum/job/roguetown/prince,

@@ -5,7 +5,7 @@
 	var/random_deserter_cloak = rand(1,4)
 	switch(random_deserter_cloak)
 		if(1)
-			cloak = /obj/item/clothing/cloak/cape/nomad
+//			cloak = /obj/item/clothing/cloak/cape/nomad
 		if(2)
 			cloak = /obj/item/clothing/cloak/stabard/dungeon
 		if(3)
@@ -204,11 +204,11 @@
 	H.STAINT = 10
 	//Chest Gear
 	add_random_deserter_cloak(H)
-	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/nomad
-	armor = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/hierophant/nomad
+//	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/nomad
+//	armor = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/hierophant/nomad
 	//Head Gear
 	neck = /obj/item/clothing/neck/roguetown/coif/heavypadding
-	head = /obj/item/clothing/head/roguetown/roguehood/shalal/nomad
+//	head = /obj/item/clothing/head/roguetown/roguehood/shalal/nomad
 	//wrist Gear
 	gloves = /obj/item/clothing/gloves/roguetown/bandages
 	wrists = /obj/item/clothing/wrists/roguetown/splintarms/iron
@@ -289,12 +289,12 @@
 	H.STAPER = 11
 	H.STAINT = 10
 	//Chest Gear
-	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/hierophant/nomad
+//	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/hierophant/nomad
 	add_random_deserter_armor_hard(H)
 	add_random_deserter_cloak(H)
 	//Head Gear
-	neck = /obj/item/clothing/neck/roguetown/coif/padded/nomad
-	head = /obj/item/clothing/head/roguetown/roguehood/shalal/nomad
+//	neck = /obj/item/clothing/neck/roguetown/coif/padded/nomad
+//	head = /obj/item/clothing/head/roguetown/roguehood/shalal/nomad
 	//wrist Gear
 	gloves = /obj/item/clothing/gloves/roguetown/plate/iron
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/iron

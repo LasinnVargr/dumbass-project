@@ -93,7 +93,7 @@ GLOBAL_LIST_INIT(character_flaws, list(
 
 /mob/living/carbon/human/get_flaw(flaw_type)
 	if(!flaw_type)
-		return
+//		return
 	// Check new multiple vices system
 	if(length(vices))
 		for(var/datum/charflaw/vice in vices)
@@ -103,33 +103,33 @@ GLOBAL_LIST_INIT(character_flaws, list(
 	if(istype(charflaw, flaw_type))
 		return charflaw
 	return
-
+//
 /datum/charflaw/randflaw
 	name = "Random or None"
 	desc = "A 50% chance to be given a random flaw, or a 50% chance to have NO flaw."
-
-/datum/charflaw/randflaw/apply_post_equipment(mob/user)
-	var/mob/living/carbon/human/H = user
+//
+///datum/charflaw/randflaw/apply_post_equipment(mob/user)
+//	var/mob/living/carbon/human/H = user
 	if(prob(50))
 		var/flawz = GLOB.character_flaws.Copy()
 		var/charflaw = pick_n_take(flawz)
-		charflaw = GLOB.character_flaws[charflaw]
+//		charflaw = GLOB.character_flaws[charflaw]
 		if((charflaw == type) || (charflaw == /datum/charflaw/noflaw))
 			charflaw = pick_n_take(flawz)
 			charflaw = GLOB.character_flaws[charflaw]
 		if((charflaw == type) || (charflaw == /datum/charflaw/noflaw))
 			charflaw = pick_n_take(flawz)
-			charflaw = GLOB.character_flaws[charflaw]
+//			charflaw = GLOB.character_flaws[charflaw]
 		H.charflaw = new charflaw()
 		H.charflaw.on_mob_creation(H)
 	else
-		H.charflaw = new /datum/charflaw/eznoflaw()
+//		H.charflaw = new /datum/charflaw/eznoflaw()
 		H.charflaw.on_mob_creation(H)
 
-
+//
 /datum/charflaw/eznoflaw
-	name = "No Flaw"
-	desc = "I'm a normal person, how rare!"
+//	name = "No Flaw"
+//	desc = "I'm a normal person, how rare!"
 	point_value = 0 // Not a flaw.
 
 /datum/charflaw/noflaw
@@ -748,9 +748,9 @@ GLOBAL_LIST_INIT(character_flaws, list(
 
 		// Add the adjusted Nymphomaniac addiction flaw
 		if(!HAS_TRAIT(H, TRAIT_DEPRAVED))
-			var/datum/charflaw/addiction/baothamarked/L = new
-			H.vices += L
-			L.on_mob_creation(H)
+//			var/datum/charflaw/addiction/baothamarked/L = new
+//			H.vices += L
+//			L.on_mob_creation(H)
 
 /datum/charflaw/marked_by_baotha/proc/grant_fertility_boon(mob/user)
 	if(QDELETED(user))

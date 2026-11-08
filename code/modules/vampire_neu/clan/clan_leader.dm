@@ -1,58 +1,60 @@
-/datum/clan_leader
-	var/list/lord_spells = list(
-	)
-	var/list/lord_verbs = list(
-		/mob/living/carbon/human/proc/punish_spawn
-	)
-	var/list/lord_traits = list(TRAIT_HEAVYARMOR, TRAIT_INFINITE_ENERGY, TRAIT_STRENGTH_UNCAPPED)
-	var/lord_title = "Lord"
-	var/vitae_bonus = 500 // Extra vitae for lords
-	var/ascended = FALSE
-
-/datum/clan_leader/lord
-	lord_spells = list(
-		/obj/effect/proc_holder/spell/targeted/shapeshift/vampire/bat,
-	)
-
-// doesn't get any of the benefits, currently functionally unused
-/datum/clan_leader/wretch
-	lord_spells = list()//No bat / gas. Thanks. Xray vision. No issue Z-Movement. Unable to be countered via silver. Ignores miracles. Etc.
-	lord_traits = list()
-	vitae_bonus = 5
-
-/datum/clan_leader/proc/make_new_leader(mob/living/carbon/human/H)
-	ADD_TRAIT(H, TRAIT_CLAN_LEADER, "clan")
-
-	// Add lord spells
-	for(var/spell_type in lord_spells)
-		H.mind?.AddSpell(new spell_type(H.mind))
-
-	// Add lord verbs
-	for(var/verb_path in lord_verbs)
-		H.verbs |= verb_path
-
-	// Add lord traits
-	for(var/trait in lord_traits)
-		ADD_TRAIT(H, trait, "lord_component")
-
-	// Update vampire datum if they have one
-	var/datum/antagonist/vampire/vamp_datum = H.mind?.has_antag_datum(/datum/antagonist/vampire)
-	H.adjust_maxbloodpool(vitae_bonus)
-	if(vamp_datum)
-		vamp_datum.name = "[lord_title]"
-		vamp_datum.update_hud_icon()
-
-/datum/clan_leader/proc/remove_leader(mob/living/carbon/human/H)
-	REMOVE_TRAIT(H, TRAIT_CLAN_LEADER, "clan")
-	for(var/spell_type in lord_spells)
-		H.mind?.RemoveSpell(spell_type)
-
-	for(var/verb_path in lord_verbs)
-		H.verbs -= verb_path
-
-	for(var/trait in lord_traits)
-		REMOVE_TRAIT(H, trait, "lord_component")
-	H.adjust_maxbloodpool(-(vitae_bonus))
-
-	var/datum/antagonist/vampire/vamp_datum = H.mind?.has_antag_datum(/datum/antagonist/vampire)
-	vamp_datum?.update_hud_icon()
+// [DISABLED: zombie project] Everything below is commented out on purpose. Do not delete. See RULES_AND_LESSONS.md
+// /datum/clan_leader
+// 	var/list/lord_spells = list(
+// 	)
+// 	var/list/lord_verbs = list(
+// 		/mob/living/carbon/human/proc/punish_spawn
+// 	)
+// 	var/list/lord_traits = list(TRAIT_HEAVYARMOR, TRAIT_INFINITE_ENERGY, TRAIT_STRENGTH_UNCAPPED)
+// 	var/lord_title = "Lord"
+// 	var/vitae_bonus = 500 // Extra vitae for lords
+// 	var/ascended = FALSE
+//
+// /datum/clan_leader/lord
+// 	lord_spells = list(
+// 		/obj/effect/proc_holder/spell/targeted/shapeshift/vampire/bat,
+// 	)
+//
+// // doesn't get any of the benefits, currently functionally unused
+// /datum/clan_leader/wretch
+// 	lord_spells = list()//No bat / gas. Thanks. Xray vision. No issue Z-Movement. Unable to be countered via silver. Ignores miracles. Etc.
+// 	lord_traits = list()
+// 	vitae_bonus = 5
+//
+// /datum/clan_leader/proc/make_new_leader(mob/living/carbon/human/H)
+// 	ADD_TRAIT(H, TRAIT_CLAN_LEADER, "clan")
+//
+// 	// Add lord spells
+// 	for(var/spell_type in lord_spells)
+// 		H.mind?.AddSpell(new spell_type(H.mind))
+//
+// 	// Add lord verbs
+// 	for(var/verb_path in lord_verbs)
+// 		H.verbs |= verb_path
+//
+// 	// Add lord traits
+// 	for(var/trait in lord_traits)
+// 		ADD_TRAIT(H, trait, "lord_component")
+//
+// 	// Update vampire datum if they have one
+// 	var/datum/antagonist/vampire/vamp_datum = H.mind?.has_antag_datum(/datum/antagonist/vampire)
+// 	H.adjust_maxbloodpool(vitae_bonus)
+// 	if(vamp_datum)
+// 		vamp_datum.name = "[lord_title]"
+// 		vamp_datum.update_hud_icon()
+//
+// /datum/clan_leader/proc/remove_leader(mob/living/carbon/human/H)
+// 	REMOVE_TRAIT(H, TRAIT_CLAN_LEADER, "clan")
+// 	for(var/spell_type in lord_spells)
+// 		H.mind?.RemoveSpell(spell_type)
+//
+// 	for(var/verb_path in lord_verbs)
+// 		H.verbs -= verb_path
+//
+// 	for(var/trait in lord_traits)
+// 		REMOVE_TRAIT(H, trait, "lord_component")
+// 	H.adjust_maxbloodpool(-(vitae_bonus))
+//
+// 	var/datum/antagonist/vampire/vamp_datum = H.mind?.has_antag_datum(/datum/antagonist/vampire)
+// 	vamp_datum?.update_hud_icon()
+//

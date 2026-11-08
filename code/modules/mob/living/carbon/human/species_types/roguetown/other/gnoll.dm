@@ -106,7 +106,7 @@
 	RegisterSignal(C, COMSIG_MOVABLE_BARK, PROC_REF(cancel_default_bark))
 	C.ambushable = FALSE
 	var/mob/living/carbon/human/H = C
-	H.reset_gnoll_sprite_scale()
+//	H.reset_gnoll_sprite_scale()
 	var/pelt_type = "firepelt" // default
 	if(H.client?.prefs?.gnoll_prefs)
 		pelt_type = H.client.prefs.gnoll_prefs.pelt_type || "firepelt"

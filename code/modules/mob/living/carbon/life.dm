@@ -75,7 +75,7 @@
 		return
 	if(!stat)
 		var/pain_threshold = HAS_TRAIT(src, TRAIT_ADRENALINE_RUSH) ? ((STAWIL + 5) * 10) : (STAWIL * 10)
-		if(has_flaw(/datum/charflaw/addiction/masochist)) // Masochists handle pain better by about 1 endurance point
+//		if(has_flaw(/datum/charflaw/addiction/masochist)) // Masochists handle pain better by about 1 endurance point
 			pain_threshold += 10
 		if(has_status_effect(/datum/status_effect/buff/battle_cry))
 			pain_threshold += 10
@@ -406,8 +406,8 @@ GLOBAL_LIST_INIT(ballmer_windows_me_msg, list("Yo man, what if, we like, uh, put
 		else
 			remove_stress(/datum/stressevent/drunk)
 		if(drunkenness >= 8.5) // Roughly 2 cups
-			if(has_flaw(/datum/charflaw/addiction/alcoholic))
-				sate_addiction(/datum/charflaw/addiction/alcoholic)
+//			if(has_flaw(/datum/charflaw/addiction/alcoholic))
+//				sate_addiction(/datum/charflaw/addiction/alcoholic)
 		if(drunkenness >= 11 && slurring < 5)
 			slurring += 1.2
 

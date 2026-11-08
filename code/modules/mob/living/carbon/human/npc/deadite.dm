@@ -164,9 +164,9 @@
 		return already_zombie
 	if(mind.has_antag_datum(/datum/antagonist/vampire))
 		return
-	if(mind.has_antag_datum(/datum/antagonist/werewolf))
+//	if(mind.has_antag_datum(/datum/antagonist/werewolf))
 		return
-	if(mind.has_antag_datum(/datum/antagonist/gnoll))
+//	if(mind.has_antag_datum(/datum/antagonist/gnoll))
 		return
 	if(mind.has_antag_datum(/datum/antagonist/skeleton))
 		return

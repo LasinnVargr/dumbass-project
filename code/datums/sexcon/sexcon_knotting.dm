@@ -453,13 +453,13 @@
 		knotted_part_partner = SEX_PART_NULL
 		knotted_forced_by_bottom = FALSE
 
-/mob/living/carbon/human/werewolf_transform() // needed to ensure that we safely remove the tie before transitioning
+///mob/living/carbon/human/werewolf_transform() // needed to ensure that we safely remove the tie before transitioning
 	if(istype(sexcon) && sexcon.knotted_status)
 		sexcon.knot_remove()
 	modular_handle_werewolf_transform_chastity()
 	return ..()
 
-/mob/living/carbon/human/werewolf_untransform(dead,gibbed) // needed to ensure that we safely remove the tie after transitioning
+///mob/living/carbon/human/werewolf_untransform(dead,gibbed) // needed to ensure that we safely remove the tie after transitioning
 	if(istype(sexcon) && sexcon.knotted_status)
 		sexcon.knot_remove()
 	return ..()

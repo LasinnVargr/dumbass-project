@@ -34,12 +34,12 @@
 
 	//If God can hear your prayer (long enough, no bad words, etc.)
 	if(patron.hear_prayer(follower, prayer))
-		if(follower.has_flaw(/datum/charflaw/addiction/godfearing))
+//		if(follower.has_flaw(/datum/charflaw/addiction/godfearing))
 			// Stops prayers if you don't meet your patron's requirements to pray.
 			if(!patron?.can_pray(follower))
 				return
 			else
-				follower.sate_addiction(/datum/charflaw/addiction/godfearing)
+//				follower.sate_addiction(/datum/charflaw/addiction/godfearing)
 		if(HAS_TRAIT(follower, TRAIT_CONVICTION))
 			follower.apply_status_effect(/datum/status_effect/buff/healing/prayer, 2)//Mend those wounds.
 			follower.reagents.add_reagent(/datum/reagent/consumable/nutriment, 3)//Just a small sum.
@@ -905,11 +905,11 @@
 	if(.)
 		for(var/mob/living/carbon/human/L in viewers(7,user))
 			if(L == user)
-				if(L.has_flaw(/datum/charflaw/addiction/masochist))
-					L.sate_addiction(/datum/charflaw/addiction/masochist)
+//				if(L.has_flaw(/datum/charflaw/addiction/masochist))
+//					L.sate_addiction(/datum/charflaw/addiction/masochist)
 				continue
-			if(L.has_flaw(/datum/charflaw/addiction/sadist))
-				L.sate_addiction(/datum/charflaw/addiction/sadist)
+//			if(L.has_flaw(/datum/charflaw/addiction/sadist))
+//				L.sate_addiction(/datum/charflaw/addiction/sadist)
 
 /datum/emote/living/scream/strain
 	key = "strain"
@@ -931,11 +931,11 @@
 	if(.)
 		for(var/mob/living/carbon/human/L in viewers(7,user))
 			if(L == user)
-				if(L.has_flaw(/datum/charflaw/addiction/masochist))
-					L.sate_addiction(/datum/charflaw/addiction/masochist)
+//				if(L.has_flaw(/datum/charflaw/addiction/masochist))
+//					L.sate_addiction(/datum/charflaw/addiction/masochist)
 				continue // i hope this shit works.
-			if(L.has_flaw(/datum/charflaw/addiction/sadist))
-				L.sate_addiction(/datum/charflaw/addiction/sadist)
+//			if(L.has_flaw(/datum/charflaw/addiction/sadist))
+//				L.sate_addiction(/datum/charflaw/addiction/sadist)
 
 /datum/emote/living/scream/firescream
 	key = "firescream"
@@ -950,11 +950,11 @@
 	if(.)
 		for(var/mob/living/carbon/human/L in viewers(7,user))
 			if(L == user)
-				if(L.has_flaw(/datum/charflaw/addiction/masochist))
-					L.sate_addiction(/datum/charflaw/addiction/masochist)
+//				if(L.has_flaw(/datum/charflaw/addiction/masochist))
+//					L.sate_addiction(/datum/charflaw/addiction/masochist)
 				continue // i hope this shit works.
-			if(L.has_flaw(/datum/charflaw/addiction/sadist))
-				L.sate_addiction(/datum/charflaw/addiction/sadist)
+//			if(L.has_flaw(/datum/charflaw/addiction/sadist))
+//				L.sate_addiction(/datum/charflaw/addiction/sadist)
 
 /datum/emote/living/aggro
 	key = "aggro"
@@ -1008,11 +1008,11 @@
 	if(.)
 		for(var/mob/living/carbon/human/L in viewers(7,user))
 			if(L == user)
-				if(L.has_flaw(/datum/charflaw/addiction/masochist))
-					L.sate_addiction(/datum/charflaw/addiction/masochist)
+//				if(L.has_flaw(/datum/charflaw/addiction/masochist))
+//					L.sate_addiction(/datum/charflaw/addiction/masochist)
 				continue
-			if(L.has_flaw(/datum/charflaw/addiction/sadist))
-				L.sate_addiction(/datum/charflaw/addiction/sadist)
+//			if(L.has_flaw(/datum/charflaw/addiction/sadist))
+//				L.sate_addiction(/datum/charflaw/addiction/sadist)
 
 /datum/emote/living/embed
 	key = "embed"
