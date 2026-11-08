@@ -36,9 +36,9 @@
 	if(patron.hear_prayer(follower, prayer))
 //		if(follower.has_flaw(/datum/charflaw/addiction/godfearing))
 			// Stops prayers if you don't meet your patron's requirements to pray.
-			if(!patron?.can_pray(follower))
-				return
-			else
+//			if(!patron?.can_pray(follower))
+//				return
+//			else
 //				follower.sate_addiction(/datum/charflaw/addiction/godfearing)
 		if(HAS_TRAIT(follower, TRAIT_CONVICTION))
 			follower.apply_status_effect(/datum/status_effect/buff/healing/prayer, 2)//Mend those wounds.

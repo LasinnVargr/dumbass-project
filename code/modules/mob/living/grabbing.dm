@@ -782,11 +782,11 @@
 	if(!prob(slip_chance))
 		return
 
-	if(istype(mover))
+//	if(istype(mover))
 //		if(istype(mover.mind?.assigned_role, /datum/job/roguetown/jester))
-			mover.liquid_slip(total_time = 1 SECONDS, stun_duration = 1 SECONDS, height = 30, flip_count = 10)
-		else
-			mover.liquid_slip(total_time = 1 SECONDS, stun_duration = 1 SECONDS, height = 12, flip_count = 0)
+//			mover.liquid_slip(total_time = 1 SECONDS, stun_duration = 1 SECONDS, height = 30, flip_count = 10)
+//		else
+//			mover.liquid_slip(total_time = 1 SECONDS, stun_duration = 1 SECONDS, height = 12, flip_count = 0)
 
 /atom/movable/screen/alert/status_effect/oiled
 	name = "Oiled"

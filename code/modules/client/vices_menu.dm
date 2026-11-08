@@ -10,7 +10,7 @@
 		return types
 	types += virtue_typepath
 //	if(ispath(virtue_typepath, /datum/virtue/pack))
-		var/datum/virtue/pack/P = GLOB.virtues[virtue_typepath]
+//		var/datum/virtue/pack/P = GLOB.virtues[virtue_typepath]
 //		if(P)
 //			types += P.granted_virtues
 	return types

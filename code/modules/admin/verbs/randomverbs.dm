@@ -375,7 +375,7 @@ Traitors and the like can also be revived with the previous role mostly intact.
 	//Now for special roles and equipment.
 //	var/datum/antagonist/traitor/traitordatum = new_character.mind.has_antag_datum(/datum/antagonist/traitor)
 //	if(traitordatum)
-		SSjob.EquipRank(new_character, new_character.mind.assigned_role, 1)
+//		SSjob.EquipRank(new_character, new_character.mind.assigned_role, 1)
 //		traitordatum.equip()
 
 
