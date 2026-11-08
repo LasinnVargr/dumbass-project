@@ -1219,7 +1219,7 @@
 
 		if(user != src && !HAS_TRAIT(src, TRAIT_GUARD_RAISED) && ishuman(user))
 //			if(has_flaw(/datum/charflaw/addiction/lovefiend) && user.has_flaw(/datum/charflaw/addiction/lovefiend))
-				. += span_aiprivradio("[m1] as lovesick as I.")
+//				. += span_aiprivradio("[m1] as lovesick as I.")
 
 			if(has_flaw(/datum/charflaw/marked_by_baotha) && HAS_TRAIT(user, TRAIT_DEPRAVED))
 				. += span_aiprivradio("[m1] marked by the debauched scent of my patron.")

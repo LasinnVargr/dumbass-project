@@ -121,8 +121,8 @@
 		if(buckled)
 			if(istype(buckled, /obj/structure/fluff/psycross))
 //				if(real_name in GLOB.excommunicated_players)
-					yeae = FALSE
-					tris2take += -2
+//					yeae = FALSE
+//					tris2take += -2
 				if(real_name in GLOB.outlawed_players)
 					yeae = FALSE
 /*

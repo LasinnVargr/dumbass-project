@@ -1281,7 +1281,7 @@
 	//make reapply prefs work for gnolls
 	if(dna?.species?.id == "gnoll")
 //		if(!apply_gnoll_preferences(FALSE, keep_name = TRUE))
-			reapply_live_preferences()
+//			reapply_live_preferences()
 		set_blindness(0)
 		regenerate_icons()
 	else
