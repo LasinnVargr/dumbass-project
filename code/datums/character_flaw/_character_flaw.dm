@@ -747,7 +747,7 @@ GLOBAL_LIST_INIT(character_flaws, list(
 		var/mob/living/carbon/human/H = user
 
 		// Add the adjusted Nymphomaniac addiction flaw
-		if(!HAS_TRAIT(H, TRAIT_DEPRAVED))
+// [DISABLED: zombie project] 		if(!HAS_TRAIT(H, TRAIT_DEPRAVED))
 //			var/datum/charflaw/addiction/baothamarked/L = new
 //			H.vices += L
 //			L.on_mob_creation(H)
