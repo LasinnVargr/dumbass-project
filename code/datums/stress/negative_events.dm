@@ -142,7 +142,7 @@
 //	if(user.has_flaw(/datum/charflaw/addiction/masochist))
 		return FALSE
 	return TRUE
-
+//
 /datum/stressevent/painmax
 	timer = 1 MINUTES
 	stressadd = 2
@@ -152,7 +152,7 @@
 //	if(user.has_flaw(/datum/charflaw/addiction/masochist))
 		return FALSE
 	return TRUE
-
+//
 /datum/stressevent/freakout
 	timer = 15 SECONDS
 	stressadd = 2

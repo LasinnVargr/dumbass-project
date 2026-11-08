@@ -1379,8 +1379,8 @@ GLOBAL_LIST_EMPTY(personal_objective_minds)
 
 /datum/mind/proc/has_spellmiracle_block_antag()
 //	for(var/antag_type in SPELLMIRACLE_BLOCK_ANTAGS)
-		if(has_antag_datum(antag_type))
-			return TRUE
+//		if(has_antag_datum(antag_type))
+//			return TRUE
 	return FALSE
 
 /datum/mind/proc/is_utility_learned(spell_path)
