@@ -1,0 +1,25 @@
+DM compiler version 516.1687
+loading roguetown.dme
+code\_globalvars\special_traits.dm:183:error: inconsistent indentation
+code\_onclick\item_attack.dm:31:error: inconsistent indentation
+code\_onclick\item_attack.dm:32:error: inconsistent indentation
+code\datums\mind.dm:1383:error: inconsistent indentation
+code\datums\mind.dm:1384:error: inconsistent indentation
+code\datums\sexcon\sexcon.dm:816:warning (empty_else): empty 'else' clause
+code\datums\sexcon\sexcon.dm:918:error: inconsistent indentation
+code\datums\sexcon\sexcon.dm:919:error: bad argument definition
+code\datums\sexcon\sexcon.dm:945:error: inconsistent indentation
+code\datums\sexcon\sexcon_helpers.dm:188:error: action_target: expected end of statement
+code\datums\status_effects\rogue\roguebuff.dm:385:error: inconsistent indentation
+code\datums\stress\negative_events.dm:144:error: inconsistent indentation
+code\datums\stress\negative_events.dm:154:error: inconsistent indentation
+code\game\objects\items\rogueitems\inquisitionrelics.dm:678:error: inconsistent indentation
+code\game\objects\items\rogueitems\inquisitionrelics.dm:680:error: inconsistent indentation
+code\game\objects\items\rogueweapons\mmb\bite.dm:125:error: inconsistent indentation
+code\game\objects\items\rogueweapons\mmb\bite.dm:123:warning (empty_else): empty 'else' clause
+code\game\objects\items\rogueweapons\mmb\bite.dm:126:error: proc definition not allowed inside another proc
+code\game\objects\items\rogueweapons\mmb\bite.dm:140:error: bad argument definition
+code\game\objects\items\rogueweapons\mmb\bite.dm:157:error: bad argument definition
+code\game\objects\items\rogueweapons\mmb\bite.dm:160:error: unbalanced }
+roguetown.dmb - 19 errors, 2 warnings (11/8/26 11:12 pm)
+Total time: 0:02
