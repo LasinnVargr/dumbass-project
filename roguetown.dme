@@ -2118,6 +2118,7 @@
 #include "code\modules\jobs\job_types\roguetown\courtier\magician.dm"
 #include "code\modules\jobs\job_types\roguetown\courtier\physician.dm"
 #include "code\modules\jobs\job_types\roguetown\courtier\servant.dm"
+#include "code\modules\jobs\job_types\roguetown\courtier\test_role.dm"
 #include "code\modules\jobs\job_types\roguetown\garrison\dungeoneer.dm"
 #include "code\modules\jobs\job_types\roguetown\garrison\retainer.dm"
 #include "code\modules\jobs\job_types\roguetown\garrison\rookie.dm"

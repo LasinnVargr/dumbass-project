@@ -83,6 +83,7 @@ GLOBAL_LIST_INIT(courtier_positions, list(
 	"Seneschal",
 	"Servant",
 	"Court Chaplain",
+	"Test Role",
 	//Desert
 	"Head Slave",
 	"Palace Chaplain",

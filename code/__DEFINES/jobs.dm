@@ -143,6 +143,7 @@
 #define MAGEASSOCIATE	(1<<6)
 #define APOTHECARY	(1<<7)
 #define CHAPLAIN	(1<<8)
+#define TEST_ROLE	(1<<9)
 
 #define YEOMEN		(1<<4)
 
@@ -327,6 +328,7 @@
 #define JDO_GNOLL 30.5
 #define JDO_ASSASSIN 30.6
 #define JDO_TRADER 30.7
+#define JDO_TEST_ROLE 30.8
 
 #define JDO_MERCENARY 31
 #define JDO_GRENZELHOFT 31.1
