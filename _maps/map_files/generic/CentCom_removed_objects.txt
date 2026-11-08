@@ -1,0 +1,8 @@
+Object lines removed from _maps/map_files/generic/CentCom.dmm on 2026-11-08 because their types are commented out in code.
+Each line is kept here so it can be restored when the type comes back (the tile's turf and area are untouched).
+
+line 211 (tile key aw): /obj/item/clothing/head/roguetown/helmet/heavy/crusader,
+line 212 (tile key aw): /obj/item/clothing/head/roguetown/helmet/heavy/crusader/t,
+line 721 (tile key cG): /obj/structure/wonder,
+line 1019 (tile key jr): /obj/structure/wonder,
+line 2513 (tile key Rb): /obj/structure/wonder,
