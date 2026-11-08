@@ -74,9 +74,9 @@ GLOBAL_LIST_INIT(towner_posting_descriptors, list(
 //	return user_can_post_crown_towner(user)
 
 ///proc/user_can_post_any_towner(mob/user)
-	for(var/posting_type in GLOB.towner_posting_descriptors)
-		if(user_can_post_towner_type(user, posting_type))
-			return TRUE
+//	for(var/posting_type in GLOB.towner_posting_descriptors)
+//		if(user_can_post_towner_type(user, posting_type))
+//			return TRUE
 	return FALSE
 
 /proc/towner_advclass_names(list/paths)

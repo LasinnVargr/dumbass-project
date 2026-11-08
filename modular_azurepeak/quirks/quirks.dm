@@ -130,8 +130,8 @@
 //	else
 //		remove_status_effect(/datum/status_effect/debuff/redolent_stink)
 
-	if(!should_reek)
-		return
+//	if(!should_reek)
+//		return
 	if(world.time < redolent_last_aura_tick + redolent_aura_tick_delay(redolent_scent_type))
 		return
 	redolent_last_aura_tick = world.time

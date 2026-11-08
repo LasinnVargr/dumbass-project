@@ -86,15 +86,15 @@
 //			if(mind.has_antag_datum(/datum/antagonist/skeleton) || mind.has_antag_datum(/datum/antagonist/lich))
 //				record_round_statistic(STATS_SKELETONS_KILLED)
 
-	if(!gibbed)
-		/*
-			ZOMBIFICATION BY DEATH BEGINS HERE
-		*/
-		if(!has_world_trait(/datum/world_trait/necra_requiem))
-			if(!is_in_roguetown(src) || has_world_trait(/datum/world_trait/zizo_defilement))
-				if(!zombie_check_can_convert()) //Gives the dead unit the zombie antag flag
-					to_chat(src, span_userdanger("..is this to be my end..?"))
-					to_chat(src, span_danger("The cold consumes the final flicker of warmth in your chest and begins to seep into your limbs..."))
+//	if(!gibbed)
+//		/*
+//			ZOMBIFICATION BY DEATH BEGINS HERE
+//		*/
+//		if(!has_world_trait(/datum/world_trait/necra_requiem))
+//			if(!is_in_roguetown(src) || has_world_trait(/datum/world_trait/zizo_defilement))
+//				if(!zombie_check_can_convert()) //Gives the dead unit the zombie antag flag
+//					to_chat(src, span_userdanger("..is this to be my end..?"))
+//					to_chat(src, span_danger("The cold consumes the final flicker of warmth in your chest and begins to seep into your limbs..."))
 
 	stop_sound_channel(CHANNEL_HEARTBEAT)
 	var/obj/item/organ/heart/H = getorganslot(ORGAN_SLOT_HEART)

@@ -734,7 +734,7 @@ GLOBAL_LIST_INIT(character_flaws, list(
 
 	// A bodyless spawn(40) sat here. DM binds the next single statement as the spawn body,
 	// so the boon has always landed 4 seconds after the marking, not with it.
-	addtimer(CALLBACK(src, PROC_REF(grant_fertility_boon), user), 40)
+//	addtimer(CALLBACK(src, PROC_REF(grant_fertility_boon), user), 40)
 
 	var/obj/item/organ/vagina/vagina = user.getorganslot(ORGAN_SLOT_VAGINA)
 	if(vagina && !vagina.fertility)
@@ -753,8 +753,8 @@ GLOBAL_LIST_INIT(character_flaws, list(
 //			L.on_mob_creation(H)
 
 ///datum/charflaw/marked_by_baotha/proc/grant_fertility_boon(mob/user)
-	if(QDELETED(user))
-		return
+//	if(QDELETED(user))
+//		return
 	ADD_TRAIT(user, TRAIT_BAOTHA_FERTILITY_BOON, TRAIT_GENERIC)
 
 /datum/charflaw/hemophage

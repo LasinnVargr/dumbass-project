@@ -48,9 +48,9 @@
 //	if(vampyr)
 //		if(!wwoelf)
 //			return "vampire"
-	if(wwoelf)
-		if(!vampyr)
-			return "werewolf"
+//	if(wwoelf)
+//		if(!vampyr)
+//			return "werewolf"
 
 GLOBAL_LIST_EMPTY(found_lords)
 

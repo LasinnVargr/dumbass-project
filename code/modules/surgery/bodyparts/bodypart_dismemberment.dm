@@ -97,10 +97,10 @@
 //		C.visible_message(span_danger("<B>The [src.name] is [pick("torn off", "sundered", "severed", "separated", "unsewn")]!</B>"))
 	//past the two stage decapitation returns, so a first stage neck sever is not logged as a limb loss;
 	//the casterless branch is player-only or NPC mobs eating a body would spam it
-	if(user)
-		log_combat(user, C, "dismembered", null, "([src.name])", severe = TRUE)
-	else if(C.client || C.mind)
-		C.log_message("has lost their [src.name] to dismemberment", LOG_ATTACK, color = LOG_COLOR_SEVERE)
+//	if(user)
+//		log_combat(user, C, "dismembered", null, "([src.name])", severe = TRUE)
+//	else if(C.client || C.mind)
+//		C.log_message("has lost their [src.name] to dismemberment", LOG_ATTACK, color = LOG_COLOR_SEVERE)
 
 	if(body_zone != BODY_ZONE_HEAD) // Sorry pal, no protagonist moment if it's your head flying off. Your ride ends here, mutie.
 		INVOKE_ASYNC(C, TYPE_PROC_REF(/mob/living/carbon, delimb_pain))
@@ -223,8 +223,8 @@
 //			C.visible_message(span_danger("<B>[C] is [pick("BRUTALLY","VIOLENTLY","BLOODILY","MESSILY")] DECAPITATED!</B>"))
 //	else
 //		C.visible_message(span_danger("<B>The [src.name] is [pick("torn off", "sundered", "severed", "separated", "unsewn")]!</B>"))
-	if(body_zone != BODY_ZONE_HEAD)
-		C.delimb_pain()
+//	if(body_zone != BODY_ZONE_HEAD)
+//		C.delimb_pain()
 	if(!(NOBLOOD in C.dna?.species?.species_traits))
 		add_mob_blood(C)
 	C.add_stress(/datum/stressevent/dismembered)

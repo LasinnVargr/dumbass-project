@@ -897,7 +897,7 @@
 	if(ishuman(user) && ishuman(target) && user.client && target.client)
 //		eora_register_consensual_pair(user, target)
 
-/datum/sex_controller/proc/just_ejaculated()
+///datum/sex_controller/proc/just_ejaculated()
 	return (last_ejaculation_time + 2 SECONDS >= world.time)
 
 /datum/sex_controller/proc/set_charge(amount)
@@ -1872,7 +1872,7 @@
 //				return
 //			if(answer == "Yae")
 //				top.werewolf_infect_attempt()
-		return
+//		return
 
 /datum/proc/deadite_sex_infect_attempt(mob/living/carbon/human/top, mob/living/carbon/human/bottom)
 
